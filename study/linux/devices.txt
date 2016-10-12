@@ -1,0 +1,26 @@
+/proc # cat devices
+Character devices:
+  1 mem
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+ 29 fb
+ 90 mtd
+128 ptm
+136 pts
+252 ubi0
+253 bsg
+254 rtc
+
+Block devices:
+  1 ramdisk
+259 blkext
+  7 loop
+ 31 mtdblock
+179 mmc

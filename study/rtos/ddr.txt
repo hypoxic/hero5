@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------
+dram type = LPDDR3
+dram freq = 600000000
+dram size = 8Gb
+bus width = 32bit
+page size = 4KB
+dram_pad_term  =        0x5e020035      (dds = 5, term = off)
+dll0           =        0x002d0c31
+dll1           =        0x002d0c31
+dll2           =        0x002d0c31
+dll3           =        0x002d0c31
+dll_ctrl_sel0  =        0x00000001
+dll_ctrl_sel1  =        0x00000001
+dll_ctrl_sel2  =        0x00000001
+dll_ctrl_sel3  =        0x00000001
+dram_dqs_sync  =        0x0ff4c0a1      (sw dqs, byte0=falling,byte1=falling,byte2=falling,byte3=falling)
+--------------------------------------------------------------------------------
+PLL_DdrCtrl      (0xe81700dc)  =        0x31100000
+PLL_DdrCtrl2     (0xe8170110)  =        0x3f710000
+PLL_DdrCtrl3     (0xe8170114)  =        0x00068302
+PLL_CortexCtrl   (0xe81702b0)  =        0x20100000
+PLL_CortexCtrl2  (0xe81702b8)  =        0x3f770000
+PLL_CortexCtrl3  (0xe81702bc)  =        0x00068300
+PLL_CoreCtrl     (0xe8170000)  =        0x24100000
+PLL_CoreCtrl2    (0xe8170100)  =        0x3f770000
+PLL_CoreCtrl3    (0xe8170104)  =        0x00068300
+DLL_Setting0     (0xe8170090)  =        0x002d0c31
+DLL_Setting1     (0xe8170094)  =        0x002d0c31
+DLL_Setting2     (0xe81700f0)  =        0x002d0c31
+DLL_Setting3     (0xe81700f4)  =        0x002d0c31
+DLL_CtrlSel0     (0xe817023c)  =        0x00000001
+DLL_CtrlSel1     (0xe8170240)  =        0x00000001
+DLL_CtrlSel2     (0xe8170244)  =        0x00000001
+DLL_CtrlSel3     (0xe8170248)  =        0x00000001
+CG_DdrInit       (0xe8170220)  =        0x00000003
+DLL_CtrlSelMisc  (0xe8170158)  =        0x12f10000
+--------------------------------------------------------------------------------
+DRAM_RsvdSpace   (0xef000830)  =        0x000000e4
+DRAM_Config      (0xef000804)  =        0x602620b8
+DRAM_Timing1     (0xef000808)  =        0x831265aa
+DRAM_Timing2     (0xef00080c)  =        0x6210fceb
+DRAM_Timing3     (0xef000810)  =        0x60000091
+DRAM_ByteMap     (0xef000834)  =        0x00000000
+DRAM_PadTerm     (0xef000824)  =        0x5e020035
+DRAM_ModeReg     (0xef000818)  =        0x010b0000
+DRAM_CONTROL     (0xef000800)  =        0x00000a87
+DRAM_INIT_CTRL   (0xef000814)  =        0x00000000
+DRAM_DqsSync     (0xef000820)  =        0x0ff4c0a1
+DRAM_ZqCalib     (0xef000828)  =        0x00000060

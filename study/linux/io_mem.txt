@@ -1,0 +1,4 @@
+/proc # cat iomem
+00b00000-040fffff : System RAM
+   00b08000-0100e953 : Kernel code
+   01034000-01091b2b : Kernel data

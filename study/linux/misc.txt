@@ -1,0 +1,11 @@
+/proc # cat misc
+ 57 ubi_ctrl
+ 58 network_throughput
+ 59 network_latency
+ 60 cpu_dma_latency
+ 61 amba_dspmem
+ 62 amba_heapmem
+237 loop-control
+235 autofs
+231 snapshot
+ 63 rfkill

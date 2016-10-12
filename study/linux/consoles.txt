@@ -1,0 +1,2 @@
+/proc # cat consoles
+ttyS2                -W- (EC p a)    4:66

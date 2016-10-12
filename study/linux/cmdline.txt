@@ -1,0 +1,2 @@
+/proc # cat cmdline
+ubi.mtd=5 root=ubi0:linux rootfstype=ubifs console=ttyS2 nr_cpus=1 maxcpus=0 boss=0xa0a50000

@@ -1,0 +1,24 @@
+/proc # cat filesystems
+nodev   sysfs
+nodev   rootfs
+nodev   bdev
+nodev   proc
+nodev   cgroup
+nodev   tmpfs
+nodev   devtmpfs
+nodev   debugfs
+nodev   sockfs
+nodev   pipefs
+nodev   anon_inodefs
+nodev   rpc_pipefs
+nodev   configfs
+nodev   devpts
+        squashfs
+nodev   ramfs
+        vfat
+nodev   nfs
+nodev   autofs
+nodev   mqueue
+nodev   mtd_inodefs
+nodev   ubifs
+nodev   ambafs

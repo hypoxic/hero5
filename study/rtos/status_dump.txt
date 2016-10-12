@@ -1,0 +1,68 @@
+System Status
+
+        sd_status               0
+        shutdown_now            0
+        shutdown_inprogress             0
+        no_shutdown_exists              0
+        prevent_deep_sleep              1
+        reset_reason            2
+
+        wireless_init_state             3
+        wireless_traffic_timeout                2
+        wireless_init_finished          1
+        rewrite_wakeup_csi              0
+
+        target_app_mode 0
+        current_app_mode        0
+        current_video_sub_mode  0
+        current_photo_sub_mode  1
+        current_multi_shot_sub_mode     0
+        current_broadcast_sub_mode      0
+
+        record_status           0
+        timelapse_active                0
+        quick_capture_active            0
+        continuous_capture_active               0
+        encode_stopping         0
+
+        remote_voice_control_enable             0
+        remote_voice_narration_enable           0
+        voice_control_enable            1
+        voice_control_state             1
+        voice_control_used              0
+
+        playback_speed          0
+        playback_direction      0
+        playback_running                0
+
+        ibat_percent            50
+        ibat_bars               2
+        ibat_charge_state               1
+        charger_is_fast_charger         0
+        ibat_removed            0
+        ebat_percent            0
+        ebat_bars               0
+        ebat_charge_state               0
+        ebat_removed            1
+
+        current_disp_handle     8
+        hdmi_cable_inserted     0
+        disp_avail              8
+        audsink_avail[0]                0x00
+        audsink_avail[1]                0x00
+        audsrc_avail[0]         0x02
+        audsrc_avail[1]         0x00
+
+        orientation             2
+        current_mic_handle      0
+        contextual_menu_active          0
+        rtf_active              0
+        lcd_sleep_status                1
+        cam_type                0
+        sts_multicam_state              0
+        multicam_sd_status              0
+        multicam_pending_status         0
+
+        kirkwood_status         Not-Connected
+        exposure_select_type            2
+        avoid_camera_charging           0

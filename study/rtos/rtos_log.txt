@@ -1,0 +1,1853 @@
+[00000003][CA9_1] IDSP = 264000000
+[00000003][CA9_1] Core = 444000000
+[00000003][CA9_1] Cortex = 792000000
+[00000003][CA9_1] SD0 = 48000000
+[00000003][CA9_1] SD1 = 53333333
+[00000003][CA9_1] TARGET: Streaky MP
+
+[00000017][CA9_1] frw_nvm_init: Storage1 init success
+[00000114][CA9_1] frw_nvm_init: Storage2 init success
+[00000121][CA9_1] frw_nvm_init: Pref partition Init success
+[00000172][CA9_1] frw_nvm_init: CAL partition Init success
+[00000210][CA9_1] frw_nvm_init: IDX partition Init success
+[00000210][CA9_1] csc_task_entry
+[00000210][CA9_1] **************** BANZAI Australia Release HD5.02.01.20.00 Compiled: Sep 29 2016 19:12:10 git-b3c5ab3
+
+
+[00000210][CA9_1] Initialize Settings
+
+[00000210][CA9_1] Preferences [538314787->538314787]: 141
+[00000210][CA9_1] settings_user_pref_load: Prefernces loaded successfully
+[00000210][CA9_1] orientation 1
+[00000210][CA9_1] ..\..\..\app_control\appc_settings\test_status.c-test_appc_status_init
+[00000210][CA9_1] ..\..\..\app_control\appc_settings\test_settings.c-test_appc_settings_init
+[00000210][CA9_1] [FWUPD] first init to setup resources.
+[00000211][CA9_1] [FWUPD] fwsm_init: init_state:0 init_defaults:0
+[00000211][CA9_1] ..\..\..\app_control\fwupdate\test_fwupdate.c-test_appc_fwupdate_init
+[00000211][CA9_1] [FWUPD] Firmware update IS NOT in progress:0
+[00000211][CA9_1] drv_bmi160_init
+[00000343][CA9_1] drv_bmi160_intr_reg_init: BMI160_REG_INT_OUT_CTRL:0xB
+[00000343][CA9_1] b: 6, g: 2, r: 7, w: 5
+
+[00000363][CA9_1] mcu_ibat_tempsrc_temp_get_raw: Bad reading mcu batt temp = ffffffa4, err=-1
+
+[00000364][CA9_1] ENTER :: mcu_atmsamd21_irq_task_init
+[00000364][CA9_1] ENTER :: mcu_atmsamd21_config_irq
+[00000364][CA9_1] EXIT :: mcu_atmsamd21_config_irq
+[00000364][CA9_1] ENTER :: mcu_atmsamd21_irq_task_event_init
+[00000364][CA9_1] ENTER :: etask_mcu_atmsamd21_irq_entry
+[00000364][CA9_1] EXIT :: mcu_atmsamd21_irq_task_event_init
+[00000364][CA9_1] EXIT :: mcu_atmsamd21_irq_task_init
+[00000364][CA9_1] mcu_init: Init success
+[00000374][CA9_1] mcu_power_wakeup_reason_get: wakeup reason: 0x0
+[00000374][CA9_1] mcu_power_wakeup_reason_get: mcu wakeup reason: 0x2
+[00000374][CA9_1]  ======= init_nvm_storage_peripherals Initializing NVM storage peripherals ========
+[00000381][CA9_1] ====== init_nvm_storage_peripherals finished initializing all partitions ========
+[00000401][CA9_1]    ROMFS file mcu_australia_bld size is 17584
+[00000402][CA9_1]    Loaded 17584 bytes to buffer
+[00000402][CA9_1]     ----data:68 12 45 b7 0 0 4 0 0 0
+[00000402][CA9_1]     ----data:0 0 0 0 0 0 cb 4b 2e 66
+[00000407][CA9_1] Running BLD Ver:4.0.0 is equal to File Ver:4.0.0
+[00000407][CA9_1]    ROMFS file mcu_australia_app_key2 size is 50416
+[00000409][CA9_1]    Loaded 50416 bytes to buffer
+[00000409][CA9_1]     ----data:b0 75 bc dd 7 1 1 0 0 0
+[00000410][CA9_1]     ----data:0 0 0 0 0 0 5e 8f f c0
+[00000415][CA9_1] Running APP Ver:1.1.7 is equal to File Ver:1.1.7
+[00000415][CA9_1] [FWUPD][MCU] Not running bootloader - Checking file for MCU update.
+[00000415][CA9_1] [FWUPD][MCU] Checked MCU file - Nothing to do.
+[00000435][CA9_1] *** frw_power_init: Started after fwupdate ***
+[00000435][CA9_1] frw_time_init ENTER: REQ to Init Time module
+[00000435][CA9_1] frw_time_init EXIT: 
+[00000435][CA9_1] frw_time_open ENTER: REQ to open time instance.
+[00000435][CA9_1] time_taskentry ENTER: Thread entry function
+[00000435][CA9_1] frw_time_start ENTER:
+[00000435][CA9_1] frw_time_start EXIT: 
+[00000435][CA9_1] latch_msec_base ENTER: 
+[00000435][CA9_1] frw_time_open EXIT: 
+[00000436][CA9_1] as3716_boot_reason_init: reset reason (raw) = 0x03.
+[00000436][CA9_1] as3716_boot_reason_init: startup reason (raw) = 0x01.
+[00000436][CA9_1] as3716_boot_reason_init: skip checking reset reason because there is a startup reason!
+[00000454][CA9_1] Power Framework: PMIC boot reason: 3, event vector:
+
+[00000454][CA9_1] trickle 0, nobat 0, resume 0, eoc 0, chgin1 0, on_activity 0, ovtmp 0, lowbat 0, sd1_lv 0, sd2_lv 0, sd3_lv 0, sd4_lv 0, battemp 0, temp_sd4_alarm 0, temp_sd4_shutdown 0, ebat 0, gpio 0, gpio_restart 0, en1 0, en2 0, en3 0, en4 0, chgin2 0, herobus_wake 0, on_press 1, rtc_alarm 0, rtc_alarm_or_sd 0, settings_press 0, shutter_press 0, wake_on_wireless 0.
+[00000454][CA9_1] Power Framework: A9 BOOT REASON INFO: a9_boot_reason 1, a9_wakeup_by_alarm_state 0, a9_pwc_status 0x0000.
+
+[00000454][CA9_1] Power Framework: Pre-boot power src state: no power (0).
+
+[00000454][CA9_1] Power Framework: standby_was_wifihiber 0.
+
+[00000454][CA9_1] Power Framework: standby_was_syshiber 0.
+
+[00000541][CA9_1] frw_power_init:178
+
+[00000565][CA9_1] read_battery_levels: new mv [4126] is at least 1V different than previous [0]
+
+[00000565][CA9_1] read_battery_levels: new pct [81] is at least 10% different than previous [0]
+
+[00000605][CA9_1] powerconfd: exit: no power (0), i {N/A (0), 0 mV, nobat (0), 0%}, e {N/A (0), 0 mV, nobat (0), 0%}, chg_dis 0
+
+[00000605][CA9_1] powerconfd: enter: ibat (1), i {3 bars (4), 4126 mV, normal (3), 81%}, e {N/A (0), 0 mV, nobat (0), 0%}, chg_dis 0
+
+[00000606][CA9_1] as3716_charger_disable:
+
+[00000607][CA9_1] frw_power_boot_reason_init:162: preboot src state "no power", pmic reason 3, 
+
+[00000607][CA9_1] trickle 0, nobat 0, resume 0, eoc 0, chgin1 0, on_activity 0, ovtmp 0, lowbat 0, sd1_lv 0, sd2_lv 0, sd3_lv 0, sd4_lv 0, battemp 0, temp_sd4_alarm 0, temp_sd4_shutdown 0, ebat 0, gpio 0, gpio_restart 0, en1 0, en2 0, en3 0, en4 0, chgin2 0, herobus_wake 0, on_press 1, rtc_alarm 0, rtc_alarm_or_sd 0, settings_press 0, shutter_press 0, wake_on_wireless 0.
+[00000607][CA9_1] frw_power_boot_reason_init:173: confd_reason 21, confd_pwrdown 0
+
+[00000607][CA9_1] Power Framework: BOOT REASON: Power button (2), from standby = 0 (pre-boot src state = no power), standby was wifi hibernate = 0.
+
+[00000607][CA9_1] frw_power: PENDING POWER-DOWN: NONE
+
+[00000608][CA9_1] frw_power_event_pmic_cb:61: Event(s) received:
+
+[00000608][CA9_1] trickle 0, nobat 0, resume 0, eoc 0, chgin1 0, on_activity 0, ovtmp 0, lowbat 0, sd1_lv 0, sd2_lv 0, sd3_lv 0, sd4_lv 0, battemp 0, temp_sd4_alarm 0, temp_sd4_shutdown 0, ebat 0, gpio 0, gpio_restart 0, en1 0, en2 0, en3 0, en4 0, chgin2 0, herobus_wake 0, on_press 1, rtc_alarm 0, rtc_alarm_or_sd 0, settings_press 0, shutter_press 0, wake_on_wireless 0.
+[00000608][CA9_1]  ======= init_sd_storage_peripherals Initializing SD storage peripherals ========
+[00000608][CA9_1] ====== init_sd_storage_peripherals finished initializing SD ========
+[00000608][CA9_1] _read_sectors: start_sector=0x00000000 num_sectors=0x00000002
+
+[00000608][CA9_1] calib_nv_dir_init: valid directory found with 8 entries, crc32=0xde34f69b
+
+[00000608][CA9_1] calibration_bpc_init: sensor_type=0 mode_count=11
+
+[00000608][CA9_1] calibration_bpc_init: allocating 1536000 non-cached bytes with 32 alignment
+[00000609][CA9_1] calibration_bpc_init: allocating 1536000 non-cached bytes with 32 alignment
+[00000610][CA9_1] calibration_bpc_init: mode=0 width=4096 height=3000 pitch=4096 size=1536000
+[00000610][CA9_1] calibration_bpc_init: allocating 384000 non-cached bytes with 32 alignment
+[00000610][CA9_1] calibration_bpc_init: allocating 384000 non-cached bytes with 32 alignment
+[00000610][CA9_1] calibration_bpc_init: mode=1 width=2000 height=1500 pitch=2048 size=384000
+[00000610][CA9_1] calibration_bpc_init: allocating 192000 non-cached bytes with 32 alignment
+[00000610][CA9_1] calibration_bpc_init: allocating 192000 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: mode=2 width=2000 height=750 pitch=2048 size=192000
+[00000611][CA9_1] calibration_bpc_init: allocating 192000 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: allocating 192000 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: mode=3 width=1332 height=1000 pitch=1536 size=192000
+[00000611][CA9_1] calibration_bpc_init: allocating 63744 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: allocating 63744 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: mode=4 width=1332 height=332 pitch=1536 size=63744
+[00000611][CA9_1] calibration_bpc_init: allocating 33408 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: allocating 33408 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: mode=5 width=1332 height=174 pitch=1536 size=33408
+[00000611][CA9_1] calibration_bpc_init: allocating 191616 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: allocating 191616 non-cached bytes with 32 alignment
+[00000611][CA9_1] calibration_bpc_init: mode=6 width=1332 height=998 pitch=1536 size=191616
+[00000611][CA9_1] calibration_bpc_init: allocating 288256 non-cached bytes with 32 alignment
+[00000612][CA9_1] calibration_bpc_init: allocating 288256 non-cached bytes with 32 alignment
+[00000612][CA9_1] calibration_bpc_init: mode=7 width=2000 height=1126 pitch=2048 size=288256
+[00000612][CA9_1] calibration_bpc_init: allocating 384000 non-cached bytes with 32 alignment
+[00000612][CA9_1] calibration_bpc_init: allocating 384000 non-cached bytes with 32 alignment
+[00000612][CA9_1] calibration_bpc_init: mode=8 width=2000 height=1500 pitch=2048 size=384000
+[00000612][CA9_1] calibration_bpc_init: allocating 138240 non-cached bytes with 32 alignment
+[00000612][CA9_1] calibration_bpc_init: allocating 138240 non-cached bytes with 32 alignment
+[00000612][CA9_1] calibration_bpc_init: mode=9 width=1364 height=720 pitch=1536 size=138240
+[00000612][CA9_1] calibration_bpc_init: allocating 368640 non-cached bytes with 32 alignment
+[00000613][CA9_1] calibration_bpc_init: allocating 368640 non-cached bytes with 32 alignment
+[00000613][CA9_1] calibration_bpc_init: mode=10 width=1920 height=1440 pitch=2048 size=368640
+[00000613][CA9_1] calibration_bpc_nv_init: sensor_type=0 mode_count=11
+
+[00000613][CA9_1] calibration_bpc_nv_init: mode=0 size=215808 offset=0 offset_vflip=215808
+[00000613][CA9_1] calibration_bpc_nv_init: mode=1 size=53952 offset=431616 offset_vflip=485568
+[00000613][CA9_1] calibration_bpc_nv_init: mode=2 size=26976 offset=539520 offset_vflip=566496
+[00000613][CA9_1] calibration_bpc_nv_init: mode=3 size=26976 offset=593472 offset_vflip=620448
+[00000613][CA9_1] calibration_bpc_nv_init: mode=4 size=8716 offset=647424 offset_vflip=656140
+[00000613][CA9_1] calibration_bpc_nv_init: mode=5 size=4696 offset=664856 offset_vflip=669552
+[00000613][CA9_1] calibration_bpc_nv_init: mode=6 size=26924 offset=674248 offset_vflip=701172
+[00000613][CA9_1] calibration_bpc_nv_init: mode=7 size=40500 offset=728096 offset_vflip=768596
+[00000613][CA9_1] calibration_bpc_nv_init: mode=8 size=53952 offset=809096 offset_vflip=863048
+[00000613][CA9_1] calibration_bpc_nv_init: mode=9 size=19424 offset=917000 offset_vflip=936424
+[00000613][CA9_1] calibration_bpc_nv_init: mode=10 size=51796 offset=955848 offset_vflip=1007644
+[00000613][CA9_1] calibration_bpc_nv_init: data_start_offset=900 bytes_used=1060340 sizeof( nv )=2097152
+
+[00000691][CA9_1] _read_sectors: start_sector=0x0000003d num_sectors=0x00000100
+
+[00000691][CA9_1] calib_nv_read_region: read region VIGNETTE offset=0x00007a00 size=0x00020000
+
+[00000695][CA9_1] _read_vignette_nv: vignette data found in NV
+
+[00000695][CA9_1] _read_sectors: start_sector=0x0000013d num_sectors=0x00000001
+
+[00000695][CA9_1] calib_nv_read_region: read region WB offset=0x00027a00 size=0x00000200
+
+[00000695][CA9_1] _read_wb_nv: LCT org=(3418,4096,1227), ref=(3486,4096,1271)
+
+[00000695][CA9_1] _read_wb_nv: HCT org=(2322,4096,1902), ref=(2377,4096,1955)
+
+[00000695][CA9_1] _read_spherical_nv: no valid SPHERICAL data in NV
+
+[00000797][CA9_1] _read_sectors: start_sector=0x0000013e num_sectors=0x00001000
+
+[00000797][CA9_1] calib_nv_read_region: read region BPC offset=0x00027c00 size=0x00200000
+
+[00000869][CA9_1] calibration_bpc_decompress_maps: rup mode=0 map_bytes=1536000 unc_bytes=1536000 defect_count=8499
+
+[00000872][CA9_1] calibration_bpc_decompress_maps: upd mode=0 map_bytes=1536000 unc_bytes=1536000 defect_count=9011
+
+[00000873][CA9_1] calibration_bpc_decompress_maps: rup mode=1 map_bytes=384000 unc_bytes=384000 defect_count=249
+
+[00000873][CA9_1] calibration_bpc_decompress_maps: upd mode=1 map_bytes=384000 unc_bytes=384000 defect_count=257
+
+[00000873][CA9_1] calibration_bpc_decompress_maps: rup mode=2 map_bytes=192000 unc_bytes=192000 defect_count=1479
+
+[00000874][CA9_1] calibration_bpc_decompress_maps: upd mode=2 map_bytes=192000 unc_bytes=192000 defect_count=1390
+
+[00000874][CA9_1] calibration_bpc_decompress_maps: rup mode=3 map_bytes=192000 unc_bytes=192000 defect_count=132
+
+[00000874][CA9_1] calibration_bpc_decompress_maps: upd mode=3 map_bytes=192000 unc_bytes=192000 defect_count=134
+
+[00000874][CA9_1] calibration_bpc_decompress_maps: rup mode=6 map_bytes=191616 unc_bytes=191616 defect_count=96
+
+[00000875][CA9_1] calibration_bpc_decompress_maps: upd mode=6 map_bytes=191616 unc_bytes=191616 defect_count=99
+
+[00000875][CA9_1] calibration_bpc_decompress_maps: rup mode=8 map_bytes=384000 unc_bytes=384000 defect_count=1324
+
+[00000876][CA9_1] calibration_bpc_decompress_maps: upd mode=8 map_bytes=384000 unc_bytes=384000 defect_count=1155
+
+[00000876][CA9_1] calibration_bpc_decompress_maps: rup mode=9 map_bytes=138240 unc_bytes=138240 defect_count=81
+
+[00000876][CA9_1] calibration_bpc_decompress_maps: upd mode=9 map_bytes=138240 unc_bytes=138240 defect_count=110
+
+[00000876][CA9_1] _read_sectors: start_sector=0x0000003c num_sectors=0x00000001
+
+[00000876][CA9_1] calib_nv_read_region: read region GYRO offset=0x00007800 size=0x00000200
+
+[00000876][CA9_1] _read_gyro_nv: GYRO data found in NV
+
+[00000877][CA9_1] _read_sectors: start_sector=0x00000002 num_sectors=0x00000002
+
+[00000877][CA9_1] calib_nv_read_region: read region GPDEBUG offset=0x00000400 size=0x00000400
+
+[00000877][CA9_1] calib_region_GPDEBUG_verify: version = 0x20167050
+[00000877][CA9_1] calib_region_GPDEBUG_verify: length  = 40
+[00000877][CA9_1] calib_region_GPDEBUG_verify: crc32   = 0xbc89048d
+[00000877][CA9_1] secret_handshake_pressed: Secret handshake not satisfied
+[00000877][CA9_1] initialize_and_update_structure: version_in_flash=0x20167050
+[00000877][CA9_1] frw_dfs_init start init'ing storage related modules 
+
+[00000877][CA9_1] dcf_Init Entry
+[00000877][CA9_1] dfs_mediadb_alloc initing media db
+[00000877][CA9_1] rtos_mutex_acquire: Failure (, Err = 0x0000001c)
+
+[00000877][CA9_1] rtos_mutex_release: Failure (, Err = 0x0000001c)
+
+[00000877][CA9_1] rtos_mutex_acquire: Failure (, Err = 0x0000001c)
+
+[00000877][CA9_1] rtos_mutex_release: Failure (, Err = 0x0000001c)
+
+[00000877][CA9_1] rtos_mutex_acquire: Failure (, Err = 0x0000001c)
+
+[00000877][CA9_1] rtos_mutex_release: Failure (, Err = 0x0000001c)
+
+[00000877][CA9_1] _mediadb_handle_fs_evt entry
+[00000877][CA9_1] _disconnect_from_db entry, state = 0x1
+[00000877][CA9_1] _disconnect_from_db no-op 
+[00000877][CA9_1] _mediadb_handle_fs_evt exit
+[00000877][CA9_1]  ----- dfs_sd_monitor_init Entry scan policy is to scan on insert ---- 
+[00000878][CA9_1] _alloc_meta_session: allocating 262144 non-cached bytes with 32 alignment
+[00000878][CA9_1] frw_dfs_init done init'ing storage related modules 
+
+[00000878][CA9_1] audio_australia_init: aus audio init
+[00000889][CA9_1] audsrc init: success!
+[00000889][CA9_1] frw_audsink_init: allocating 456 non-cached bytes with 8 alignment
+[00000889][CA9_1] frw_audsink_init: allocating 456 non-cached bytes with 8 alignment
+[00000889][CA9_1] audsink init: success
+[00000889][CA9_1] audio_input_init: allocating 456 non-cached bytes with 8 alignment
+[00000889][CA9_1] audio_input_init: allocating 456 non-cached bytes with 8 alignment
+[00000889][CA9_1] audcap init: success
+[00000889][CA9_1] Audio Capture initialization success!
+[00000890][CA9_1] (frw_usb_class_init) - Class Init
+[00000890][CA9_1] drv_exif_demux_alloc_full: allocating 1048576 non-cached bytes with 32 alignment
+[00000890][CA9_1] drv_mp_demux_alloc_full: allocating 5242880 non-cached bytes with 32 alignment
+[00000890][CA9_1] drv_mp_demux_alloc_full: allocating 6748768 non-cached bytes with 32 alignment
+[00000890][CA9_1] frw_usb_mtp_alloc_fixed_buffers: allocating 262156 non-cached bytes with 32 alignment
+[00000890][CA9_1] frw_usb_mtp_alloc_fixed_buffers: allocating 8204 non-cached bytes with 32 alignment
+[00000890][CA9_1] frw_usb_mtp_alloc_fixed_buffers: allocating 15012 non-cached bytes with 32 alignment
+[00000890][CA9_1] frw_usb_mtp_alloc_fixed_buffers: allocating 524 non-cached bytes with 32 alignment
+[00000890][CA9_1] frw_usb_mtp_alloc_fixed_buffers: allocating 1024 non-cached bytes with 32 alignment
+[00000890][CA9_1] (frw_usb_class_ctrl_task_entry) - Creating USB Queue
+
+[00000890][CA9_1] [FWUPD] Update is NOT in progress - allow USB connections
+[00000896][CA9_1] drv_bmi160_orientation_init: initialized
+[00000896][CA9_1] frw_framebuffer_init ENTER: REQ to Init Framebuffer module
+[00000896][CA9_1] frw_framebuffer_init: allocating 4147200 non-cached bytes with 32 alignment
+[00000908][CA9_0] as3716_sd_voltage_set: Australia Pre-EVT
+
+[00001019][CA9_0] as3716_sd_voltage_set: Australia Pre-EVT
+
+[00001054][CA9_0] SD(0) init OK
+[00001083][CA9_1] sd_sys_evt_listener_thread_entry recvd. SD card insert event from system, card is already inited, actual flags = 0x200
+[00001083][CA9_1] Card Monitor is working, Slot = 0x0
+[00001113][CA9_1] frw_framebuffer_init EXIT: 
+[00001113][CA9_1] mft_md_init: allocating 129900 non-cached bytes with 32 alignment
+[00001113][CA9_1] mft_md_init: allocate mem for md_src_inst, buf_needed 80000
+[00001113][CA9_1] mft_md_init: allocating 80000 non-cached bytes with 32 alignment
+[00001113][CA9_1] mft_md_init: allocating 80000 non-cached bytes with 32 alignment
+[00001113][CA9_1] mft_md_init: allocating 80000 non-cached bytes with 32 alignment
+[00001113][CA9_1] mft_md_init: allocating 80000 non-cached bytes with 32 alignment
+[00001113][CA9_1] mft_md_init: allocating 80000 non-cached bytes with 32 alignment
+[00001113][CA9_1] frw_mft_init: success
+[00001113][CA9_1] frw_playback_init ENTER: REQ to Init Playback module
+[00001113][CA9_1] ERR(900): frw_dfs_get_last_file_handle Card state not ready state = 0x1
+
+[00001113][CA9_1] pb_movie_init: enter
+[00001113][CA9_1] pb_movie_init: exit
+[00001113][CA9_1] frw_playback_init EXIT: 
+[00001113][CA9_1] frw_medit_init ENTER: REQ to Init Medit module
+[00001113][CA9_1] ERR(900): frw_dfs_get_last_file_handle Card state not ready state = 0x1
+
+[00001113][CA9_1] me_trim_init: enter
+[00001113][CA9_1] me_trim_init: exit
+[00001113][CA9_1] frw_medit_init EXIT: 
+[00001114][CA9_1] _read_sectors: start_sector=0x00000004 num_sectors=0x00000008
+
+[00001114][CA9_1] calib_nv_read_region: read region NVDATA offset=0x00000800 size=0x00001000
+
+[00001114][CA9_1] calib_camdata_init: No MFGDATA region found
+
+[00001114][CA9_1] calib_camdata_calc_crc32_nv: crc=0xa27297e8 len=419 ver=0x20165110
+[00001114][CA9_1] calib_camdata_calc_crc32_mfg: crc=0xa829b1e0 len=22 ver=0x20158040
+[00001124][CA9_1] calib_read_ca_nv_rom_late: Chroma-aberration read from ca_stk_LAE.bin in ROMFS
+
+[00001124][CA9_1] frw_streamer_out_init
+[00001124][CA9_1] simple_ipc_bind_channel_io Doesn't match specified channel types - Data-type = 0, dir = 0
+[00001124][CA9_1] frw_datacapture_init: allocating 52000 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 4000 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 16000 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 8000 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 8000 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 8000 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 8000 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 16384 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 32 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 32 non-cached bytes with 32 alignment
+[00001125][CA9_1] frw_datacapture_init: allocating 32 non-cached bytes with 32 alignment
+[00001126][CA9_1] drv_bmi160_datasrc_init: initialized
+[00001126][CA9_1] hal_datasrc_9axis_init: Init ret:0
+[00001126][CA9_1] hal_datasrc_9axis_unitcfg
+[00001126][CA9_1] hal_datasrc_9axis_unitcfg
+[00001126][CA9_1] frw_datacapture_init: RETURN:0
+[00001126][CA9_1] monocle_init: Monocle disabled
+
+[00001126][CA9_1] init_head
+[00001126][CA9_1] init_imgsrc
+[00001126][CA9_1] init_imgcap
+[00001126][CA9_1] init_audsrc
+[00001126][CA9_1] init_audsrc2
+[00001126][CA9_1] init_audcap
+[00001126][CA9_1] init_audcap2
+[00001126][CA9_1] init_liveplay
+[00001126][CA9_1] init_record
+[00001126][CA9_1] init_playback
+[00001126][CA9_1] init_streaming
+[00001126][CA9_1] init_datacapture
+[00001126][CA9_1] init_usb_mtp
+[00001126][CA9_1] init_disp_lcd
+[00001126][CA9_1] init_disp_hdmi
+[00001126][CA9_1] init_disp_ext_av
+[00001126][CA9_1] init_disp_ext_lcd
+[00001126][CA9_1] init_audsink
+[00001126][CA9_1] init_audsink2
+[00001126][CA9_1] init_framebuffer
+[00001126][CA9_1] init_record_md
+[00001126][CA9_1] init_streamer_in_gp_ipc
+[00001126][CA9_1] init_streamer_in_usb_mtp
+[00001126][CA9_1] init_handle_list
+[00001126][CA9_1] Creating CSC Queue
+
+[00001127][CA9_1] ASSERT CSC queue if return value = 0, RET_VAL = 0
+[00001127][CA9_1] Opening SDK Modules...
+
+[00001127][CA9_1] av_open_module
+[00001127][CA9_1] Opening Module : Image_src
+[00001127][CA9_1] av_open_module
+[00001127][CA9_1] Opening Module : Image_capture
+[00001127][CA9_1] uart task entered
+[00001127][CA9_1] set 115200
+[00001127][CA9_1] gps timepulse isr registered
+
+[00001127][CA9_1] gps command: 31 set port_baudrate
+[00001127][CA9_1] new baudrate requested: 115200
+[00001133][CA9_1] Init'ing sd task on slot 0
+[00001133][CA9_1] dcf_Init Entry
+[00001133][CA9_1] dfs_nand_read_entry buffered data is stale for entry e_scan, so going on to read straight from file and buffer all entries
+[00001204][CA9_1] Load a9se76_orccode.bin to 0xa7d00000, size = 3029205
+[00001204][CA9_1] dfs_nand_read_and_buffer_all_entries reading in all of the string into the buffer (le_dno|0100)(le_fno|0228)(sd_dno|0100)(sd_fno|0228)(e_scan|0001), len = 66
+[00001204][CA9_1] dfs_nand_read_and_buffer_all_entries value of le_dno is 100, name cursor = 1, val cursor = 8
+[00001204][CA9_1] dfs_nand_read_and_buffer_all_entries value of le_fno is 228, name cursor = 14, val cursor = 21
+[00001204][CA9_1] dfs_nand_read_and_buffer_all_entries value of sd_dno is 100, name cursor = 27, val cursor = 34
+[00001204][CA9_1] dfs_nand_read_and_buffer_all_entries value of sd_fno is 228, name cursor = 40, val cursor = 47
+[00001205][CA9_1] dfs_nand_read_and_buffer_all_entries value of e_scan is 1, name cursor = 53, val cursor = 60
+[00001214][CA9_1] [Img Lib Version] 1.15 Description:A9S_sdk_main
+[00001216][CA9_1] imgproc_init: allocating 524288 non-cached bytes with 32 alignment
+[00001217][CA9_1] av_open_module
+[00001217][CA9_1] Opening Module : Audio_src
+[00001217][CA9_1] audio select_route start! instance 0
+[00001217][CA9_1] current src :0, sink :0
+[00001217][CA9_1] src :0, sink :0
+[00001217][CA9_1] frw_audsrc_open: audsrc0 open success!
+[00001217][CA9_1] av_open_module
+[00001217][CA9_1] Opening Module : Audio_sec_src
+[00001217][CA9_1] audio select_route start! instance 1
+[00001217][CA9_1] current src :0, sink :0
+[00001217][CA9_1] src :0, sink :0
+[00001217][CA9_1] frw_audsrc1_open: audsrc1 open success!
+[00001217][CA9_1] av_open_module
+[00001217][CA9_1] Opening Module : Audio_capture
+[00001218][CA9_1] install_bdup_process: installing buff dup plug-in
+[00001218][CA9_1] install_fin_process: installing File input plug-in
+[00001218][CA9_1] install_fout_process: installing File output plug-in
+[00001218][CA9_1] install_capture_fout_process: installing capture File output plug-in
+[00001218][CA9_1] AWE: awe_needed_heap_size ---> returned heap_size=901120
+[00001218][CA9_1] Initializing AWE (Build 1)...
+[00001218][CA9_1]  ... done
+
+[00001218][CA9_1] AWE: awe_init ---> returned 0
+[00001218][CA9_1] Executing layout with length 16105 ...
+[00001229][CA9_1]  ... done.
+
+[00001229][CA9_1] AWE: awe initialized for passthru ---> returned 0
+[00001229][CA9_1] Initializing tuning instances...
+[00001230][CA9_1]  ... done.
+
+[00001230][CA9_1] Initializing (speaker processing) tuning instances...
+[00001230][CA9_0] Audio Proc Task: start
+[00001230][CA9_1] audproc_task_create: success
+[00001230][CA9_1] frw_audproc_open: done
+[00001230][CA9_1] audcap open success!
+[00001230][CA9_1] av_open_module
+[00001230][CA9_1] Opening Module : Audio_sec_capture
+[00001230][CA9_1] install_bdup_process: installing buff dup plug-in
+[00001230][CA9_1] install_capture_fout_process: installing capture File output plug-in
+[00001230][CA9_1] audcap1 open success!
+[00001230][CA9_1] av_open_module
+[00001230][CA9_1] Opening Module : Liveplay
+[00001230][CA9_1] av_open_module
+[00001230][CA9_1] Opening Module : Lcd
+[00001230][CA9_1] av_disp_open
+[00001230][CA9_1] Open Module[8] AV_MOD_HANDLE_DISPLAY_LCD
+[00001230][CA9_1] av_open_module
+[00001230][CA9_1] Opening Module : Hdmi
+[00001230][CA9_1] av_disp_open
+[00001230][CA9_1] Open Module[9] AV_MOD_HANDLE_DISPLAY_HDMI
+[00001230][CA9_1] frw_disp_set_output_mode: Set HDMI display mode to 0
+[00001230][CA9_1] Registering event handler for Display HDMI
+
+[00001231][CA9_1] av_open_module
+[00001231][CA9_1] Opening Module : Ext_Lcd
+[00001231][CA9_1] av_disp_open
+[00001231][CA9_1] Open Module[11] AV_MOD_HANDLE_DISPLAY_EXT_LCD - bacpac LCD
+[00001231][CA9_1] frw_disp_set_output_mode: Set EXT LCD/AV display mode to 0
+[00001231][CA9_1] Registering event handler for Display - bacpac LCD
+
+[00001231][CA9_1] av_open_module
+[00001231][CA9_1] Opening Module : Ext_Av
+[00001231][CA9_1] av_disp_open
+[00001231][CA9_1] Open Module[10] AV_MOD_HANDLE_DISPLAY_CVBS - 10 pin cable
+[00001231][CA9_1] frw_disp_set_output_mode: Set EXT LCD/AV display mode to 0
+[00001231][CA9_1] Registering event handler for Display CVBS - 10 pin cable
+
+[00001231][CA9_1] av_open_module
+[00001231][CA9_1] Opening Module : Record
+[00001231][CA9_1] av_mft_open
+[00001231][CA9_1] Open Module[5] AV_MOD_HANDLE_RECORD
+[00001231][CA9_1] Record Service Evt Task: start
+[00001231][CA9_1] mft_task_create: success
+[00001232][CA9_1] frw_mft_open: success
+[00001232][CA9_1] av_open_module
+[00001232][CA9_1] Opening Module : Calibration
+[00001232][CA9_1] av_open_module
+[00001232][CA9_1] Opening Module : FrameBuffer
+[00001232][CA9_1] av_fb_open
+[00001232][CA9_1] Open Module[13] AV_MOD_HANDLE_FRAMEBUFFER
+[00001232][CA9_1] frw_framebuffer_open ENTER: REQ to open Framebuffer instance. id = 1
+[00001232][CA9_1] frw_framebuffer_open EXIT: 
+[00001232][CA9_1] av_open_module
+[00001232][CA9_1] Opening Module : Audio_sink
+[00001232][CA9_1] audsink_open: audio output task created
+[00001232][CA9_1] install_fin_process: installing File input plug-in
+[00001232][CA9_1] install_bep_process: installing beep plug-in
+[00001232][CA9_1] install_dup_process: installing Ch Duplicator plug-in
+[00001232][CA9_1] audsink open: success
+[00001232][CA9_1] frw_audsink_start: audsink_handle 0xa71722c4
+[00001232][CA9_1] Aud sink0 start: type 0, status 0
+[00001232][CA9_1] audio select_route start! instance 0
+[00001232][CA9_1] current src :0, sink :0
+[00001232][CA9_1] src :0, sink :0
+[00001232][CA9_1] frw_audsink_start: calling audio_set_mute: enable1
+[00001233][CA9_1] audsink_start 1
+[00001233][CA9_1] Ready to put the semaphore.  Index is 0
+[00001233][CA9_0] audio_output_no_buf_cb: pevent_data is 0xa8539900
+
+[00001233][CA9_1] audsink_start 2
+[00001233][CA9_1] Aud sink0 active 1
+[00001233][CA9_1] frw_audsink_set_playback_volume: not ready
+[00001233][CA9_1] frw_audsink_start: enabling DSPC Beep plugin...
+[00001233][CA9_1] frw_audsink_start: enabling Ch Duplicator plugin...
+[00001233][CA9_1] av_open_module
+[00001233][CA9_1] Opening Module : Audio_sec_sink
+[00001233][CA9_1] install_fin_process: installing File input plug-in
+[00001233][CA9_1] install_fout_process: installing File output plug-in
+[00001233][CA9_1] audsink1 open: success
+[00001233][CA9_1] av_open_module
+[00001233][CA9_1] Opening Module : Playback
+[00001233][CA9_1] av_playback_open
+[00001233][CA9_1] Open Module[6] AV_MOD_HANDLE_PLAYBACK
+[00001233][CA9_1] frw_playback_open ENTER: REQ to open playback instance. id = 0
+[00001233][CA9_1] pb_main_taskentry ENTER: Thread entry function
+[00001233][CA9_1] pb_movie_open: enter
+[00001233][CA9_1] pb_movie_open: exit
+[00001234][CA9_1] frw_playback_open EXIT: 
+[00001234][CA9_1] Error: Current mode is not playback
+
+[00001234][CA9_1] av_open_module
+[00001234][CA9_1] Opening Module : Stream_out
+[00001234][CA9_1] frw_streamer_open: 0
+[00001234][CA9_1] av_open_module
+[00001234][CA9_1] Opening Module : DataCapture
+[00001234][CA9_1] hal_datasrc_9axis_register
+[00001234][CA9_1] frw_datacapture_open: success
+[00001234][CA9_1] av_open_module
+[00001234][CA9_1] Opening Module : USB MTP
+[00001234][CA9_1] av_open_module
+[00001234][CA9_1] Opening Module : Monocle
+[00001234][CA9_1] av_open_module
+[00001234][CA9_1] Opening Module : Streamer_in_gp_ipc
+[00001234][CA9_1] av_streamer_in_open
+[00001234][CA9_1] av_streamer_in_open: Open Module[23] AV_MOD_HANDLE_STREAMER_IN_GP_IPC
+[00001234][CA9_1] frw_streamer_in_open setting the handle to 0xa685df40 , 2793791296
+[00001234][CA9_1] av_open_module
+[00001234][CA9_1] Opening Module : Streamer_in_usb_mtp
+[00001234][CA9_1] av_streamer_in_open
+[00001234][CA9_1] av_streamer_in_open: Open Module[24] AV_MOD_HANDLE_STREAMER_IN_USB_MTP
+[00001234][CA9_1] frw_streamer_in_open setting the handle to 0xa685dff0 , 2793791472
+[00001234][CA9_1] av_open_module
+[00001234][CA9_1] Opening Module : Record_md
+[00001234][CA9_1] av_mft_open
+[00001234][CA9_1] Open Module[22] AV_MOD_HANDLE_RECORD_MD
+[00001234][CA9_1] Record Metadata Evt Task: start
+[00001234][CA9_1] mft_task_create: success
+[00001234][CA9_1] frw_mft_open: success
+[00001234][CA9_1] frw_audproc_set_beep_volume: AWE change beep volume from 100 to 100
+[00001234][CA9_1] csc_utils_system_led_init: leds enabled 2
+[00001234][CA9_1] as3716_back_blue_led_disabled_set: NOTE:  this is no longer valid on Australia project
+[00001235][CA9_1] csc_task_entry: reset_reason is Power button pressed.(2)FRW_POWER_BOOT_REASON_POWER_BUTTON
+[00001235][CA9_1] ENTER:: test_dana_init
+[00001235][CA9_1] EXIT:: test_dana_init
+[00001247][CA9_1] Load a9se76_orcme.bin to 0xa8180000, size = 474128
+[00001254][CA9_1] Load a9se76_orcmdxf.bin to 0xa8200000, size = 150760
+[00001256][CA9_1] gps command: 8 get gnss
+[00001268][CA9_1] Load a9se76_default_binary.bin to 0xa8280000, size = 332480
+[00001277][CA9_1] gnss num_configs: 5
+, 
+[00001277][CA9_1] block 0, flags 1010001
+[00001277][CA9_1] block 1, flags 1010000
+[00001277][CA9_1] block 3, flags 1010000
+[00001277][CA9_1] block 5, flags 1010001
+[00001277][CA9_1] block 6, flags 1010000
+[00001277][CA9_1] gps command: 67 datasource register
+[00001277][CA9_1] gps command: 7 get powersave
+[00001278][CA9_1] gnss type changed to gps
+[00001278][CA9_1] gps baudrate already set to required rate: 115200
+[00001278][CA9_1] gps setting solution interval to 55
+[00001278][CA9_1] gps timepulse enabled
+[00001278][CA9_1] gps get navpvt
+[00001278][CA9_1] gps ublox messages only
+[00001288][CA9_1] handle_sd_status_event scan card flag is set now reading other entries
+[00001288][CA9_1] dfs_nand_read_entry servicing value for entry sd_dno (100) from memory
+[00001288][CA9_1] dfs_nand_read_entry servicing value for entry sd_fno (228) from memory
+[00001288][CA9_1] handle_sd_status_event card is already scanned so skip scanning, last dir = 100, last file = 228
+[00001289][CA9_1] _mediadb_handle_fs_evt entry
+[00001289][CA9_1] _mediadb_handle_fs_evt -- try connecting to db,FS state = 0x11
+[00001289][CA9_1] [fq_profile] _connect_to_db called, fs_state = 0x11, not dirty
+[00001291][CA9_1] _connect_to_db[fq_profile] backup db doesn't exist
+[00001291][CA9_1] _connect_to_db clearing out the DB
+[00001291][CA9_1] **************** ERROR: Assertion (AmbaFS_remove(_media_db._db_fname) == 0) failed in _connect_to_db()
+			..\..\..\framework\media_storage\db\dfs_media_db.c:1206
+
+[00001293][CA9_1] _connect_to_db succesfully connected to the db
+[00001293][CA9_1] _mediadb_handle_fs_evt exit
+[00001293][CA9_1] [fq_profile] dcf_ScanRootStep1 catting pattern w/ wildcard
+[00001293][CA9_1] [fq_profile] dcf_ScanRootStep1 - setting search query to C:\DCIM\???G????
+[00001294][CA9_1] [fq_profile]dcf_ScanRootStep1 Found a valid directory 100
+[00001302][CA9_1] _mediadb_handle_fs_evt entry
+[00001302][CA9_1] _mediadb_handle_fs_evt -- try connecting to db,FS state = 0x13
+[00001302][CA9_1] _connect_to_db we are already connected to db , state = 0x3
+[00001302][CA9_1] _mediadb_handle_fs_evt --- db is ready for business ----- db state = 0x7
+[00001302][CA9_1] _mediadb_handle_fs_evt exit
+[00001327][CA9_1] gps powersave config, maxStartupDur: 0, flags: 00029000, updatePeriod: 1000, searchPeriod: 10000, gridOffset: 0, onTime: 0, minAcqTime: 0
+[00001327][CA9_1] power save mode psmct
+[00001327][CA9_1] GPS sample found since disable
+[00001327][CA9_1] gps command: 54 powersave off
+[00001327][CA9_1] exiting power save
+[00001368][CA9_1] mcu_ibat_tempsrc_temp_get_raw: new temp [39] is at least 10 degrees different than previous [0]
+
+[00001455][CA9_1] rtc_time_latch_msec_base latched msec base sec 2992, msec 1455, RTC phase delta 0.
+[00001455][CA9_1] latch_msec_base EXIT: total delay 1020ms
+[00001455][CA9_1] csc_check_for_silent_boot: reset_reason is Power button pressed.(2)FRW_POWER_BOOT_REASON_POWER_BUTTON
+
+[00001455][CA9_1] Power button wakeup.
+
+[00001496][CA9_1] csc_utils_system_beep
+[00001496][CA9_1] frw_audsink_beep: asked to BEEP!!!
+[00001496][CA9_1] audio select_route start! instance 0
+[00001496][CA9_1] current src :0, sink :0
+[00001496][CA9_1] src :0, sink :1
+[00001513][CA9_1] audio select_route i2s, 0
+[00001514][CA9_1] audio source setup success: internal mic
+[00001515][CA9_1] audio sink setup success: speaker playback
+[00001515][CA9_1] csc_utils_system_blink
+[00001515][CA9_1] lp5562_blink: id: 2, color: 1, on: 60, off: 120, count : 3
+
+[00001515][CA9_1] lp5562_load_engine_blink: on_msec: 43, off_msec: 47, blink_num : a100
+
+[00001518][CA9_1] LP5562_LED_MAP  = 0
+[00001518][CA9_1] LP5562_STATUS  = 0
+[00001519][CA9_1] lp5562_blink: id: 0, color: 1, on: 60, off: 120, count : 3
+
+[00001519][CA9_1] lp5562_blink: id: 1, color: 1, on: 60, off: 120, count : 3
+
+[00001519][CA9_1] lp5562_blink: id: 3, color: 1, on: 60, off: 120, count : 3
+
+[00001520][CA9_1] lp5562_load_engine_blink: on_msec: 43, off_msec: 47, blink_num : a100
+
+[00001522][CA9_1] LP5562_LED_MAP  = c
+[00001522][CA9_1] LP5562_STATUS  = 0
+[00001523][CA9_1] silent_boot is to 0
+[00001523][CA9_1] camera serial no set with size = 15
+[00001524][CA9_1] _read_sectors: start_sector=0x0000000c num_sectors=0x00000020
+
+[00001524][CA9_1] calib_nv_read_region: read region COMM offset=0x00001800 size=0x00004000
+
+[00001531][CA9_0] Got beep index 3, rpt 1, addr 0xa63e79c0, cnt 20425
+[00001531][CA9_0] audsink_bep_pre_process: Succeed awe_set_beep_source. Error code: 0
+[00001531][CA9_0] audsink mute: mute flag 0, ref cnt 0
+[00001532][CA9_0] audsink unmute: 0
+[00001557][CA9_1] bdata_file_from_cal: b:\wifi_bdata.bin is valid (0133ba8e)
+
+[00001589][CA9_1] validate_file: (b:\wifi_mac.bin)  valid
+
+[00001620][CA9_1] validate_file: (b:\mfg.json)  valid
+
+[00001651][CA9_1] validate_file: (b:\wlan_mac.bin)  valid
+
+[00001651][CA9_1] wiman_task_entry
+
+[00001651][CA9_1] wireless_offload_charger_cb Charger disconnected
+[00001651][CA9_1] csc_task_entry XXX Enabling Linux ===================
+[00001651][CA9_1] AmbaLink: SpinLock 0xa0514000, 0x00001000
+[00001651][CA9_1] AmbaLink: Mutex    0xa0515000
+[00001651][CA9_0] AmbaBoss_Start: Initialize BOSS
+[00001652][CA9_0] BossLoadTask: BOSS load task start.
+[00001652][CA9_1] CSC Task create ret_val = 0
+[00001662][CA9_0] hero_bus_stat = 0, prod_id = 0
+
+[00001662][CA9_0] Unrecognized accessory detached ID=0000
+[00001662][CA9_0] ENTER :: mcu_atmsamd21_irq_register_cb
+[00001662][CA9_0] EXIT :: mcu_atmsamd21_irq_register_cb
+[00001684][CA9_1] csc_init
+[00001684][CA9_1] disp_avail_1: 0
+[00001684][CA9_1] disp_avail_1: 0
+[00001684][CA9_1] csc_battery_level_init internal battery percentage 81% bars 4
+[00001684][CA9_1] csc_battery_level_init internal battery charging state 0
+[00001684][CA9_1] disp_avail_1: 0
+[00001684][CA9_1] disp_avail_1: 0
+[00001684][CA9_1] csc_metadata_uuid_init
+[00001684][CA9_1] nvdata_cam_sn size is 14 
+edit
+[00001684][CA9_1] This is encoded Serial Number
+edit
+[00001685][CA9_1] Initialize Events
+
+[00001685][CA9_1] remote_button_long_set, id: 1, msec: 2000
+[00001685][CA9_1] remote_button_long_set, id: 0, msec: 2000
+[00001685][CA9_1] remote_button_long_set, id: 2, msec: 2000
+[00001685][CA9_1] remote_button_long_set, id: 3, msec: 2000
+[00001685][CA9_1] orientation 1
+[00001685][CA9_1] csc_application_modules_init
+[00001685][CA9_1] Initialize AV Resource Manager
+
+[00001685][CA9_1] av_rm_init
+[00001685][CA9_1] sd_status_callback: changed state: 1, new appc state: 4
+[00001685][CA9_1] ENTER: multicam_register_callback_and_update_status
+[00001685][CA9_1] ENTER :: frw_register_multicam_cb
+[00001685][CA9_1] ENTER :: multicam_cb_default_init
+[00001685][CA9_1] EXIT :: multicam_cb_default_init
+[00001685][CA9_1] ENTER :: drv_multicam_register_cb
+[00001685][CA9_1] Exit :: drv_multicam_register_cb
+[00001685][CA9_1] EXIT :: frw_register_multicam_cb
+[00001685][CA9_1] EXIT: multicam_register_callback_and_update_status
+[00001685][CA9_1] csc_utils_switch_to_display: ENTRY, switch_at_init is 1
+
+[00001685][CA9_1] disp_avail_0: 1, disp_avail_1: 0
+[00001685][CA9_1] _system_status.disp_avail=8
+[00001686][CA9_1] disp_handle = 8
+
+[00001686][CA9_1] frw_disp_set_output: LCD output
+[00001686][CA9_1] av_attach_modules
+[00001686][CA9_1] Attaching Module(4)-[Liveplay] with Module(8)-[Lcd]
+
+[00001686][CA9_1] Ready to attach calling handle_1->attach (0xa48370dc):	
+handle_1->frw_mod_handle 0xa6815318	
+handle_2->frw_mod_handle 0xa73c1564	
+handle_2->frw_mod_type 10
+
+[00001686][CA9_1] Liveplay: attach
+[00001686][CA9_1] Attached Count = 1
+
+[00001686][CA9_1] Attached Module[8] at index[0] = a70d151c
+
+[00001686][CA9_1] av_start_module
+[00001686][CA9_1] Starting Module : Lcd
+[00001686][CA9_1] frw_disp_start: REQ to start LCD display
+[00001686][CA9_1] DISP_DEBUG ++++++++++++++++++++++++++++ 5555 LCD AmbaDSP_VoutVideoCtrl(1) 
+
+[00001686][CA9_1] st7796s_enable
+
+[00001691][CA9_1] dcf_get_disk_space_info querying space, root drive = C, found 8380832 of 15549952 free
+[00001691][CA9_1] handle_sd_status_event sending card ready event, available space = 8380832 kb 
+[00001691][CA9_1] sd_event_callback: sd state=3
+[00001692][CA9_1] _sd_event_callback: sd state=3
+[00001692][CA9_1] No logging enabled
+[00001692][CA9_1] sd_status_callback: changed state: 3, new appc state: 0
+[00001692][CA9_1] Clearing the flag
+[00001817][CA9_1] st7796s_set_brightness: max brightness is 100
+[00001817][CA9_1] av_attach_modules
+[00001817][CA9_1] Attaching Module(13)-[FrameBuffer] with Module(8)-[Lcd]
+
+[00001817][CA9_1] Ready to attach calling handle_1->attach (0xa48019e8):	
+handle_1->frw_mod_handle 0xa73c1574	
+handle_2->frw_mod_handle 0xa73c1564	
+handle_2->frw_mod_type 10
+
+[00001817][CA9_1] frw_framebuffer_attach ENTER: REQ to attach handle a73c1564, type = 10
+[00001817][CA9_1] frw_framebuffer_attach acquired mutex
+[00001817][CA9_1] frw_framebuffer_attach EXIT: 
+[00001817][CA9_1] Attached Count = 1
+
+[00001817][CA9_1] Attached Module[8] at index[0] = a70d151c
+
+[00001817][CA9_1] frw_disp_touch_high_sensitivity_enable: REQ to turn off touch sensitivity
+[00001817][CA9_1] csc_util_switch_to_audio_src
+
+[00001817][CA9_1] Audio source mask = 2
+[00001817][CA9_1] _system_status.audsrc_avail[0]=2
+
+[00001817][CA9_1] frw_audsrc_get_availability(0) returned audsrc_mask 2
+
+[00001817][CA9_1] returning audsrc 1
+
+[00001817][CA9_1] Audio source = 1
+[00001817][CA9_1] audio select_route start! instance 0
+[00001817][CA9_1] current src :1, sink :1
+[00001817][CA9_1] src :1, sink :1
+[00001817][CA9_1] frw_audsrc_set_control: audsrc0 selected src 1
+[00001817][CA9_1] csc_util_switch_to_audio_src
+
+[00001817][CA9_1] sts_audsrc_availability_get(0) returned audsrc_mask 2
+
+[00001817][CA9_1] returning audsrc 1
+
+[00001817][CA9_1] init_handles
+[00001817][CA9_1] Initialize Picture Capture module
+
+[00001817][CA9_1] picture_capture_init
+[00001817][CA9_1] init_rec_photo_api_list
+[00001817][CA9_1] Initialize Video Capture module
+
+[00001817][CA9_1] video_capture_init
+[00001817][CA9_1] init_rec_video_api_list
+[00001818][CA9_1] Initialize Multishot Capture module
+
+[00001818][CA9_1] multi_shot_capture_init
+[00001818][CA9_1] init_rec_multi_shot_api_list
+[00001818][CA9_1] pb_playback_init
+[00001818][CA9_1] Setup callback handler for playback
+[00001818][CA9_1] frw_playback_set_event_callback ENTER: REQ to register event callback instance a75fc638
+[00001818][CA9_1] frw_playback_set_event_callback EXIT: 
+[00001818][CA9_1] Initialize Broadcast module
+
+[00001818][CA9_1] frw_medit_open ENTER: REQ to open medit instance. id = 0
+[00001818][CA9_1] medit_main_task ENTER: Thread entry function
+[00001818][CA9_1] me_trim_open: enter
+[00001818][CA9_1] me_trim_open: exit
+[00001818][CA9_1] MEDIT instance opened pMedit = 0xa75b10ec
+
+[00001818][CA9_1] xcode_mux_input_task() Entered
+
+[00001818][CA9_1] Created Transcoder Mux Task
+
+[00001819][CA9_1] Created Transcoder Demux Output Task
+
+[00001819][CA9_1] Created Transcoder JPEG Input Task
+
+[00001819][CA9_1] Return me_xcode_open() = 0x0
+
+[00001819][CA9_1] frw_medit_open EXIT: 
+[00001819][CA9_1] frw_medit_set_event_callback ENTER: REQ to register event callback instance a75b10ec
+[00001819][CA9_1] frw_medit_set_event_callback EXIT: 
+[00001819][CA9_1] APPC: init
+[00001819][CA9_1] drv_dsp_mem_init: allocating 648693188 non-cached bytes with 32 alignment
+[00001819][CA9_1] drv_dsp_mem_init: Work Area: 0xb945ba40, 0 Curr Ptr: 0xdff00004, 648693188
+[00001819][CA9_1] [FWUPD] Firmware update IS NOT in progress:0
+[00001819][CA9_1] csc_handle_quick_start_mode
+[00001819][CA9_1] csc_handle_quick_start_mode: quick capture reset_reason is Power button pressed.(2)FRW_POWER_BOOT_REASON_POWER_BUTTON
+[00001819][CA9_1] start_mode  -1  quick_capture_mode 0
+[00001819][CA9_1] csc_handle_default_mode
+[00001819][CA9_1] av_mode_switch
+[00001819][CA9_1] av_mode_switch: mode: 12 delay: 0
+[00001819][CA9_1] av_mode_switch : APPC_MODE_VIDEO
+[00001819][CA9_1] av_mode_video
+[00001819][CA9_1] av_graph_detach
+[00001819][CA9_1] av_graph_detach_video
+[00001819][CA9_1] av_stop_module
+[00001819][CA9_1] Stopping Module : Monocle
+[00001819][CA9_1] av_stop_module: module was not started
+
+[00001819][CA9_1] av_suspend_module
+[00001819][CA9_1] Suspending Module : Monocle
+[00001819][CA9_1] av_suspend_module: module already suspended
+
+[00001819][CA9_1] av_stop_module
+[00001820][CA9_1] Stopping Module : Streamer_in_gp_ipc
+[00001820][CA9_1] av_stop_module: module was not started
+
+[00001820][CA9_1] av_encode_mode_display_stop: disp_hdl: 8, switch_display: 0
+
+[00001820][CA9_1] Calling av_stop_module( AV_MOD_HANDLE_LIVEPLAY )
+
+[00001820][CA9_1] av_stop_module
+[00001820][CA9_1] Stopping Module : Liveplay
+[00001820][CA9_1] av_stop_module: module was not started
+
+[00001820][CA9_1] av_detach_modules
+[00001820][CA9_1] Detaching Module[Lcd] from Module[Liveplay]
+[00001820][CA9_1] handle_2->av_mod_handle = 8
+
+[00001820][CA9_1] handle_1->attached_list[0]->av_mod_handle = 8
+
+[00001820][CA9_1] Liveplay: detach
+[00001820][CA9_1] liveplay_stop_sink: sink 0xa6815318  sink->active 0
+
+[00001820][CA9_1] liveplay_stop_sink: RETURNING
+[00001820][CA9_1] av_stop_module
+[00001820][CA9_1] Stopping Module : Lcd
+[00001820][CA9_1] frw_disp_stop: REQ to stop LCD display
+[00001820][CA9_1] DISP_DEBUG ++++++++++++++++++++++++++++ 2222 VOUT RESET LCD AmbaDSP_VoutVideoCtrl(0) and AmbaDSP_VoutReset
+
+[00001820][CA9_1] av_stop ret val = 0
+[00001820][CA9_1] av_suspend_module
+[00001820][CA9_1] Suspending Module : Stream_out
+[00001820][CA9_1] av_suspend_module: module already suspended
+
+[00001820][CA9_1] av_suspend_module
+[00001820][CA9_1] Suspending Module : Record
+[00001820][CA9_1] av_suspend_module: module already suspended
+
+[00001820][CA9_1] av_suspend_module
+[00001820][CA9_1] Suspending Module : Liveplay
+[00001820][CA9_1] av_suspend_module: module already suspended
+
+[00001820][CA9_1] av_suspend_module
+[00001820][CA9_1] Suspending Module : Image_capture
+[00001820][CA9_1] av_suspend_module: module already suspended
+
+[00001820][CA9_1] av_suspend_module
+[00001820][CA9_1] Suspending Module : Image_src
+[00001820][CA9_1] av_suspend_module: module already suspended
+
+[00001820][CA9_1] av_suspend_module
+[00001821][CA9_1] Suspending Module : Streamer_in_gp_ipc
+[00001821][CA9_1] av_suspend_module: module already suspended
+
+[00001821][CA9_1] av_detach_modules
+[00001821][CA9_1] Detaching Module[Stream_out] from Module[Record]
+[00001821][CA9_1] Error: No modules attached
+
+[00001821][CA9_1] av_detach_modules
+[00001821][CA9_1] Detaching Module[Record] from Module[DataCapture]
+[00001821][CA9_1] Error: No modules attached
+
+[00001821][CA9_1] av_detach_modules
+[00001821][CA9_1] Detaching Module[Record] from Module[Image_capture]
+[00001821][CA9_1] Error: No modules attached
+
+[00001821][CA9_1] av_detach_modules
+[00001821][CA9_1] Detaching Module[Liveplay] from Module[Image_capture]
+[00001821][CA9_1] Error: No modules attached
+
+[00001821][CA9_1] av_detach_modules
+[00001821][CA9_1] Detaching Module[Image_capture] from Module[Image_src]
+[00001821][CA9_1] Error: No modules attached
+
+[00001821][CA9_1] av_graph_detach_audio
+[00001821][CA9_1] av_suspend_module
+[00001821][CA9_1] Suspending Module : Audio_capture
+[00001821][CA9_1] av_suspend_module: module already suspended
+
+[00001821][CA9_1] av_suspend_module
+[00001821][CA9_1] Suspending Module : Audio_src
+[00001821][CA9_1] av_suspend_module: module already suspended
+
+[00001821][CA9_1] av_detach_modules
+[00001821][CA9_1] Detaching Module[Record] from Module[Audio_capture]
+[00001821][CA9_1] Error: No modules attached
+
+[00001821][CA9_1] av_detach_modules
+[00001821][CA9_1] Detaching Module[Audio_capture] from Module[Audio_src]
+[00001821][CA9_1] Error: No modules attached
+
+[00001821][CA9_1] APPC: Free noncached mem: 1048536 vs at boot: 1048536
+[00001821][CA9_1]  Video settings: res 4, fps 5, fov 1
+[00001822][CA9_1] csc_utils_video_capability_res_list_get
+[00001822][CA9_1] csc_utils_video_capability_fps_list_get
+[00001822][CA9_1] csc_utils_video_capability_fov_list_get
+[00001822][CA9_1]  VIDEO settings: res 4, fps 5, fov 1
+[00001822][CA9_1] frw_audproc_set_awe_mode: AWE mode changed: 4 -> 2
+[00001822][CA9_1] frw_audproc_enable_protune: Audio protune disabled
+[00001822][CA9_1] Audio protune is disabled
+[00001822][CA9_1] frw_audproc_set_bt_weight: BT weight changed: 0 -> 0
+[00001822][CA9_1] frw_mft_setcontrol: new override sec gop_n 8
+[00001822][CA9_1] frw_mft_setcontrol: new override sec idr_interval 1
+[00001822][CA9_1] frw_mft_setcontrol: new override sec enc_size 4
+[00001822][CA9_1] frw_mft_set_sec_bit_rate: overriding sec bit rate to 2500000bps
+[00001822][CA9_1] av_graph_create_video
+[00001822][CA9_1] av_attach_modules
+[00001822][CA9_1] Attaching Module(0)-[Image_src] with Module(1)-[Image_capture]
+
+[00001822][CA9_1] Ready to attach calling handle_1->attach (0xa482cefc):	
+handle_1->frw_mod_handle 0xa6814820	
+handle_2->frw_mod_handle 0xa64a07d8	
+handle_2->frw_mod_type 1
+
+[00001822][CA9_1] Attached Count = 1
+
+[00001822][CA9_1] Attached Module[1] at index[0] = a70d0f7c
+
+[00001822][CA9_1] av_attach_modules
+[00001822][CA9_1] Attaching Module(1)-[Image_capture] with Module(4)-[Liveplay]
+
+[00001822][CA9_1] Ready to attach calling handle_1->attach (0xa48137e4):	
+handle_1->frw_mod_handle 0xa64a07d8	
+handle_2->frw_mod_handle 0xa6815318	
+handle_2->frw_mod_type 5
+
+[00001822][CA9_1] Attached Count = 1
+
+[00001822][CA9_1] Attached Module[4] at index[0] = a70d11bc
+
+[00001822][CA9_1] av_attach_modules
+[00001822][CA9_1] Attaching Module(1)-[Image_capture] with Module(5)-[Record]
+
+[00001822][CA9_1] Ready to attach calling handle_1->attach (0xa48137e4):	
+handle_1->frw_mod_handle 0xa64a07d8	
+handle_2->frw_mod_handle 0xa68158e0	
+handle_2->frw_mod_type 6
+
+[00001822][CA9_1] Attached Count = 2
+
+[00001822][CA9_1] Attached Module[5] at index[1] = a70d124c
+
+[00001822][CA9_1] av_attach_modules
+[00001823][CA9_1] Attaching Module(5)-[Record] with Module(7)-[Stream_out]
+
+[00001823][CA9_1] Ready to attach calling handle_1->attach (0xa419041c):	
+handle_1->frw_mod_handle 0xa68158e0	
+handle_2->frw_mod_handle 0xa685e478	
+handle_2->frw_mod_type 9
+
+[00001823][CA9_1] Attached Count = 1
+
+[00001823][CA9_1] Attached Module[7] at index[0] = a70d136c
+
+[00001823][CA9_1] av_attach_modules
+[00001823][CA9_1] Attaching Module(14)-[DataCapture] with Module(5)-[Record]
+
+[00001823][CA9_1] Ready to attach calling handle_1->attach (0xa47f4c54):	
+handle_1->frw_mod_handle 0xa647feb0	
+handle_2->frw_mod_handle 0xa68158e0	
+handle_2->frw_mod_type 6
+
+[00001823][CA9_1] frw_datacapture_attach: entry 
+[00001823][CA9_1] frw_mft_register_md_src: enter
+[00001823][CA9_1] frw_mft_register_md_src: allocating 104004 bytes with 32 alignment at 0xdfee69c0, n_slots = 1
+[00001823][CA9_1] frw_mft_register_md_src: added metadata source datacapture, assigned src_id 1, registered count 1
+[00001823][CA9_1] frw_mft_register_md_src: exit
+[00001823][CA9_1] frw_datacapture_attach successfully registered md source, id = 1
+[00001823][CA9_1] Attached Count = 1
+
+[00001823][CA9_1] Attached Module[5] at index[0] = a70d124c
+
+[00001823][CA9_1] Registering record complete callbacks
+[00001823][CA9_1] av_graph_create_video: setting pipeline mode to             FRW_CAPTURE_MODE_MOVIE
+
+[00001823][CA9_1] av_set_pipeline_config
+[00001823][CA9_1] sub_mode = 0,cam_mode = 0
+[00001823][CA9_1] high config in video mode = 48
+[00001823][CA9_1] av_get_low_res_config
+[00001823][CA9_1] ret_config = 268
+[00001823][CA9_1] Video chaptering set to default chaptering
+[00001823][CA9_1] frw_mft_setcontrol: chaptering chapter_in_bytes 4000000000
+[00001823][CA9_1] av_resume_module
+[00001823][CA9_1] Resuming Module : Image_src
+[00001823][CA9_1] IMX117_Enable
+
+[00001823][CA9_1] av_resume_module
+[00001823][CA9_1] Resuming Module : Image_capture
+[00001823][CA9_1] drv_dsp_mem: Set work area size: 321912832 DSP Work Area: 321912832
+[00001823][CA9_1] still_cap_alloc_mem: allocating 7050240 bytes with 32 alignment at 0xdf82d5c0, n_slots = 2
+[00001823][CA9_1] still_cap_alloc_mem: allocating 40960 bytes with 32 alignment at 0xdf8235c0, n_slots = 3
+[00001823][CA9_1] Still Cap: Video Thumb buf 0xdf8235c0
+[00001823][CA9_1] [0;1;36mGPWDR 1.9.0 neon-opt ( wdr-1.9.0 ) - Feb 25 2016 15:49:05
+[00001824][CA9_1] av_resume_module
+[00001824][CA9_1] Resuming Module : Record
+[00001824][CA9_1] frw_mft_resume: allocating 15005632 bytes with 32 alignment at 0xde9d3e00, n_slots = 4
+[00001824][CA9_1] frw_mft_resume: allocating 4783872 bytes with 32 alignment at 0xde543f00, n_slots = 5
+[00001824][CA9_1] frw_mft_resume: allocating 129920 bytes with 32 alignment at 0xde524380, n_slots = 6
+[00001824][CA9_1] frw_mft_resume: allocating 24576 bytes with 32 alignment at 0xde51e380, n_slots = 7
+[00001824][CA9_1] frw_mft_resume: allocating 4160 bytes with 32 alignment at 0xde51d340, n_slots = 8
+[00001824][CA9_1] frw_mft_resume: allocating 5120 bytes with 32 alignment at 0xde51bf40, n_slots = 9
+[00001824][CA9_1] frw_mft_resume: allocating 26214400 bytes with 32 alignment at 0xdcc1bf40, n_slots = 10
+[00001824][CA9_1] frw_mft_resume: allocating 10485760 bytes with 32 alignment at 0xdc21bf40, n_slots = 11
+[00001824][CA9_1] mft_report_init: success
+[00001824][CA9_1] _mwrite_alloc_memory _ENTER_
+[00001824][CA9_1] _mwrite_alloc_memory: allocating 100139008 bytes with 32 alignment at 0xd629bf40, n_slots = 12
+[00001824][CA9_1] _mwrite_alloc_memory _EXIT_
+[00001824][CA9_1] dcf_get_disk_space_info querying space, root drive = C, found 8380832 of 15549952 free
+[00001824][CA9_1] mft_populate_geocal_data not populating spherical calib data for this platform
+[00001824][CA9_1] av_resume_module
+[00001824][CA9_1] Resuming Module : Liveplay
+[00001824][CA9_1] Liveplay: Resume
+[00001824][CA9_1] Liveplay: Start
+[00001824][CA9_1] liveplay->sink[0].type is 10
+
+[00001824][CA9_1] liveplay->sink[1].type is 0
+
+[00001824][CA9_1] frw_liveplay_start: returning
+
+[00001824][CA9_1] frw_liveplay_resume: allocating 307200 bytes with 32 alignment at 0xd6250f40, n_slots = 13
+[00001824][CA9_1] av_resume_module
+[00001824][CA9_1] Resuming Module : Stream_out
+[00001824][CA9_1] av_resume_module
+[00001824][CA9_1] Resuming Module : DataCapture
+[00001824][CA9_1] frw_datacapture_resume:   entry 
+[00001825][CA9_1] av_resume_module
+[00001825][CA9_1] Resuming Module : Streamer_in_gp_ipc
+[00001825][CA9_1] av_encode_mode_display_start: disp_hdl: 8, switch_display: 0
+[00001825][CA9_1] HELLO I'M HERE  9  !!!!!!!!!!!!!!!!!!!!!!
+
+[00001825][CA9_1] frw_disp_set_output: LCD output
+[00001825][CA9_1] av_attach_modules
+[00001825][CA9_1] Attaching Module(4)-[Liveplay] with Module(8)-[Lcd]
+
+[00001825][CA9_1] Ready to attach calling handle_1->attach (0xa48370dc):	
+handle_1->frw_mod_handle 0xa6815318	
+handle_2->frw_mod_handle 0xa73c1564	
+handle_2->frw_mod_type 10
+
+[00001825][CA9_1] Liveplay: attach
+[00001825][CA9_1] Attached Count = 1
+
+[00001825][CA9_1] Attached Module[8] at index[0] = a70d151c
+
+[00001825][CA9_1] av_start_module
+[00001825][CA9_1] Starting Module : Lcd
+[00001825][CA9_1] frw_disp_start: REQ to start LCD display
+[00001825][CA9_1] DISP_DEBUG ++++++++++++++++++++++++++++ 5555 LCD AmbaDSP_VoutVideoCtrl(1) 
+
+[00001825][CA9_1] av_start_module
+[00001825][CA9_1] Starting Module : Liveplay
+[00001825][CA9_1] Liveplay: Start
+[00001825][CA9_1] liveplay->sink[0].type is 10
+
+[00001825][CA9_1] calling liveplay_start_sink()
+
+[00001825][CA9_1] Liveplay: Start Sink
+[00001825][CA9_1] Liveview Display Config Width: 480 Height: 270 TimeScale 180000 NumUnitsInTick 3003
+[00001825][CA9_1] returned from liveplay_start_sink()
+
+[00001825][CA9_1] liveplay->sink[1].type is 0
+
+[00001825][CA9_1] frw_liveplay_start: returning
+
+[00001825][CA9_1] av_encode_mode_display_start: Returning 
+
+[00001825][CA9_1] av_start_module
+[00001825][CA9_1] Starting Module : Streamer_in_gp_ipc
+[00001825][CA9_1] frw_ipc_start --------- starting framework ipc -------- 
+[00001825][CA9_1] av_graph_create_audio
+[00001825][CA9_1] av_attach_modules
+[00001825][CA9_1] Attaching Module(2)-[Audio_src] with Module(3)-[Audio_capture]
+
+[00001825][CA9_1] Ready to attach calling handle_1->attach (0xa47e3ec4):	
+handle_1->frw_mod_handle 0xa6471c7c	
+handle_2->frw_mod_handle 0xa63a2688	
+handle_2->frw_mod_type 3
+
+[00001825][CA9_1] Attached Count = 1
+
+[00001825][CA9_1] Attached Module[3] at index[0] = a70d112c
+
+[00001825][CA9_1] av_attach_modules
+[00001825][CA9_1] Attaching Module(3)-[Audio_capture] with Module(5)-[Record]
+
+[00001825][CA9_1] Ready to attach calling handle_1->attach (0xa47d9208):	
+handle_1->frw_mod_handle 0xa63a2688	
+handle_2->frw_mod_handle 0xa68158e0	
+handle_2->frw_mod_type 6
+
+[00001826][CA9_1] Attached Count = 1
+
+[00001826][CA9_1] Attached Module[5] at index[0] = a70d124c
+
+[00001826][CA9_1] av_resume_module
+[00001826][CA9_1] Resuming Module : Audio_src
+[00001826][CA9_1] audio select_route start! instance 0
+[00001826][CA9_1] current src :1, sink :1
+[00001826][CA9_1] src :1, sink :1
+[00001826][CA9_1] av_resume_module
+[00001826][CA9_1] Resuming Module : Audio_capture
+[00001826][CA9_1] av_resume_module
+[00001826][CA9_1] Resuming Module : Monocle
+[00001826][CA9_1] av_run_current_mode
+[00001826][CA9_1] Run MODE = 0
+[00001826][CA9_1] av_start_module
+[00001826][CA9_1] Starting Module : Image_src
+[00001826][CA9_1] frw_imgsrc_start: dsp_phase_shift=(.Horizontal=0, .Vertical=1)
+
+[00001826][CA9_1] imgsrc_set_pll_clocks: Frequency change Done.
+[00001826][CA9_1] imgsrc_set_pll_clocks: IDSP freq:   Request: 96000000 Actual: 96000000
+[00001826][CA9_1] imgsrc_set_pll_clocks: Core freq:   Request: 216000000 Actual: 444000000
+[00001826][CA9_1] [IMX117] hw reset
+
+[00001863][CA9_1] ENTER :: frw_multicam_type_get
+[00001863][CA9_1] av_start_module
+[00001863][CA9_1] Starting Module : Image_capture
+[00001863][CA9_1] imgsrc_get_settings: zero x_offset
+
+[00001863][CA9_1] mft_set_sec_enc_size: new override sec 854 x 480 SAR 0:0
+[00001863][CA9_1] ImgCap: Main Tile 8 8 0
+[00001863][CA9_1] ImgCap: Screennail Tile 1 2 0
+[00001863][CA9_1] ImgCap: Thumbnail Tile 2 2 0
+[00001863][CA9_1] imgcap_set_vin_window: OffsetX=82 OffsetY=14 Width=1280 Height=720
+[00001863][CA9_1] ImgCap: VinGeo StartX = 120 StartY = 422 Width = 1280 Height = 720 Zoom Factor = 1.00
+[00001863][CA9_1] ImgCap: VinGeo H.FactorNum = 1 H.FactorDen = 3 V.FactorNum = 1 V.FactorDen = 3 
+[00001863][CA9_1] ImgCap: Deferred BLC is enabled
+[00001864][CA9_1] imgproc_init_dsp_img_core: AmbaDSP_ImgInitCtx done
+[00001864][CA9_1] TimeScale = 30000 NumUnitsInTick = 1001
+[00001864][CA9_1] FrameLengthLines : 3080
+[00001864][CA9_1] ImgCap: MCTF is OFF
+[00001864][CA9_1] ImgCap: Checking horizontal flip
+[00001864][CA9_1] Pipeline Config: Camera is rightside up need horizontal flip is true
+[00001864][CA9_1] ImgCap: Background Processing is 0
+[00001864][CA9_1] ImgCap: Horizontal Flip is 1
+[00001864][CA9_1] System info -> Frame rate : 29.970030
+
+[00001864][CA9_1] imgcap_set_eis_config is called with 11 percent and 4 degree
+[00001864][CA9_1] AmbaImgEisCtrl_SetFocalLength: EisFocalLength = 263, FocalValue = 673
+[00001864][CA9_1] ImgCap: Setup Dummy Warp Tables Start
+[00001864][CA9_1] imgcap_setup_warp_calib: 
+
+[00001864][CA9_1] w,h = 4096, 3002;  gridx,y = 33, 25; exp x,y = 7, 7; first table entry: 0
+
+[00001865][CA9_1] ImgCap: Setup Dummy Warp Tables Done
+[00001865][CA9_1] calib_vignette_apply live view
+[00001866][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=65535, update=0)
+
+[00001866][CA9_1] ImgCap: imgcap_config->slow_shutter_factor is 0, low light is currently ENABLED
+[00001866][CA9_1] imgsrc_get_settings: zero x_offset
+
+[00001866][CA9_1] sensor mode = 63
+[00001866][CA9_1] sensor pixel bits = 12
+[00001866][CA9_1] sensor first pixel color = 0
+[00001866][CA9_1] sensor width = 1416
+[00001866][CA9_1] sensor height = 738
+[00001866][CA9_1] sensor max binning = 1
+[00001866][CA9_1] sensor max slow shutter = 0
+[00001866][CA9_1] sensor frame tv = 0
+[00001866][CA9_1] sensor frame total line = 3080
+[00001866][CA9_1] sensor frame total shutter line = 3080
+[00001866][CA9_1] sensor frame total ns in line = 10833
+[00001866][CA9_1] sensor frame total ns in shuter line = 10833
+[00001867][CA9_1] sensor frame rate = 2997
+[00001867][CA9_1] sensor frame time = 33
+[00001867][CA9_1] sensor frame binning = 1
+[00001867][CA9_1] video delay mode = 0
+[00001867][CA9_1] capture line = 720
+[00001867][CA9_1] stitch = 0
+[00001867][CA9_1] low delay = 0
+[00001867][CA9_1] deferred black level = 1
+[00001867][CA9_1] eis active = 1
+[00001867][CA9_1] AdvEof = 0
+[00001867][CA9_1] BackEof = 0
+[00001867][CA9_1] statistics delay = 0
+[00001868][CA9_1] === AmbaImgProc Module, Revision :  5109 ===
+[00001868][CA9_1] <AmbaImg_CtrlFunc_MemMgr_Init> 0, rval = 0x0 , MutexCreate
+[00001868][CA9_1] <AmbaImg_CtrlFunc_MemMgr_Init> 0, rval = 0x0 
+[00001868][CA9_1] <AmbaImg_CtrlFunc_Param_Init> channelCount = 1 
+[00001868][CA9_1] <AmbaImg_CtrlFunc_Param_Init> ICF_PARAM_s : size : 106688 
+[00001868][CA9_1] <AmbaImg_VDsp_Handler_MemMgr_Init> 0, rval = 0x0 , MutexCreate
+[00001868][CA9_1] <AmbaImg_VDsp_Handler_MemMgr_Init> 0, rval = 0x0 ,size : 59144 
+[00001868][CA9_1] <Amba_Img_Reset_Video_Pipe_Ctrl_Params>, chNo : 0, MatrixThreeDTableAddr : 0xb93fb8e4 
+[00001868][CA9_1] <AmbaIQParamImx117_A9_Get_Adj_Still_Low_Iso_param_au>, 0, 0x0a64cb280
+[00001868][CA9_1] <AmbaIQParamImx117_A9_Get_Adj_Still_Low_Iso_param_au>, 1, 0x0a64daa5c
+[00001868][CA9_1] <AmbaIQParamImx117_A9_Get_Adj_Still_Low_Iso_param_au>, 2, 0x0a64ea238
+[00001868][CA9_1] <AmbaIQParamImx117_A9_Get_Adj_Still_High_Iso_param_au>, 0, 0x0a64ea238
+[00001868][CA9_1] <AmbaIQParamImx117_A9_Get_Adj_Still_High_Iso_param_au>, 1, 0x0a65250cc
+[00001868][CA9_1] <AmbaIQParamImx117_A9_Get_Adj_Still_High_Iso_param_au>, 2, 0x0a656c654
+[00001868][CA9_1] case ADJ_PARAM_LISO_STILL, tableNo = 0
+[00001869][CA9_1] case ADJ_PARAM_LISO_STILL, tableNo = 1
+[00001869][CA9_1] case ADJ_PARAM_HISO_STILL, tableNo = 0
+[00001871][CA9_1] case ADJ_PARAM_HISO_STILL, tableNo = 1
+[00001889][CA9_1] load Cc Reg A9_CC_Reg.bin from ROMFS: 18752, RVal :0
+[00001901][CA9_1] load video cc 3D Imx117_Cc_Video0_au.bin from ROMFS: 17536
+[00001912][CA9_1] load video cc 3D Imx117_Cc_Video1_au.bin from ROMFS: 17536
+[00001924][CA9_1] load video cc 3D Imx117_Cc_Video2_au.bin from ROMFS: 17536
+[00001927][CA9_1] load video cc 3D Imx117_Cc_Video3_au.bin from ROMFS: 17536
+[00001932][CA9_1] load video cc 3D Imx117_Cc_Video4_au.bin from ROMFS: 17536
+[00001944][CA9_1] load still cc 3D Imx117_Cc_Still0_au.bin from ROMFS: 17536
+[00001955][CA9_1] load still cc 3D Imx117_Cc_Still1_au.bin from ROMFS: 17536
+[00001958][CA9_0] audsink_bep_process: AWE finished BEEP
+[00001967][CA9_1] load still cc 3D Imx117_Cc_Still2_au.bin from ROMFS: 17536
+[00001974][CA9_1] load still cc 3D Imx117_Cc_Still3_au.bin from ROMFS: 17536
+[00001980][CA9_1] load still cc 3D Imx117_Cc_Still4_au.bin from ROMFS: 17536
+[00001983][CA9_1] -------- ImgParam   : VersionNumber, Struct : 14020700 --------
+[00001983][CA9_1] -------- AaaParam   : VersionNumber, Struct : 15031700, Param : 15031700 --------
+[00001984][CA9_1] -------- VIDEO      : VersionNumber, Struct : 15032300, Param : 15091400 --------
+[00001984][CA9_1] -------- Photo      : VersionNumber, Struct : 15032300, Param : 15032300 --------
+[00001984][CA9_1] -------- Still LISO : VersionNumber, Struct : 15032300, Param : 15032300 --------
+[00001984][CA9_1] -------- Still HISO : VersionNumber, Struct : 15032300, Param : 15041300 --------
+[00001984][CA9_1] -------- StillParam : VersionNumber, Struct : 14051500, Param : 14051500 --------
+[00001985][CA9_1] imgproc_algo_info_get: ----------
+[00001986][CA9_1] SensorWinWidth = 1364
+[00001986][CA9_1] SensorWinHeight = 720
+[00001986][CA9_1] VinCaptureWidth = 1280
+[00001986][CA9_1] VinCaptureHeight = 720
+[00001986][CA9_1] MainOutputWidth = 864
+[00001986][CA9_1] MainOutputHeight = 480
+[00001986][CA9_1] FrameRate = 30
+[00001986][CA9_1] Oversampling = 0
+[00001986][CA9_1] HorizontalBinningNum = 1
+[00001986][CA9_1] HorizontalBinningDen = 3
+[00001986][CA9_1] VerticalBinningNum = 1
+[00001986][CA9_1] VerticalBinningDen = 3
+[00001986][CA9_1] Ae Control Info (0, 0)
+[00001986][CA9_1] ImgProc: Enable flicker detection
+[00001986][CA9_1] === Amba Ae Lib., Revision :  3018 ===
+[00001986][CA9_1] ae algorithm initial, FrameRate :  30, FrameRatex1000 : 29970 
+[00001986][CA9_1] <Ae_Control_Init_Full>, scene mode : 0 
+[00001986][CA9_1] 
+
+----- MainShutterIdx =  1012, EvLutNum =     3, -----
+[00001986][CA9_1] 
+
+----- max_agc_db : 36,36,36,36,36,36,36 -----
+[00001986][CA9_1] ----- max_dgain_db : 0,0,0,1,1,1,1 -----
+
+
+[00001987][CA9_1] 
+
+----- max_agc_db : 1280,1280,1280,1259,1259,1259,1259 -----
+[00001987][CA9_1] 
+
+----- AeVagcLength =  1482, AeShutterLength =   779, AeIrisLength =     0, -----
+[00001988][CA9_1] 
+ aaa version number
+[00001988][CA9_1] -------- aaa version_number, struct : 15031700, param : 15031700 --------
+
+[00001988][CA9_1] imgtuning_setup_tuning: (video) color = gopro, wb = auto, meter = center, ev = +0.0, lowlight = on
+
+
+[00001988][CA9_1]    shutter mode = auto, iso mode = max, wdr is off
+
+
+[00001988][CA9_1] === Amba Awb Lib., Revision :  2184 ===
+[00001989][CA9_1] <_awb_control_2_init_full>,1 i = 0 
+[00001989][CA9_1] <_awb_control_2_init_full>, 1 
+[00001990][CA9_1] <_awb_control_2_init_full>,2 awb_curr_info.vin_total = 1, chNoCount : 1 
+[00001990][CA9_1] <_awb_control_2_init_full>,2 i = 0 
+[00001992][CA9_1] imgtuning_setup_tuning: AeCtrlMode.DefAeTarget: 0
+[00001992][CA9_1] imgtuning_setup_tuning: AeCtrlMode.MeteringMode: 0
+[00001992][CA9_1] Setting Video Scene Mode to 0
+
+[00001992][CA9_1] == ISO = 800,  Auto Low Light is OFF,  EIS is ON
+
+[00001992][CA9_1] AE_EV LUT:
+[00001992][CA9_1]   20  20  20  20  20  20  20
+[00001992][CA9_1]   21  20  20  20  20  20  20
+[00001992][CA9_1]   21  21  20  20  20  20  20
+[00001992][CA9_1]   21  21  21  20  20  20  20
+[00001992][CA9_1]   21  21  21  21  20  20  20
+[00001992][CA9_1]   21  21  21  21  21  20  20
+[00001992][CA9_1]   21  21  21  21  21  21  20
+[00001992][CA9_1]   20  20  20  20  20  20  20
+[00001992][CA9_1] 
+
+[00001992][CA9_1]    1   1   1   1   1   1   1
+[00001992][CA9_1]    0   1   1   1   1   1   1
+[00001992][CA9_1]    0   0   1   1   1   1   1
+[00001992][CA9_1]    0   0   0   1   1   1   1
+[00001993][CA9_1]    0   0   0   0   1   1   1
+[00001993][CA9_1]    0   0   0   0   0   1   1
+[00001993][CA9_1]    0   0   0   0   0   0   1
+[00001993][CA9_1]    1   1   1   1   1   1   1
+[00001993][CA9_1] ae algorithm initial, FrameRate :  30, FrameRatex1000 : 29970 
+[00001993][CA9_1] <Ae_Control_Init_Full>, scene mode : 0 
+[00001993][CA9_1] 
+
+----- MainShutterIdx =  1012, EvLutNum =     3, -----
+[00001993][CA9_1] 
+
+----- max_agc_db : 21,21,21,20,20,20,20 -----
+[00001993][CA9_1] ----- max_dgain_db : 0,0,0,1,1,1,1 -----
+
+
+[00001994][CA9_1] 
+
+----- max_agc_db : 1600,1600,1600,1600,1600,1600,1600 -----
+[00001994][CA9_1] 
+
+----- AeVagcLength =  1141, AeShutterLength =   779, AeIrisLength =     0, -----
+[00001994][CA9_1] Scene Mode 0 has CC table : 0
+[00001996][CA9_1] load video cc 3D Imx117_Cc_Video0_au.bin from ROMFS: 17536
+[00001998][CA9_1] load video cc 3D Imx117_Cc_Video1_au.bin from ROMFS: 17536
+[00002003][CA9_1] load video cc 3D Imx117_Cc_Video2_au.bin from ROMFS: 17536
+[00002010][CA9_1] load video cc 3D Imx117_Cc_Video3_au.bin from ROMFS: 17536
+[00002011][CA9_1] load video cc 3D Imx117_Cc_Video4_au.bin from ROMFS: 17536
+[00002012][CA9_1] load still cc 3D Imx117_Cc_Still0_au.bin from ROMFS: 17536
+[00002014][CA9_1] load still cc 3D Imx117_Cc_Still1_au.bin from ROMFS: 17536
+[00002015][CA9_1] load still cc 3D Imx117_Cc_Still2_au.bin from ROMFS: 17536
+[00002017][CA9_1] load still cc 3D Imx117_Cc_Still3_au.bin from ROMFS: 17536
+[00002018][CA9_1] load still cc 3D Imx117_Cc_Still4_au.bin from ROMFS: 17536
+[00002021][CA9_1] load still cc 3D Imx117_Cc_Still0_au.bin from ROMFS: 17536
+[00002022][CA9_1] load still cc 3D Imx117_Cc_Still1_au.bin from ROMFS: 17536
+[00002023][CA9_1] load still cc 3D Imx117_Cc_Still2_au.bin from ROMFS: 17536
+[00002025][CA9_1] load still cc 3D Imx117_Cc_Still3_au.bin from ROMFS: 17536
+[00002026][CA9_1] load still cc 3D Imx117_Cc_Still4_au.bin from ROMFS: 17536
+[00002026][CA9_1] eis init...
+[00002026][CA9_1] ImgCap: EIS focal length = 263
+[00002026][CA9_1] AmbaImgEisCtrl_SetFocalLength: EisFocalLength = 263, FocalValue = 673
+[00002026][CA9_1] ImgCap: EIS Adaptive Rotation Params = 0.30, 0.33 Recovery Time = 10.00
+[00002026][CA9_1] invalid t cmd id...
+[00002026][CA9_1] ModifyAngleThres = 0.300000    TimesDifRAThres = 0.334000
+[00002026][CA9_1] ====AmbaImgEisCtrl_Init starts====
+[00002026][CA9_1] LevelShift = 32768
+
+[00002026][CA9_1] MaxBias=65536
+[00002026][CA9_1] FocalValue=673
+[00002026][CA9_1] EisMv.MaxAngX=2252
+[00002027][CA9_1] EisMv.MaxAngY=2252
+[00002027][CA9_1] ====AmbaImgEisCtrl_Init finish====
+[00002027][CA9_1] ====AmbaImgEisCtrl_ModeInit starts====
+[00002027][CA9_1] FrameRatePerSec=30
+[00002027][CA9_1] CurrFrameTime=34
+[00002027][CA9_1] NumUnitsInTick=1001, TimeScale=30000, pCalcWinInfo.VinSensorGeo.Height=720, VB5=26
+[00002027][CA9_1] EisSensorStatus.ModeInfo.FrameLengthLines=3080
+[00002027][CA9_1] EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=738
+[00002027][CA9_1] EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height=2160
+[00002027][CA9_1] EisSensorStatus.ModeInfo.RowTime*1000000000=10833
+[00002027][CA9_1] VerticalBlankTime=26
+[00002027][CA9_1] ====MemAllocate======
+[00002027][CA9_1] ====AmbaImageMainEis_GyroLogInit start====
+[00002027][CA9_1] ====AmbaImageMainEis_GyroLogInit finish====
+[00002027][CA9_1] ---------AmbaImageMainEis_GyroParamInit starts-------
+[00002027][CA9_1] GyroParam.OffsetX=8388608
+[00002027][CA9_1] GyroParam.OffsetY=8388608
+[00002027][CA9_1] GyroCalibInfo.SenseX=16640
+[00002027][CA9_1] GyroCalibInfo.SenseY=16640
+[00002027][CA9_1] ---------AmbaImageMainEis_GyroParamInit finishes-------
+[00002027][CA9_1] ---------AmbaImageMainEis_ParamInit starts-------
+[00002027][CA9_1] DefEisParam.SensorCellSizeX=39680
+[00002027][CA9_1] GyroInfo.VolDivDen=1
+[00002027][CA9_1] DefEisParam.EisScaleFactorDenX=7142400
+[00002027][CA9_1] DefEisParam.SensorCellSizeY=39680
+[00002027][CA9_1] DefEisParam.EisScaleFactorDenY=7142400
+[00002027][CA9_1] GyroCalibInfo.SenseX=16640
+[00002027][CA9_1] EisParam.EisScaleFactorDenX=4642560
+[00002027][CA9_1] GyroCalibInfo.SenseY=16640
+[00002027][CA9_1] EisParam.EisScaleFactorDenY=4642560
+[00002028][CA9_1] GyroCalibInfo.SenseZ=16640
+[00002028][CA9_1] EisParam.EisScaleFactorDenZ=-1299767296, EisParam.EisScaleFactorNum=804
+[00002028][CA9_1] ---------AmbaImageMainEis_ParamInit finishes-------
+[00002028][CA9_1] EisMv.MaxAngX=2252
+[00002028][CA9_1] EisMv.MaxPixX=43302
+[00002028][CA9_1] EisMv.MaxAngY=2252
+[00002028][CA9_1] EisMv.MaxPixY=43302
+[00002028][CA9_1] pCalcWinInfo.VinSensorGeo.StartY=422
+[00002028][CA9_1] EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY=422
+[00002028][CA9_1] EisSensorStatus.ModeInfo.FrameLengthLines=3080
+[00002028][CA9_1] EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height=720
+[00002028][CA9_1] EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=738
+[00002028][CA9_1] VinSensorGeo: Width=1280, Height=720, StartX=120, StartY=422
+[00002028][CA9_1] CapStartY=0
+[00002028][CA9_1] DlyMs=24
+
+[00002028][CA9_1] AudioClkPerSecond=12288000
+[00002028][CA9_1] CmdReadDly=296296
+[00002028][CA9_1] ====AmbaImgEisCtrl_ModeInit finish====
+[00002028][CA9_1] ====AmbaImgEisCtrl_Enable starts====
+[00002028][CA9_1] EisObj.Enable=0
+[00002028][CA9_1] EisObj.EnableCmd=0
+[00002028][CA9_1] EisObj.StabilizerType=2
+[00002028][CA9_1] EisObj.MeEnable=0
+[00002028][CA9_1] FlgEisDzEffect=1
+[00002028][CA9_1] ========AmbaImageMainEis_SetRange(1)=======
+[00002028][CA9_1] ============AmbaImageMainEis_CalCurrRange start===============
+[00002028][CA9_1] =============AmbaImageMainEis_CalcRotateFactor start===========
+[00002028][CA9_1] CapW=1280
+[00002028][CA9_1] CapH=720
+[00002028][CA9_1] 		calc 11: 1280 720 1140 641 0 b0000
+[00002028][CA9_1] 		calc 12: 1280 720 1127 634 3 b0000
+[00002028][CA9_1] 		calc 13: 1280 720 1114 627 7 b0000
+[00002028][CA9_1] 		calc 14: 1280 720 1101 620 10 b0000
+[00002028][CA9_1] 		calc 15: 1280 720 1089 613 14 b0000
+[00002028][CA9_1] 		calc 16: 1280 720 1076 605 18 b0000
+[00002029][CA9_1] 		calc 17: 1280 720 1063 598 21 b0000
+[00002029][CA9_1] 		calc 18: 1280 720 1050 591 25 b0000
+[00002029][CA9_1] 		calc 19: 1280 720 1037 584 28 b0000
+[00002029][CA9_1] 		calc 20: 1280 720 1025 577 32 b0000
+[00002029][CA9_1] 		calc 21: 1280 720 1012 569 36 b0000
+[00002029][CA9_1] =============AmbaImageMainEis_CalcRotateFactor end============
+[00002029][CA9_1] EisRotateFactor=10
+[00002029][CA9_1] EisStatus.EisDzoomFactor=82956
+[00002029][CA9_1] Zoom Ratio: 1.26 x
+
+[00002029][CA9_1] EisZoomRatio: 1.26 x
+
+[00002029][CA9_1] ============AmbaImageMainEis_CalCurrRange end===============
+[00002029][CA9_1] CapH=720
+[00002029][CA9_1] ActH=568, FrameLengthLines=3080
+[00002029][CA9_1] ========AmbaImageMainEis_SetDummy=======
+[00002029][CA9_1] CurrEisRangePerct  = 720896
+[00002029][CA9_1] RscY = 15
+[00002029][CA9_1] TmpDmyRange.Left  = 6881
+[00002029][CA9_1] TmpDmyRange.Right  = 6881
+[00002029][CA9_1] TmpDmyRange.Top = 3817
+[00002029][CA9_1] TmpDmyRange.Bottom = 3817
+[00002029][CA9_1] ============== AmbaImageMainEis_SetDummy: Before===============
+[00002029][CA9_1] WindowInfo.ActWinCrop.LeftTopX  = 0
+[00002029][CA9_1] WindowInfo.ActWinCrop.LeftTopY  = 0
+[00002029][CA9_1] WindowInfo.ActWinCrop.RightBotX = 1280
+[00002029][CA9_1] WindowInfo.ActWinCrop.RightBotY = 720
+[00002029][CA9_1] WindowInfo.DmyWinGeo.StartX  = 0
+[00002029][CA9_1] WindowInfo.DmyWinGeo.StartY  = 0
+[00002029][CA9_1] WindowInfo.DmyWinGeo.Width   = 1280
+[00002029][CA9_1] WindowInfo.DmyWinGeo.Height  = 720
+[00002029][CA9_1] WindowInfo.MainWinDim.Height  = 480
+[00002029][CA9_1] DspZFY = 0xaaaa
+[00002029][CA9_1] AmbaDSP_WarpCore_SetWarpReferenceDummyWinMarginPixels = 1 @2086
+[00002030][CA9_1] [EIS] initialize calibration warp: 20130101 a79864a0 120 422 1280 720 1 3 1 3 5 5 41 24
+
+[00002030][CA9_1] ============== AmbaImageMainEis_SetDummy: After===============
+[00002030][CA9_1] WindowInfo.ActWinCrop.LeftTopX  = 132
+[00002030][CA9_1] WindowInfo.ActWinCrop.LeftTopY  = 74
+[00002030][CA9_1] WindowInfo.ActWinCrop.RightBotX = 1147
+[00002030][CA9_1] WindowInfo.ActWinCrop.RightBotY = 645
+[00002030][CA9_1] WindowInfo.DmyWinGeo.StartX  = 0
+[00002030][CA9_1] WindowInfo.DmyWinGeo.StartY  = 32
+[00002030][CA9_1] WindowInfo.DmyWinGeo.Width   = 1280
+[00002030][CA9_1] WindowInfo.DmyWinGeo.Height  = 658
+[00002030][CA9_1] WindowInfo.MainWinDim.Height  = 480
+[00002030][CA9_1] DspZFY = 0xd70a
+[00002030][CA9_1] ADV time: 6 3
+[00002030][CA9_1] EisUpdateEndTime1=18
+[00002031][CA9_1] EisUpdateEndTime2=24
+[00002031][CA9_1] EisWarpUpdateEndTime1=21
+[00002031][CA9_1] Sec2ProcLinesPerSample=0
+[00002031][CA9_1] EisEnableDlyCnt=6
+[00002031][CA9_1] EisObj.EnablePref=0
+[00002031][CA9_1] EisObj.RscEnablePref=0
+[00002031][CA9_1] ====AmbaImgEisCtrl_Enable finish====
+[00002031][CA9_1] eis timer (0) = (1000, 1000)
+[00002031][CA9_1] ae algorithm initial, FrameRate :  30, FrameRatex1000 : 29970 
+[00002031][CA9_1] <Ae_Control_Init_Full>, scene mode : 0 
+[00002031][CA9_1] 
+
+----- MainShutterIdx =  1012, EvLutNum =     3, -----
+[00002031][CA9_1] AmbaImgEisCtrl_Resume rejected!
+[00002031][CA9_1] eis algo resume
+[00002031][CA9_1] Low Light inactive
+[00002031][CA9_1] low_light_active_callback() low_light: 0 eis: 1
+[00002032][CA9_1] <_awb_control_2_init_full>, 1 
+[00002034][CA9_1] <_awb_control_2_init_full>,2 awb_curr_info.vin_total = 1, chNoCount : 1 
+[00002034][CA9_1] <_awb_control_2_init_full>,2 i = 0 
+[00002034][CA9_1] === Amba Adj Lib., Revision :  2171 ===
+[00002034][CA9_1] <AdjFunc_MemMgr_Init> 0, RVal = 0x0, size : 876
+[00002034][CA9_1] <AdjFunc_Param_Init> channelCount = 1 
+[00002034][CA9_1] <AdjFunc_A9_MemMgr_Init> 0, RVal = 0x0, size : 13968
+[00002034][CA9_1] <AdjFunc_A9_Param_Init> channelCount = 1 
+[00002034][CA9_1] <Amba_Adj_Video_Init>
+[00002034][CA9_1] imgtuning_dynamic_tuning: 
+    (video) color = gopro, sharp = high, superview OFF, lowlight INACTIVE
+
+
+[00002034][CA9_1] IN <Amba_AdjInit>, imgtuning_select_tuning_bucket returned 7 (base bucket = 7)
+
+[00002034][CA9_1] <Iqt_MemMgr_Init> 0, RVal = 0x0, size : 6236
+[00002034][CA9_1] <Iqt_Param_Init> channelCount = 1 
+[00002042][CA9_1] DISP_DEBUG ++++++++++++++++++++++++++++ 4444 AmbaDSP_LiveviewCtrl
+
+[00002042][CA9_1] DspOpMode 255
+[00002042][CA9_1] calib_ca_apply live view
+[00002043][CA9_1] calib_ca_apply: chroma-aberration data applied
+
+[00002043][CA9_1] calib_bpc_apply live view
+[00002043][CA9_1] calib_bpc_apply: BPC applied for mode=9 upd=0
+
+[00002043][CA9_1] av_run_current_mode: Start streaming
+[00002043][CA9_1] av_start_module
+[00002043][CA9_1] Starting Module : Stream_out
+[00002043][CA9_1] Streaming STATE: STARTED
+[00002043][CA9_1] av_start_module
+[00002043][CA9_1] Starting Module : Audio_src
+[00002043][CA9_1] audio select_route start! instance 0
+[00002043][CA9_1] current src :1, sink :1
+[00002043][CA9_1] src :1, sink :1
+[00002043][CA9_1] frw_audsrc_start: success!
+[00002043][CA9_1] av_start_module
+[00002043][CA9_1] Starting Module : Audio_capture
+[00002043][CA9_1] frw_audcap_start_sub: audcap0
+[00002043][CA9_1] audcap_handle_bdup_effect: enabling bdup plugin.(default) return 0
+[00002043][CA9_1] audcap_bdup_setup: delay 5
+[00002043][CA9_1] frw_audcap_start_sub: failed to open capture preview i/o node
+[00002043][CA9_1] frw_audcap_start_sub: failed to open capture source i/o node
+[00002043][CA9_1] audcap_input_start 1
+[00002043][CA9_1] audcap_input_start 2
+[00002046][CA9_1] Initializing AWE (Build 1)...
+[00002047][CA9_1]  ... done
+
+[00002047][CA9_1] AWE: awe_init ---> returned 0
+[00002047][CA9_1] Executing layout with length 16105 ...
+[00002059][CA9_1]  ... done.
+
+[00002059][CA9_1] AWE: awe initialized for passthru ---> returned 0
+[00002059][CA9_1] Initializing tuning instances...
+[00002059][CA9_1]  ... done.
+
+[00002059][CA9_1] Initializing (speaker processing) tuning instances...
+[00002063][CA9_1] _read_sectors: start_sector=0x0000002c num_sectors=0x00000010
+
+[00002063][CA9_1] calib_nv_read_region: read region AUDIO offset=0x00005800 size=0x00002000
+
+[00002064][CA9_1] frw_audproc_int_mic_calib: internal mic calibration done
+[00002064][CA9_1] audproc_awe_config: done
+[00002064][CA9_1] frw_audproc_start: done
+[00002064][CA9_1] audcap0 start success!
+[00002064][CA9_1] frw_audcap_start: by appc 1
+[00002064][CA9_1] av_start_module
+[00002064][CA9_1] Starting Module : Streamer_in_gp_ipc
+[00002064][CA9_1] av_start_module: module already started
+
+[00002064][CA9_1] av_start_module
+[00002064][CA9_1] Starting Module : Monocle
+[00002064][CA9_1] av_mode_switch_sync_send: Sending sync event to UI flat_mode 12 (app_mode 0, sub_mode 0
+
+[00002064][CA9_1] [FWUPD] Firmware update IS NOT in progress:0
+[00002065][CA9_1] batch_cmd_seq_num = No batch tag cmd_buf_size = 4352
+[00002065][CA9_0] audsink mute: mute flag 1, ref cnt 1
+[00002065][CA9_1] audsink mute: 0
+[00002065][CA9_1] audsink_bep_process: mute after BEEP
+[00002066][CA9_0] audcap_bdup_process: init delay to receive proc2cap FIFO0, muted block inserted 
+[00002087][CA9_0] audcap_bdup_process: init delay to receive proc2cap FIFO0, muted block inserted 
+[00002108][CA9_0] audcap_bdup_process: init delay to receive proc2cap FIFO0, muted block inserted 
+[00002118][CA9_1] DSP boot Done - uCode Ver. = [255424], 4/26/2016, API_REV: 209824, SILICON_VER: 1760
+[00002118][CA9_1] [VC] Create Voice Control Pseudo UI task
+
+[00002118][CA9_1] test_appc_voice_init: Adding voice control test cmds
+
+[00002118][CA9_1] Really starting voice at boot time
+
+[00002118][CA9_1] [VC] ENTER csc_voice_control_change: start is 1
+
+[00002118][CA9_1] av_start_module
+[00002118][CA9_1] Starting Module : Audio_capture
+[00002118][CA9_1] av_start_module: module already started
+
+[00002118][CA9_1] av_start_module
+[00002118][CA9_1] Starting Module : Audio_src
+[00002118][CA9_1] av_start_module: module already started
+
+[00002119][CA9_1] frw_audproc_set_vr_source: VR source changed: -1 -> 0
+[00002119][CA9_1] vr_start: Sensory SDK release: 3.15.4
+[00002119][CA9_1] set language index=0
+
+[00002127][CA9_1] PS Delay=200.000000
+
+[00002127][CA9_1] frw_audproc_set_vr_source: VR source changed: 0 -> 0
+[00002127][CA9_1] frw_audproc_vr_start: VR started
+[00002127][CA9_1] frw_audproc_set_vr_language: VR language already set
+[00002127][CA9_1] [VC] Setting VR language 0 returned retval 0
+
+[00002127][CA9_1] ENTER sts_local_voice_control_state_set: new framework vr state is 1
+[00002127][CA9_1] frw_audproc_set_vr_state: VR state change: 1 -> 1
+[00002127][CA9_1] PS Delay=200.000000
+
+[00002127][CA9_1] [VC] EXIT csc_voice_control_change
+
+[00002127][CA9_1] Create Tara UI task
+[00002127][CA9_1] frw_framebuffer_get_control_ex ENTER: REQ
+[00002127][CA9_1] frw_framebuffer_get_control_ex EXIT: 
+[00002128][CA9_1] Ew initialized with width 960, height 540, buf:0xb8f483a0
+
+[00002130][CA9_0] audcap_bdup_process: init delay to receive proc2cap FIFO0, muted block inserted 
+[00002141][CA9_1] BiasAdjustBitShift changes from 0 to 5
+[00002149][CA9_1] ************************************
+
+[00002149][CA9_1] UI version: 1.0 for Phase 3 release
+
+[00002149][CA9_1] ************************************
+
+[00002149][CA9_1] csc_utils_video_capability_res_list_get
+[00002149][CA9_1] csc_utils_video_capability_fps_list_get
+[00002149][CA9_1] csc_utils_video_capability_fps_list_get
+[00002150][CA9_1] csc_utils_video_capability_fov_list_get
+[00002150][CA9_1] disp_avail_1: 0
+[00002150][CA9_1] disp_avail_1: 0
+[00002150][CA9_1] csc_battery_level_init internal battery percentage 81% bars 4
+[00002150][CA9_1] csc_battery_level_init internal battery charging state 0
+[00002150][CA9_1] disp_avail_1: 0
+[00002150][CA9_1] disp_avail_1: 0
+[00002150][CA9_1] csc_battery_level_init sending external battery missing
+[00002150][CA9_1] Creating mtp task
+[00002151][CA9_0] audcap_bdup_process: init delay to receive proc2cap FIFO0, muted block inserted 
+[00002188][CA9_1] MTP Task create ret_val = 0
+[00002188][CA9_1] spb_test_init
+[00002188][CA9_1] Creating csc async task
+[00002189][CA9_1] CSC Async Task create ret_val = 0
+[00002189][CA9_1] Setting brightness 100
+[00002190][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=58431, update=1)
+
+[00002203][CA9_1] CCL Proxy Task: start
+[00002203][CA9_1] mtp_check_gpTunnel_ready : Waiting for the IPC init done
+[00002203][CA9_1] size for mfg date ====> 3
+[00002203][CA9_1] Manufacturing date (year,work week) ====> 3, 34
+[00002204][CA9_1] [FWUPD] Firmware update IS NOT in progress:0
+[00002204][CA9_1] csc_util_switch_to_audio_src
+
+[00002204][CA9_1] sts_audsrc_availability_get(0) returned audsrc_mask 2
+
+[00002204][CA9_1] returning audsrc 1
+
+[00002204][CA9_1] disp_avail_1: 0
+[00002204][CA9_1] disp_avail_1: 0
+[00002204][CA9_1] csc_storage_internal_event_handler
+[00002204][CA9_1] APPC: SD card event 4
+[00002204][CA9_1] sts_sd_status_set SD card status changed to 4
+[00002204][CA9_1] APPC: Sending SD card event (4) to UI
+[00002204][CA9_1] wireless_sd_card_state_set: Sending new state - 4
+
+[00002204][CA9_1] csc_storage_internal_event_handler
+[00002204][CA9_1] APPC: SD card event 0
+[00002205][CA9_1] [FWUPD] Firmware update not required
+[00002205][CA9_1] ASSERT CSC_ASYNC queue if return value = 0, RET_VAL = 0
+[00002205][CA9_1] Waiting for a message in csc_async_task
+[00002208][CA9_1] dcf_get_fh_from_sd Read in file handle, <0x00000064, 0x000000c6>
+[00002208][CA9_1] frw_sos_recovery_needed: enter
+[00002208][CA9_1] check file_name: C:\DCIM\100GOPRO\GOPR0198.MP4
+[00002210][CA9_1]  mdat read as 0x8c469e01
+[00002210][CA9_1]  File has mdat size as 27149956. No recovery needed.
+[00002211][CA9_1] csc_utils_sos File Recovery needed:0 for file name:C:\DCIM\100GOPRO\GOPR0198.MP4
+[00002211][CA9_1] filename=C:\MISC
+[00002212][CA9_1] filename=C:\MISC\version.txt
+[00002214][CA9_1] csc_version_info_update: success:{
+"info version":"2.0",
+"firmware version":"HD5.02.01.20.00",
+"wifi mac":"",
+"camera type":"HERO5 Black",
+"camera serial number":"XXXX",
+}
+ (161 bytes)
+[00002214][CA9_1] filename =C:\MISC\version.txt.bak
+[00002228][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=52151, update=1)
+
+[00002256][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=46656, update=1)
+
+[00002289][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=41848, update=1)
+
+[00002328][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=37641, update=1)
+
+[00002341][CA9_0] BossImplIpcInit
+[00002341][CA9_0] vring 1024 0xa0500000 0xa0504000 0xa0505000
+[00002341][CA9_0] vring 1024 0xa050a000 0xa050e000 0xa050f000
+[00002357][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=33959, update=1)
+
+[00002358][CA9_0] gp_ipc_helper_init initing helper for the first time
+[00002358][CA9_0] gp_ipc_resume_helper_task entry
+[00002358][CA9_0] gp_ipc_resume_helper_task set helper task is now set to running
+[00002358][CA9_0] db_proxy_init initing db proxy
+[00002359][CA9_0] db_proxy_init created queue with id 0x51554555
+[00002359][CA9_0] db_proxy_init DONE initing db proxy
+[00002359][CA9_0] GoPro IPC intialized
+[00002374][CA9_1] mcu_ibat_tempsrc_temp_get_raw: new temp [39] is at least 10 degrees different than previous [9]
+
+[00002376][CA9_0] Restore rpmsg info finish.
+[00002376][CA9_0] Done AmbaLink Setup
+[00002376][CA9_0] Hibernation image loaded (0)!!
+[00002376][CA9_0] BossGuestTask: Boot Linux kernel
+[00002390][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=30738, update=1)
+
+[00002428][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=27919, update=1)
+
+[00002452][CA9_1] ====AmbaImgEisCtrl_Enable starts====
+[00002452][CA9_1] EisObj.Enable=0
+[00002452][CA9_1] EisObj.EnableCmd=1
+[00002452][CA9_1] EisObj.StabilizerType=2
+[00002452][CA9_1] EisObj.MeEnable=0
+[00002452][CA9_1] EisEnableDlyCnt=0
+[00002452][CA9_1] ====AmbaImageMainEis_RangeUpdate starts====
+[00002452][CA9_1] -------- AmbaImageMainEis_RangeUpdate Start --------
+[00002452][CA9_1] DownsampleX=3.000000, FactorDen=3, FactorNum=1
+[00002452][CA9_1] DownsampleY=3.000000, FactorDen=3, FactorNum=1
+[00002452][CA9_1] DownsampleXSft=255
+[00002452][CA9_1] DownsampleYSft=255
+[00002452][CA9_1] ============== AmbaImageMainEis_RangeUpdate: CalcWindowInfo===============
+[00002452][CA9_1] WindowInfo.ActWinCrop.LeftTopX  = 132
+[00002452][CA9_1] WindowInfo.ActWinCrop.LeftTopY  = 74
+[00002452][CA9_1] WindowInfo.ActWinCrop.RightBotX = 1147
+[00002452][CA9_1] WindowInfo.ActWinCrop.RightBotY = 645
+[00002452][CA9_1] WindowInfo.DmyWinGeo.StartX  = 0
+[00002452][CA9_1] WindowInfo.DmyWinGeo.StartY  = 32
+[00002452][CA9_1] WindowInfo.DmyWinGeo.Width   = 1280
+[00002452][CA9_1] WindowInfo.DmyWinGeo.Height  = 658
+[00002452][CA9_1] ============== AmbaImageMainEis_RangeUpdate: GetWindowInfo===============
+[00002452][CA9_1] pWindowInfo.ActWinCrop.LeftTopX  = 132
+[00002452][CA9_1] pWindowInfo.ActWinCrop.LeftTopY  = 74
+[00002452][CA9_1] pWindowInfo.ActWinCrop.RightBotX = 1147
+[00002452][CA9_1] pWindowInfo.ActWinCrop.RightBotY = 645
+[00002452][CA9_1] pWindowInfo.DmyWinGeo.StartX  = 0
+[00002452][CA9_1] pWindowInfo.DmyWinGeo.StartY  = 32
+[00002452][CA9_1] pWindowInfo.DmyWinGeo.Width   = 1280
+[00002452][CA9_1] pWindowInfo.DmyWinGeo.Height  = 658
+[00002452][CA9_1] pWindowInfo.MainWinDim.Height  = 480
+[00002452][CA9_1] DspZFY = 0xd70a
+[00002452][CA9_1] CapW=1280
+[00002452][CA9_1] CapH=720
+[00002452][CA9_1] ActiveH=572
+[00002452][CA9_1] SafeH=430
+[00002452][CA9_1] Sec2OutH=480
+[00002452][CA9_1] Sec2OutOffset = 36    DmyWinGeo.Height = 658   ActiveH = 572
+[00002452][CA9_1] SafeH=502
+[00002452][CA9_1] Sec2ProcLinesPerSample=77
+[00002452][CA9_1] IsMovLim.MovX=68
+[00002452][CA9_1] IsMovLim.MovY=37
+[00002452][CA9_1] EisLimP.MovX= 44544
+[00002452][CA9_1] RscLimP.MovX= 7680
+[00002452][CA9_1] EisLimN.MovX= 44544
+[00002452][CA9_1] RscLimN.MovX= 7680
+[00002452][CA9_1] EisLimP.MovY= 21504
+[00002452][CA9_1] RscLimP.MovY= 3840
+[00002452][CA9_1] EisLimN.MovY= 23040
+[00002452][CA9_1] RscLimN.MovY= 3840
+[00002452][CA9_1] -------- AmbaImageMainEis_RangeUpdate End --------
+[00002452][CA9_1] ====AmbaImgEisCtrl_Enable finish====
+[00002452][CA9_1] EisObj.EnablePref=1
+[00002452][CA9_1] EisObj.RscEnablePref=1
+[00002452][CA9_1] EisObj.EnablePref=0
+[00002453][CA9_1] EisObj.RscEnablePref=0
+[00002453][CA9_1] BiasAdjustBitShift changes from 5 to 10
+[00002453][CA9_1] eis warmup is done
+[00002456][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=25453, update=1)
+
+[00002487][CA9_1] csc_version_info_update: success:{
+"info version":"2.0",
+"firmware version":"HD5.02.01.20.00",
+"wifi mac":"EDIT",
+"camera type":"HERO5 Black",
+"camera serial number":"EDIT",
+}
+ (161 bytes)
+[00002487][CA9_1] frw_fdelete: filename = C:\MISC\version.txt.bak
+[00002489][CA9_1] 
+---- Enable anti flicker detection ----
+[00002490][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=23295, update=1)
+
+[00002494][CA9_1] f_handle is 0
+[00002494][CA9_1] f_handle is 0
+[00002494][CA9_1] Factory reset file not found on SD. Ignoring factory reset
+[00002494][CA9_1] csc_utils_factory_over_ride_support:f_handle is 0
+[00002495][CA9_1] EVENT_STORAGE_SD_STATUS: _rtf_requested 0
+[00002495][CA9_1] sts_sd_status_set SD card status changed to 0
+[00002495][CA9_1] dcf_get_disk_space_info querying space, root drive = C, found 8380832 of 15549952 free
+[00002495][CA9_1] frw_mft_get_remaining_still_count: enc_height 3000, enc_width 4000
+[00002495][CA9_1] frw_mft_get_remaining_still_count: sd_size 8555233280, img_size 6815744, count 1255
+[00002495][CA9_1] Photos Remaining: 1255
+[00002495][CA9_1] mft_get_overall_bitrate: mrv bitrate 60000000
+[00002495][CA9_1] mft_get_overall_bitrate: mrv bitrate with margin 63000000
+[00002495][CA9_1] mft_get_overall_bitrate: + mrv overhead 63250000
+[00002495][CA9_1] mft_get_overall_bitrate: lrv bitrate 500000
+[00002495][CA9_1] mft_get_overall_bitrate: total bitrate 66125000
+[00002495][CA9_1] dcf_get_disk_space_info querying space, root drive = C, found 8380832 of 15549952 free
+[00002495][CA9_1] frw_mft_get_remaining_movie_time: bit_rate 66125000
+[00002495][CA9_1] frw_mft_get_remaining_movie_time: sd_size 8548417536, in seconds 1034
+[00002495][CA9_1] Video time Remaining (sec): 1034
+[00002495][CA9_1] frw_dfs_get_total_file_count[fq_profile] returning ungrouped photo file count 122
+[00002495][CA9_1] frw_dfs_get_total_file_count[fq_profile] returning grouped photo file count 6
+[00002495][CA9_1] Photos Count: total 122, group 6
+[00002495][CA9_1] frw_dfs_get_total_file_count[fq_profile] returning ungrouped video file count 21
+[00002495][CA9_1] frw_dfs_get_total_file_count[fq_profile] returning grouped video file count 21
+[00002495][CA9_1] Video Count: total 21, group 21
+[00002495][CA9_1] MTP: Check if we need to proceed on SD Status update:OKAY|FULL
+[00002496][CA9_1] mtp_check_for_mode_switch
+[00002496][CA9_1] sts_sd_status_set SD card status changed to 0
+[00002496][CA9_1] APPC: Sending SD card event (0) to UI
+[00002496][CA9_1] wireless_sd_card_state_set: Sending new state - 0
+
+[00002496][CA9_1] MTP: MTP_CAM_READY
+[00002496][CA9_1] mtp_cam_ready_to_process
+[00002501][CA9_0] Linux is Hibernation Boot and IPC is ready!
+[00002501][CA9_0] Linux resume AMBA_LINK_HIBER_TO_DISK is done
+[00002501][CA9_1] wiman_wait_ipc_init: IPC init complete
+[00002501][CA9_1] wiman_hs_init: WKUP REASON: Power button pressed.(2)FRW_POWER_BOOT_REASON_POWER_BUTTON Warm boot: 0
+[00002501][CA9_1] gp_linux_hs_init:268
+[00002529][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=21407, update=1)
+
+[00002557][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=19755, update=1)
+
+[00002590][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=18309, update=1)
+
+[00002629][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=17044, update=1)
+
+[00002657][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=15937, update=1)
+
+[00002690][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=14968, update=1)
+
+[00002728][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=14121, update=1)
+
+[00002757][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=13379, update=1)
+
+[00002790][CA9_1] calib_vignette_apply: video vignette data found and applied (luma strength=12730, update=1)
+
+[00002838][CA9_1] gps command: 44 subscribe navstatus
+[00002888][CA9_1] gps command: 72 subscribe nav time gps
+[00002938][CA9_1] gps command: 74 subscribe nav velned
+[00002990][CA9_1] gps command: 69 poll nav time utc
+[00002991][CA9_1] gps command: 69 poll nav time utc
+[00002992][CA9_1] gps command: 34 gnss gps
+[00003040][CA9_1] gps command: 29 set interval
+[00003092][CA9_1] gps command: 22 timepulse on
+[00003092][CA9_1] enable timepulse messages
+[00003141][CA9_1] gps command: 64 subscribe navpvt
+[00003191][CA9_1] gps command: 32 set port_output
+[00003241][CA9_1] gps command: 37 set cfg
+[00003379][CA9_1] mcu_ibat_tempsrc_temp_get_raw: new temp [39] is at least 10 degrees different than previous [19]
+
+[00003857][CA9_1] 
+---- Anti flicker : 60Hz. ----
+
+[00004242][CA9_1] tara_system_display_hdmi_status_get, isHdmiPresent:0, isHdmiOn:0
+
+[00004242][CA9_1] UI<tara_system_display_hdmi_status_get> isHdmiPresent[0], isHdmiOn[0]
+
+[00004428][CA9_0] gp_rx ipc channel is not ready
+[00004579][CA9_1] wiman_hs_init: Linux boot count - 0
+[00004579][CA9_1] frw_audproc_set_wifi_enabled: change wifi state from 0 to 1
+[00004579][CA9_1] wifi_callback: event status 1
+[00004580][CA9_1] frw_streamer_init: 0
+[00004580][CA9_1] wiman_task_entry: WKUP REASON: Power button pressed.(2)FRW_POWER_BOOT_REASON_POWER_BUTTON Warm boot: 0
+[00004581][CA9_1] Wireless intialization completed.
+
+[00004581][CA9_1] [FWUPD] Checking if WIFI should be reenabled.
+[00004581][CA9_1] [FWUPD] Firmware update IS NOT in progress:0
+[00004640][CA9_1] wireless_sd_card_state_set: Sending new state - 0
+
+[00004640][CA9_1] wiman_power_init
+
+[00005203][CA9_1] 
