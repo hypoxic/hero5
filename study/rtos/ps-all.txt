@@ -1,0 +1,855 @@
+ps all
+ ID  PRI  PREEMPT  SCHED            STAT  NEXT_ID  STKSIZE  STKUSED  STKBASE     STKEND      STKPTR      SMP_CORE  NAME
+--------------------------------------------------------------------------------------------------------------------------
+  0    0        0  61426       SUSPENDED        0     1020      336  0xa79f5f1c  0xa79f6317  0xa79f61c8       0x2  System Timer Thread
+  1  253      253    816      EVENT_FLAG       18     4092      356  0xa6aec900  0xa6aed8fb  0xa6aed798       0x2  RootTask
+  2   32       32    383      EVENT_FLAG        2     2044      380  0xa6b34e60  0xa6b3565b  0xa6b354e0       0x1  AmbaSD_CardMonitorTask
+  3   14       14    378      QUEUE_SUSP        3     2044      364  0xa83001c8  0xa83009c3  0xa8300858       0x2  rtos_workq Dispatch
+  4   14       14    479      QUEUE_SUSP        4     2044      372  0xa83009d0  0xa83011cb  0xa8301058       0x2  rtos_workq Queuer
+  5  125      125   5647  SEMAPHORE_SUSP        6     8188      380  0xa83013f0  0xa83033eb  0xa8303270       0x2  systemwq_long
+  6  125      125     21  SEMAPHORE_SUSP        5     8188      380  0xa83033f8  0xa83053f3  0xa8305278       0x2  systemwq_long
+  7   15       15      5  SEMAPHORE_SUSP        7     4092      380  0xa8305510  0xa830650b  0xa8306390       0x2  systemwq_realtime
+  8  100      100    947  SEMAPHORE_SUSP        9    16380      380  0xa8306730  0xa830a72b  0xa830a5b0       0x2  systemwq_short
+  9  100      100    901      MUTEX_SUSP        9    16380      644  0xa830a738  0xa830e733  0xa830e4b0       0x2  systemwq_short
+ 10  254      254   1769      EVENT_FLAG       10     4092      332  0xa6aea900  0xa6aeb8fb  0xa6aeb7b0       0x3  AmbaPrintTask
+ 11  100      100  10092      QUEUE_SUSP       11    20476      492  0xa830e740  0xa831373b  0xa8313550       0x2  CSC task
+ 12  100      100      1      EVENT_FLAG       12     4092      372  0xa8313e08  0xa8314e03  0xa8314c90       0x2  Button HAL Event Task
+ 13  100      100      1      EVENT_FLAG       13     4092      380  0xa8314e10  0xa8315e0b  0xa8315c90       0x2  Button GPIO Event Task
+ 14   50       50      1      EVENT_FLAG       14     4092      380  0xa8315e18  0xa8316e13  0xa8316c98       0x2  MCU IRQ Event Task
+ 15   10       10      9      QUEUE_SUSP       15     4092      364  0xa8316e88  0xa8317e83  0xa8317d18       0x2  Time task
+ 16  100      100   1668      EVENT_FLAG       16     8188      396  0xa8317e90  0xa8319e8b  0xa8319d00       0x2  Platform HAL Poll Task
+ 17   99       99      1      EVENT_FLAG       17     4092      372  0xa8319e98  0xa831ae93  0xa831ad20       0x2  Platform HAL Util Task
+ 18  150      150      2      EVENT_FLAG       44     4092      380  0xa851aeb0  0xa851beab  0xa851bd30       0x2  dfs_sd_event_listener
+ 19  150      150   1496      EVENT_FLAG       19    43004      380  0xa851beb8  0xa85266b3  0xa8526538       0x2  dfs_sd_monitor_SD
+ 20   58       58      1      EVENT_FLAG       20    24572      404  0xa85338f8  0xa85398f3  0xa8539760       0x2  DFS File write task
+ 21  253      253   1060           SLEEP       21    16380      328  0xa78da514  0xa78de50f  0xa78de3c8       0x1  AmbaUSBDeviceVbusCheckTask
+ 22   60       60    251      QUEUE_SUSP       22    16380      396  0xa88bd8f0  0xa88c18eb  0xa88c1760       0x2  USB
+ 23   50       50      1      EVENT_FLAG       23     2044      380  0xa88c1a80  0xa88c227b  0xa88c2100       0x2  ft6306_thread
+ 24    5        5  20118      EVENT_FLAG       25    16380      364  0xa8942e98  0xa8946e93  0xa8946d28       0x2  Image Capture Sync
+ 25   10       10   3392      EVENT_FLAG       24    16380      364  0xa8946ea0  0xa894ae9b  0xa894ad30       0x2  Image Capture
+ 26  100      100   2704      EVENT_FLAG       26     4092      916  0xa8cde9a8  0xa8cdf9a3  0xa8cdf610       0x2  GPS COMM
+ 27   99       99   4933           SLEEP       27     2044      372  0xa8cdf9b0  0xa8ce01ab  0xa8ce0038       0x2  GPS_UART
+ 28    6        6      1      QUEUE_SUSP       28     8188      324  0xa6c082e0  0xa6c0a2db  0xa6c0a198       0x2  AmbaImageMessageTask
+ 29   18       18   5521  SEMAPHORE_SUSP       29    10236      544  0xa8cb713c  0xa8cb9937  0xa8cb9718       0x2  AmbaImageMainAeTask
+ 30   22       22  10167  SEMAPHORE_SUSP       30    12284      384  0xa8cb9944  0xa8cbc93f  0xa8cbc7c0       0x2  AmbaImageMainAwbTask
+ 31  100      100   9034  SEMAPHORE_SUSP       31     8188      400  0xa8cbc94c  0xa8cbe947  0xa8cbe7b8       0x2  AmbaImageMainAdjTask
+ 32    7        7 215722      EVENT_FLAG       33     8188      572  0xa6b61020  0xa6b6301b  0xa6b62de0       0x2  AmbaImageMainEisTask
+ 33   12       12   3137      EVENT_FLAG       32     8188      332  0xa6b63020  0xa6b6501b  0xa6b64ed0       0x2  AmbaImageMainEisAlgo2Task
+ 34   13       13      1  SEMAPHORE_SUSP       34    32764      640  0xa8cbf774  0xa8cc776f  0xa8cc74f0       0x2  Still Capture
+ 35   47       47      1  SEMAPHORE_SUSP       35     4092      408  0xa8cc7794  0xa8cc878f  0xa8cc85f8       0x1  wdrMNT
+ 36   47       47      1  SEMAPHORE_SUSP       36     4092      408  0xa8cc87b4  0xa8cc97af  0xa8cc9618       0x1  wdrMNB
+ 37   47       47      1  SEMAPHORE_SUSP       37     4092      408  0xa8cc97d4  0xa8cca7cf  0xa8cca638       0x1  wdrSNT
+ 38   47       47      1  SEMAPHORE_SUSP       38     4092      408  0xa8cca7f4  0xa8ccb7ef  0xa8ccb658       0x1  wdrSNB
+ 39   47       47      1  SEMAPHORE_SUSP       39     4092      408  0xa8ccb814  0xa8ccc80f  0xa8ccc678       0x1  wdrTNT
+ 40   47       47      1  SEMAPHORE_SUSP       40     4092      408  0xa8ccc834  0xa8ccd82f  0xa8ccd698       0x1  wdrTNB
+ 41   46       46   7836      EVENT_FLAG       50     8188      428  0xa86243c8  0xa86263c3  0xa8626218       0x3  Audio Input Task
+ 42   46       46  34369           READY       42    16380      452  0xa8f44070  0xa8f4806b  0xa8f47ea8       0x3  Audio Proc Task
+ 43   46       46      0       SUSPENDED       43     8188       84  0xa866eb74  0xa8670b6f  0xa8670b1c       0x3  Audio Input Task
+ 44  251      251      1      EVENT_FLAG        1     4092      392  0xa8cdc86c  0xa8cdd867  0xa8cdd6e0       0x2  AmbaMonitor_HDMI
+ 45   60       60      1      EVENT_FLAG       45    10236      372  0xa8f80d58  0xa8f83553  0xa8f833e0       0x2  Record Service Evt Task
+ 46   47       47      0       SUSPENDED       46     8188       80  0xa8f83760  0xa8f8575b  0xa8f8570c       0x3  Audio Encoder Task
+ 47   12       12      1  SEMAPHORE_SUSP       47    12284     2084  0xa8ff78f0  0xa8ffa8eb  0xa8ffa0c8       0x2  MFT Still Task
+ 48   12       12      1  SEMAPHORE_SUSP       48    24572     2204  0xa90035a0  0xa900959b  0xa9008d00       0x2  MFT Still Write Task
+ 49   50       50    375      EVENT_FLAG       49     8188      420  0xa90099a0  0xa900b99b  0xa900b7f8       0x2  Frame Buffer Task
+ 50   48       48   7355      EVENT_FLAG       41     8188      444  0xa8539b00  0xa853bafb  0xa853b940       0x3  Audio Output Task
+ 51   48       48      0       SUSPENDED       51     8188       80  0xa857ff90  0xa8581f8b  0xa8581f3c       0x3  Audio Output Task
+ 52   80       80      1      QUEUE_SUSP       52    16380      452  0xa900b9a8  0xa900f9a3  0xa900f7e0       0x2  Playback task
+ 53   62       62      1      QUEUE_SUSP       53     8188      364  0xa900f9b0  0xa90119ab  0xa9011840       0x2  Still Decoder Task
+ 54   61       61      1      QUEUE_SUSP       54     8188      364  0xa90119b8  0xa90139b3  0xa9013848       0x2  Still Display Task
+ 55   49       49      0       SUSPENDED       55     8188       80  0xa890ad78  0xa890cd73  0xa890cd24       0x3  Audio Decoder Task
+ 56   60       60      1      EVENT_FLAG       56    12284      668  0xa9019b70  0xa901cb6b  0xa901c8d0       0x2  pb_movie_task
+ 57   60       60      1      EVENT_FLAG       57     8188      364  0xa901cb78  0xa901eb73  0xa901ea08       0x2  datacap task
+ 58   60       60      1      EVENT_FLAG       58    10236      372  0xa901eb80  0xa902137b  0xa9021208       0x2  Record Metadata Evt Task
+ 59  100      100    290  SEMAPHORE_SUSP       59    20476      372  0xa90613a8  0xa90663a3  0xa9066230       0x2  WiMan task
+ 60  255      255  71649           READY       60    32764      464  0xa906e3e0  0xa90763db  0xa907620c       0x1  LINK_BOSS
+ 61  250      250  45887      EVENT_FLAG       61     4092      332  0xa68e8000  0xa68e8ffb  0xa68e8eb0       0x3  AmbaShell_CliTask
+ 62  249      249   7195           READY       62    32764     1492  0xa9076400  0xa907e3fb  0xa907de28       0x3  AmbaShell_ExecTask
+ 63   80       80      1      QUEUE_SUSP       63    16380      444  0xa908ec40  0xa9092c3b  0xa9092a80       0x2  medit_main_task
+ 64   60       60      1      QUEUE_SUSP       64    12284      508  0xa9092c48  0xa9095c43  0xa9095a48       0x2  medit_trim_task
+ 65   60       60      1      EVENT_FLAG       65    12284      412  0xa9095c50  0xa9098c4b  0xa9098ab0       0x2  xcode_mux_input_task
+ 66   60       60      1      EVENT_FLAG       66    12284      404  0xa9098c58  0xa909bc53  0xa909bac0       0x2  xcode_demux_output_task
+ 67   60       60      1      EVENT_FLAG       67    12284      404  0xa909bc60  0xa909ec5b  0xa909eac8       0x2  xcode_jpeg_input_task
+ 68    3        3  18509      EVENT_FLAG       68     4092      432  0xa6c022c4  0xa6c032bf  0xa6c03110       0x3  AmbaDSP_ArmCommTask
+ 69    8        8  12323      QUEUE_SUSP       69     4092      448  0xa6c072c4  0xa6c082bf  0xa6c08100       0x3  AmbaDSP_MsgDispatchTask
+ 70    4        4  16415      EVENT_FLAG       70    16380      328  0xa6c032c4  0xa6c072bf  0xa6c07178       0x3  AmbaDSP_IntTask
+ 71   80       80      1      QUEUE_SUSP       71     8188      436  0xa90a2c70  0xa90a4c6b  0xa90a4ab8       0x2  Voice Control Pseudo UI
+ 72   80       80   5345      QUEUE_SUSP       72    16380      532  0xa90f4e28  0xa90f8e23  0xa90f8c10       0x2  Tara Application
+ 73  100      100      1      EVENT_FLAG       73     4092      376  0xa93b44ac  0xa93b54a7  0xa93b5330       0x2  CCL Proxy Task
+ 74  100      100      1      QUEUE_SUSP       74    16380      408  0xa93b557c  0xa93b9577  0xa93b93e0       0x2  REMOTE_BACPACTask
+ 75  100      100      1      QUEUE_SUSP       75    16380      408  0xa93b964c  0xa93bd647  0xa93bd4b0       0x2  REMOTE_WIFITask
+ 76  100      100     25  SEMAPHORE_SUSP       76     8188      360  0xa93bd654  0xa93bf64f  0xa93bf4e8       0x2  MTP task
+ 77  101      101      2      QUEUE_SUSP       77    26620      400  0xa93bf65c  0xa93c5e57  0xa93c5cc8       0x2  CSC async task
+ 78   50       50    453      EVENT_FLAG       78     4092      332  0xa93c6580  0xa93c757b  0xa93c7430       0x1  LINK_RPMSG_RVQ
+ 79   50       50    298      EVENT_FLAG       79     4092      340  0xa93c75a0  0xa93c859b  0xa93c8448       0x1  LINK_RPMSG_SVQ
+ 80   65       65      1      EVENT_FLAG       81     4092      340  0xa93c85c0  0xa93c95bb  0xa93c9468       0x1  LINK_RPC_SVC_THREAD 0
+ 81   66       66      1      EVENT_FLAG       80     4092      340  0xa93c95e0  0xa93ca5db  0xa93ca488       0x1  LINK_RPC_SVC_THREAD 1
+ 82   60       60   8946      QUEUE_SUSP       82    16380      324  0xa93ca620  0xa93ce61b  0xa93ce4d8       0x1  LINK_VFS_OPS
+ 83   70       70     83      QUEUE_SUSP       83     4092      324  0xa93ce640  0xa93cf63b  0xa93cf4f8       0x1  LINK_VFS_SG
+ 84   80       80      1      QUEUE_SUSP       84     4092      316  0xa93cf800  0xa93d07fb  0xa93d06c0       0x1  HiberSuspendHandler
+ 85   64       64    121      QUEUE_SUSP       85     8188      456  0xa93d131c  0xa93d3317  0xa93d3150       0x2  gpipc in worker task
+ 86  100      100      1  SEMAPHORE_SUSP       86    25596      416  0xa93e7b74  0xa93edf6f  0xa93eddd0       0x2  DB Proxy Task
+ 87  100      100      1      QUEUE_SUSP       87    16380      424  0xa93edf7c  0xa93f1f77  0xa93f1dd0       0x2  IPC test task
+ 88   64       64      2      QUEUE_SUSP       88     8188      428  0xa96427c8  0xa96447c3  0xa9644618       0x2  Streamer IPC task
+ 89  200      200    260           SLEEP       89     4092      856  0xa977965c  0xa977a657  0xa977a300       0x1  ux_print_thread
+ 90   10       10     40      QUEUE_SUSP       90     4092      364  0xa877e530  0xa877f52b  0xa877f3c0       0x1  AmbaUSB_IsrTask
+ 91   60       60    519           SLEEP       91    16380      344  0xa9786ec4  0xa978aebf  0xa978ad68       0x2  USB_CDC_ACM
+ 92   60       60    181  SEMAPHORE_SUSP       92     4092      600  0xa978aecc  0xa978bec7  0xa978bc70       0x2  USB_CDC_ACM_RCV
+---------------------------------
+*******  Total 370 Mutex  *******
+---------------------------------
+ ID  Count  SuspendCount  Owner                FirstSuspended
+0xa7c46480      0             0
+0xa70cc248      0             0
+0xa7c4644c      0             0
+0xa70ca734      0             0
+0xa7c48ca0      0             0
+0xa7a7264c      0             0
+0xa7a72684      0             0
+0xa7a726bc      0             0
+0xa7a726f4      0             0
+0xa7a7272c      0             0
+0xa7a72764      0             0
+0xa7a7279c      0             0
+0xa7a727d4      0             0
+0xa7a7280c      0             0
+0xa7a72844      0             0
+0xa7a7287c      0             0
+0xa7a728b4      0             0
+0xa70ca56c      0             0
+0xa70ca5a0      0             0
+0xa70ca5d4      0             0
+0xa70ca608      0             0
+0xa70ca63c      0             0
+0xa70ca698      0             0
+0xa70ca6cc      0             0
+0xa70ca700      0             0
+0xa70cbb78      0             0
+0xa70cbbac      0             0
+0xa70cbbe0      0             0
+0xa70cc384      0             0
+0xa70cc3b8      0             0
+0xa70cc440      0             0
+0xa70cc474      0             0
+0xa70cc4fc      0             0
+0xa70cc530      0             0
+0xa70cc5b8      0             0
+0xa70cc5ec      0             0
+0xa70ca230      0             0
+0xa70ca264      0             0
+0xa70ca298      0             0
+0xa70ca2cc      0             0
+0xa70ca300      0             0
+0xa70ca334      0             0
+0xa70ca368      0             0
+0xa70ca39c      0             0
+0xa70cc280      0             0
+0xa70cc68c      0             0
+0xa70ca1d4      0             0
+0xa6b34a00      0             0
+0xa70cb378      0             0
+0xa70cb6c4      0             0
+0xa70d2f64      0             0
+0xa70ca790      0             0
+0xa70ca7c4      0             0
+0xa70ca7fc      0             0
+0xa70ca830      0             0
+0xa7705cc8      0             0
+0xa77071c8      0             0
+0xa7705674      0             0
+0xa770721c      0             0
+0xa70c8008      0             0
+0xa70c803c      0             0
+0xa70c8070      0             0
+0xa76374d0      0             0
+0xa75f94b8      0             0
+0xa7c47f9c      0             0
+0xa7c46600      0             0
+0xa7c48600      0             0
+0xa7c47938      0             0
+0xa7c472d4      0             0
+0xa7c46c70      0             0
+0xa70cdb30      0             0
+0xa70cdb84      0             0
+0xa70d2e84      0             0
+0xa7625a40      0             0
+0xa7625a9c      0             0
+0xa7635be8      0             0
+0xa7635c44      0             0
+0xa7635ca0      0             0
+0xa7635cfc      0             0
+0xa7635e70      0             0
+0xa7635edc      0             0
+0xa7635fa4      0             0
+0xa763601c      0             0
+0xa7636080      0             0
+0xa8313b18      0             0
+0xa8313c1c      0             0
+0xa8313d1c      0             0
+0xa76366dc      0             0
+0xa70c6364      0             0
+0xa70dd048      0             0
+0xa70ee8d8      0             0
+0xa70ee92c      0             0
+0xa70ca500      0             0
+0xa70ef34c      0             0
+0xa70cb31c      0             0
+0xa75ff7c4      0             0
+0xa70ef4c8      0             0
+0xa70eefb4      0             0
+0xa70ca88c      0             0
+0xa70ca8c0      0             0
+0xa70ca8f4      0             0
+0xa70ca928      0             0
+0xa70ca95c      0             0
+0xa70ca990      0             0
+0xa70ca9c4      0             0
+0xa70ca9f8      0             0
+0xa70caa2c      0             0
+0xa70caa60      0             0
+0xa75fe668      0             0
+0xa75fe60c      0             0
+0xa75fe7c0      0             0
+0xa75fe864      0             0
+0xa75fe6cc      0             0
+0xa75ff558      0             0
+0xa75ff5b4      0             0
+0xa75ff70c      0             0
+0xa75ff760      0             0
+0xa75ff614      0             0
+0xa647cad4      0             0
+0xa6817644      0             0
+0xa6817698      0             0
+0xa682c1e8      0             0
+0xa682c674      0             0
+0xa682c270      0             0
+0xa682a4c0      0             0
+0xa682a928      0             0
+0xa682ad90      0             0
+0xa682b1f8      0             0
+0xa682b660      0             0
+0xa682bac8      0             0
+0xa682bf30      0             0
+0xa682a1b4      0             0
+0xa75f6830      0             0
+0xa76259d8      0             0
+0xa771dd38      0             0
+0xa771dd74      0             0
+0xa771ddb0      0             0
+0xa771ddec      0             0
+0xa771de28      0             0
+0xa771de64      0             0
+0xa771dea0      0             0
+0xa771dedc      0             0
+0xa771df18      0             0
+0xa771df54      0             0
+0xa771df90      0             0
+0xa771dfcc      0             0
+0xa771e008      0             0
+0xa771e044      0             0
+0xa771e080      0             0
+0xa771e0bc      0             0
+0xa771e0f8      0             0
+0xa771e134      0             0
+0xa771e170      0             0
+0xa771e1ac      0             0
+0xa771e1e8      0             0
+0xa771e224      0             0
+0xa771e260      0             0
+0xa771e29c      0             0
+0xa771e2d8      0             0
+0xa771e314      0             0
+0xa771e350      0             0
+0xa771e38c      0             0
+0xa771e3c8      0             0
+0xa771e404      0             0
+0xa771e440      0             0
+0xa771e47c      0             0
+0xa771e4b8      0             0
+0xa771e4f4      0             0
+0xa771e530      0             0
+0xa771e56c      0             0
+0xa771e5a8      0             0
+0xa771e5e4      0             0
+0xa771e620      0             0
+0xa771e65c      0             0
+0xa62eaa40      0             0
+0xa62eaa98      0             0
+0xa62e9580      0             0
+0xa70daba0      0             0
+0xa8539a00      0             0
+0xa853bb0c      0             0
+0xa853bb40      0             0
+0xa853bb8c      0             0
+0xa717215c      0             0
+0xa857fe90      0             0
+0xa8581f9c      0             0
+0xa8581fd0      0             0
+0xa858201c      0             0
+0xa71715a0      0             0
+0xa7171674      0             0
+0xa86242c8      0             0
+0xa86263d4      0             0
+0xa8626408      0             0
+0xa8626454      0             0
+0xa866ea74      0             0
+0xa8670b80      0             0
+0xa8670bb4      0             0
+0xa8670c00      0             0
+0xa6334d2c      0             0
+0xa7789efc      0             0
+0xa7789fec      0             0
+0xa7789cac      0             0
+0xa7789ce0      0             0
+0xa7789c78      0             0
+0xa70c7d68      0             0
+0xa70c7d9c      0             0
+0xa7c3e358      0             0
+0xa75ffd04      0             0
+0xa78da4d8      0             0
+0xa75ffc18      0             0
+0xa7635d5c      0             0
+0xa68170cc      0             0
+0xa68171d8      0             0
+0xa68172e4      0             0
+0xa68173f0      0             0
+0xa68174fc      0             0
+0xa890ac78      0             0
+0xa890cd84      0             0
+0xa890cdb8      0             0
+0xa890ce04      0             0
+0xa7597058      0             0
+0xa75970ac      0             0
+0xa7597100      0             0
+0xa685de10      0             0
+0xa685dec0      0             0
+0xa685df70      0             0
+0xa685e020      0             0
+0xa685e0d0      0             0
+0xa685e1b4      0             0
+0xa685e244      0             0
+0xa685e2d4      0             0
+0xa685e364      0             0
+0xa685e3f4      0             0
+0xa6815268      0             0
+0xa6480004      0             0
+0xa73c1400      0             0
+0xb93cade0      0             0
+0xb93cbdc0      0             0
+0xb93cfc60      0             0
+0xb93d1bc0      0             0
+0xb93d3b20      0             0
+0xb93d5aa0      0             0
+0xa75b1094      0             0
+0xa73c188c      0             0
+0xa75911b8      0             0
+0xa7591210      0             0
+0xa778678c      0             0
+0xa8972220      0             0
+0xa8ac9e60      0             0
+0xa8b447a0      0             0
+0xa8c3c520      0             0
+0xa6334a6c      0             0
+0xa6334ae4      0             0
+0xa6334aa8      0             0
+0xa6334b30      0             0
+0xa6334b98      0             0
+0xa6334c10      0             0
+0xa6334bd4      0             0
+0xa6334c5c      0             0
+0xa77897dc      0             0
+0xa77898cc      0             0
+0xa77899bc      0             0
+0xa7789aac      0             0
+0xa7789b9c      0             0
+0xa70c7bf8      0             0
+0xa64a0e84      0             0
+0xa64a0f58      0             0
+0xa7591ca0      0             0
+0xa7591d74      0             0
+0xa7591fd8      0             0
+0xa75920ac      0             0
+0xa7592310      0             0
+0xa75923e4      0             0
+0xa7592648      0             0
+0xa759271c      0             0
+0xa7592980      0             0
+0xa7592a54      0             0
+0xa7592cb8      0             0
+0xa7592d8c      0             0
+0xa7171a58      0             0
+0xa7171aac      0             0
+0xa7171b3c      0             0
+0xa7171c10      0             0
+0xa7171ce4      0             0
+0xa6b60ea0      0             0
+0xa75ca6ac      0             0
+0xa75ca780      0             0
+0xa75ca854      0             0
+0xa8f83660      0             0
+0xa8f8576c      0             0
+0xa8f857a0      0             0
+0xa8f857ec      0             0
+0xa75bd2a0      0             0
+0xa70ee4c0      0             0
+0xa70ee5a0      0             0
+0xa75bd47c      0             0
+0xa6472188      0             0
+0xa64720f0      0             0
+0xa6472350      0             0
+0xa73c161c      0             0
+0xa75fc63c      0             0
+0xa75f9b4c      0             0
+0xa75f9cf0      0             0
+0xa70d2cb0      0             0
+0xa76361fc      0             0
+0xa638d2fc      0             0
+0xa7abbf20      0             0
+0xa70c21d8      0             0
+0xa70c220c      0             0
+0xa70d2c50      0             0
+0xa70d1f5c      0             0
+0xa70d1fb0      0             0
+0xa70d0e08      0             0
+0xa73c15c0      0             0
+0xa70d30b8      0             0
+0xa70ccaa8      0             0
+0xa70cc9cc      0             0
+0xa75b10f0      0             0
+0xa70cdd40      0             0
+0xa6816234      0             0
+0xa7785228      0             0
+0xa77852cc      0             0
+0xa7785370      0             0
+0xa7785414      0             0
+0xa77854b8      0             0
+0xa778555c      0             0
+0xa7785600      0             0
+0xa77856a4      0             0
+0xa7785748      0             0
+0xa77857ec      0             0
+0xa7785890      0             0
+0xa7785934      0             0
+0xa77859d8      0             0
+0xa7785af8      0             0
+0xa7785c18      0             0
+0xa7785d38      0             0
+0xa7785e58      0             0
+0xa7785f78      0             0
+0xa7786098      0             0
+0xa77861b8      0             0
+0xa77862d8      0             0
+0xa77863f8      0             0
+0xa7786518      0             0
+0xa7786638      0             0
+0xa62e92e4      0             0
+0xa62e9348      0             0
+0xa62ea864      0             0
+0xa62ea984      0             0
+0xa62e9404      0             0
+0xb93dba28      0             0
+0xb93f5af0      0             0
+0xa6386540      0             0
+0xa70d35f8      0             0
+0xa7702be8      0             0
+0xa7703008      0             0
+0xa7702d14      0             0
+0xa907e448      0             0
+0xa907e4e8      0             0
+0xa7a72dc0      0             0
+0xa907e660      0             0
+0xa7a73184      0             0
+0xa7a723f8      0             0
+0xa7597168      0             0
+0xa76367dc      0             0
+0xa75fff80      0             0
+0xa877d8d8      0             0
+0xa877e49c      0             0
+0xa977a6dc      0             0
+0xa977a7a0      0             0
+0xa877fd7c      0             0
+0xa877fdb0      1             0  USB_CDC_ACM_RCV
+---------------------------------
+*****  Total 128 Semaphore  *****
+---------------------------------
+ ID     Count  Name  SuspendCount  FirstSuspended
+  0         0                   0
+  1         0                   0
+  2         1                   0
+  3         1                   0
+  4         1                   0
+  5         1                   0
+  6         1                   0
+  7         1                   0
+  8         0  systemwq_long             2  systemwq_long
+  9         0  systemwq_realtime             1  systemwq_realtime
+ 10         0  systemwq_short             2  systemwq_short
+ 11         0                   0
+ 12         0  CSC Task Start             0
+ 13         1  dfs_session_sema             0
+ 14         1  audio_output_sem             0
+ 15         0  Audio beep request FIFO             0
+ 16         1  audio_output_beep_req sem             0
+ 17         1  audio_output_beep_play_sem             0
+ 18         1  audio_output_mute_sem             0
+ 19         0  audio_output_sem             0
+ 20         0  Audio cap2proc FIFO0             0
+ 21         0  Audio cap2proc FIFO1             0
+ 22         0                   0
+ 23         1                   0
+ 24         1                   0
+ 25         0                   0
+ 26         0  Metadata FIFO             0
+ 27         0  Metadata FIFO             0
+ 28         0  Metadata FIFO             0
+ 29         0  Metadata FIFO             0
+ 30         0  Metadata FIFO             0
+ 31         0  dec_read_buffer_avail_sem             0
+ 32       192  demux_write_buffers_avail_sem_s             0
+ 33         0                   0
+ 34        16                   0
+ 35         0  AmbaAe Ready Sem             0
+ 36         0  AmbaAe Go Sem             0
+ 37         0  AmbaAe Ack Sem             0
+ 38         0  AmbaAe Pause Sem             0
+ 39         0  AmbaAe Resume Sem             0
+ 40         0  AmbaAe StableRdy Sem             0
+ 41         0  AmbaAe SlowMotionCap Sem             0
+ 42         0  AmbaMainAwb Ready Sem             0
+ 43         0  AmbaMainAwb Go Sem             0
+ 44         0  AmbaMainAwb Ack Sem             0
+ 45         0  AmbaMainAwb Pause Sem             0
+ 46         0  AmbaMainAwb Resume Sem             0
+ 47         0  AmbaAdj Ready Sem             0
+ 48         0  AmbaAdj Go Sem             0
+ 49         0  AmbaAdj Ack Sem             0
+ 50         0  AmbaAdj Pause Sem             0
+ 51         0  AmbaAdj Resume Sem             0
+ 52         0                   0
+ 53         0                   0
+ 54         0                   0
+ 55         0                   0
+ 56         0                   0
+ 57         1  Still Cap Buf Mutex             0
+ 58         1  Still Cap Buf Mutex             0
+ 59        30  Still Cap RAW Buf Sem             0
+ 60         0  Still Cap Video Thumbnail Sem             0
+ 61         1  Still Cap Mutex             0
+ 62         0  Still Cap RAW FIFO             1  Still Capture
+ 63         0  Still Cap YUV FIFO             0
+ 64         0  wdrMNT             1  wdrMNT
+ 65         0  wdrMNT             0
+ 66         0  wdrMNB             1  wdrMNB
+ 67         0  wdrMNB             0
+ 68         0  wdrSNT             1  wdrSNT
+ 69         0  wdrSNT             0
+ 70         0  wdrSNB             1  wdrSNB
+ 71         0  wdrSNB             0
+ 72         0  wdrTNT             1  wdrTNT
+ 73         0  wdrTNT             0
+ 74         0  wdrTNB             1  wdrTNB
+ 75         0  wdrTNB             0
+ 76         0                   0
+ 77        32                   0
+ 78         0                   0
+ 79        32                   0
+ 80         1  audio_input_sem             0
+ 81         0  Protune Audio FIFO             0
+ 82         5  Back To Audio CAP0 FIFO             0
+ 83         0  Back To Audio CAP1 FIFO             0
+ 84         0                   0
+ 85        32                   0
+ 86         0                   0
+ 87        32                   0
+ 88         0  audio_input_sem             0
+ 89         1  SD rem size count sem             0
+ 90         0  Video Encoder First FIFO             0
+ 91         0  Video Encoder Second FIFO             0
+ 92         0  Audio Encoder FIFO             0
+ 93         1  enc_bs_sem             0
+ 94         0  MFT Still Task FIFO             1  MFT Still Task
+ 95         0  DRV_JPEG FIFO             0
+ 96         0  MFT Still Write Task FIFO             1  MFT Still Write Task
+ 97         0  Encode Info FIFO             0
+ 98         1  Vout LCD Semaphore             0
+ 99         1  Vout TV Semaphore             0
+100         0  pb_event_fifo             0
+101        90                   0
+102         1  mco_atomic_latch_sema             0
+103         1  @eRЈ             0
+104         1                   0
+105         1  KeRЈ             0
+106         0  WiMan notif sem             1  WiMan task
+107         0  Still Cap Complete Semaphore             0
+108         1  DSP Memory Mutex             0
+109         0  Metadata FIFO             0
+110         1  WDR tuneLock             0
+111         2  dfs_session_sema             0
+112         2  dfs_session_sema             0
+113         1  dfs_session_sema             0
+114         2  dfs_session_sema             0
+115         1  dfs_session_sema             0
+116         1                   0
+117         0                   1  AmbaImageMainAeTask
+118         1                   0
+119         0                   1  AmbaImageMainAwbTask
+120         1                   0
+121         0                   1  AmbaImageMainAdjTask
+122         0  MTP notif sem             1  MTP task
+123         0  DB Cmd Semaphore             1  DB Proxy Task
+124         0  ux_transfer_request_semaphore             0
+125         0  ux_transfer_request_semaphore             0
+126         0  ux_transfer_request_semaphore             1  USB_CDC_ACM_RCV
+127         0  ux_transfer_request_semaphore             0
+-------------------------------------
+*****    Total 168 EventFlag    *****
+-------------------------------------
+ ID   EventFlag  Name  SuspendCount  FirstSuspended
+  0  0x00000000                   3  dfs_sd_event_listener
+  1  0xfffffdff                   0
+  2  0x00000000                   0
+  3  0x00000000                   0
+  4  0x00000000                   0
+  5  0x00000000                   2  Audio Output Task
+  6  0x00000006                   0
+  7  0x00000000                   1  AmbaSD_CardMonitorTask
+  8  0x00000000                   0
+  9  0x000000c3                   0
+ 10  0x00000000                   0
+ 11  0x00000000                   1  AmbaPrintTask
+ 12  0x00000000  Button HAL Event Flag             1  Button HAL Event Task
+ 13  0x00000000  Button GPIO Event Flag             1  Button GPIO Event Task
+ 14  0x00000000  MCU IRQ HAL Event Flag             1  MCU IRQ Event Task
+ 15  0x00000000                   2  Image Capture
+ 16  0x00000000                   0
+ 17  0x00000001  frw_time_flag             0
+ 18  0x00000000  Platform HAL Util Event Flag             1  Platform HAL Util Task
+ 19  0x00000000  Platform HAL Poll Event Flag             1  Platform HAL Poll Task
+ 20  0x00000000                   0
+ 21  0x00000000  Tempwait eflag             0
+ 22  0x00000000  DFS SD Monitor Control Flag             1  dfs_sd_monitor_SD
+ 23  0x00000000  global event flag             1  DFS File write task
+ 24  0x0000001f  global session state flag             0
+ 25  0xffffffff  sync flags             0
+ 26  0xffffffff  sync flags             0
+ 27  0xffffffff  sync flags             0
+ 28  0xffffffff  sync flags             0
+ 29  0xffffffff  sync flags             0
+ 30  0xffffffff  sync flags             0
+ 31  0x00000000  session events flag             0
+ 32  0xffffffff  sync flags             0
+ 33  0xffffffff  sync flags             0
+ 34  0xffffffff  sync flags             0
+ 35  0xffffffff  sync flags             0
+ 36  0xffffffff  sync flags             0
+ 37  0xffffffff  sync flags             0
+ 38  0x00000000  session events flag             0
+ 39  0xffffffff  sync flags             0
+ 40  0xffffffff  sync flags             0
+ 41  0xffffffff  sync flags             0
+ 42  0xffffffff  sync flags             0
+ 43  0xffffffff  sync flags             0
+ 44  0xffffffff  sync flags             0
+ 45  0x00000000  session events flag             0
+ 46  0xffffffff  sync flags             0
+ 47  0xffffffff  sync flags             0
+ 48  0xffffffff  sync flags             0
+ 49  0xffffffff  sync flags             0
+ 50  0xffffffff  sync flags             0
+ 51  0xffffffff  sync flags             0
+ 52  0x00000000  session events flag             0
+ 53  0xffffffff  sync flags             0
+ 54  0xffffffff  sync flags             0
+ 55  0xffffffff  sync flags             0
+ 56  0xffffffff  sync flags             0
+ 57  0xffffffff  sync flags             0
+ 58  0xffffffff  sync flags             0
+ 59  0x00000000  session events flag             0
+ 60  0xffffffff  sync flags             0
+ 61  0xffffffff  sync flags             0
+ 62  0xffffffff  sync flags             0
+ 63  0xffffffff  sync flags             0
+ 64  0xffffffff  sync flags             0
+ 65  0xffffffff  sync flags             0
+ 66  0x00000000  session events flag             0
+ 67  0xffffffff  sync flags             0
+ 68  0xffffffff  sync flags             0
+ 69  0xffffffff  sync flags             0
+ 70  0xffffffff  sync flags             0
+ 71  0xffffffff  sync flags             0
+ 72  0xffffffff  sync flags             0
+ 73  0x00000000  session events flag             0
+ 74  0x00000000  FRW Init DSP uCode load wait             0
+ 75  0x00000220                   0
+ 76  0x00000001  audio_out_flag_builtin             0
+ 77  0x00000000                   0
+ 78  0x00000000  audio_out_flag_builtin             0
+ 79  0x00000000  Audio cap2proc Evt Flag             1  Audio Proc Task
+ 80  0x00000000                   0
+ 81  0x00000000                   0
+ 82  0x00000000                   0
+ 83  0x00000000                   0
+ 84  0x00000004  USB CDC ACM flags             0
+ 85  0x00000000                   0
+ 86  0x00000002  USB Flag             0
+ 87  0x00000000  ft6306_event_flag             1  ft6306_thread
+ 88  0x00000000                   0
+ 89  0x00200000  gps event flag             1  GPS COMM
+ 90  0x00000000  gps init event flag             0
+ 91  0x00000001                   0
+ 92  0x00000000                   0
+ 93  0x00000000                   2  AmbaImageMainEisAlgo2Task
+ 94  0x00000000  Still Cap Event Flag             0
+ 95  0x00000000  Record Service Evt Flag             1  Record Service Evt Task
+ 96  0x00000000                   0
+ 97  0x00000001  MFT Still Task Event Flag             0
+ 98  0x00000000  JPEG Encode Event Flag             0
+ 99  0x00000000  Calibration Event             0
+100  0x00000001  Producer Event Flag             0
+101  0x00000000  Consumer Event Flag             1  Frame Buffer Task
+102  0x00000000  PB Event id Flag             0
+103  0x00000001  Still Decode Event ID Flag             0
+104  0x00000001  Event id flag             0
+105  0x00000000  pb_movie_flag             1  pb_movie_task
+106  0x00000000  Playback still decode fb event             0
+107  0x00000000  Playback still display fb event             0
+108  0x00000000  PB Abort Event Flag             0
+109  0x00000000  Data Cap Evt Flag             1  datacap task
+110  0x00000000  Record Service Evt Flag             1  Record Metadata Evt Task
+111  0x00000000  wireless manager task ready event             0
+112  0xffffffff  wireless manager eflag             0
+113  0x00000005                   0
+114  0x00000002                   0
+115  0x00000000                   1  AmbaShell_CliTask
+116  0x00000000  Multishot Event Flag             0
+117  0x00000000  PB_Status_Event             0
+118  0x00000000  Media Edit Evt Flag             0
+119  0x00000000  xcode_decode_event_flag             1  xcode_demux_output_task
+120  0x00000000  xcode_jpeg_event_flag             1  xcode_jpeg_input_task
+121  0x00000000  xcode_encode_event_flag             1  xcode_mux_input_task
+122  0xffffffff                   0
+123  0xffffffff                   0
+124  0xffffffff                   0
+125  0xffffffff                   0
+126  0xffffffff                   0
+127  0x00180181                   1  AmbaDSP_ArmCommTask
+128  0x00000002                   0
+129  0x00000004                   0
+130  0x00000000                   0
+131  0x00000000                   0
+132  0x00000000                   0
+133  0x00000000                   0
+134  0x00000022                   0
+135  0x00000000                   1  AmbaDSP_IntTask
+136  0x00000000  CCL Proxy Event             1  CCL Proxy Task
+137  0x00000000  Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>tй+цџџя?БFБН5Б<             0
+138  0x00000000  Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>tй+цџџя?БFБН5Б<             0
+139  0x00000000  Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>tй+цџџя?БFБН5Б<             0
+140  0x00000000  Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>Уџ>tй+цџџя?БFБН5Б<             0
+141  0x00000000  cal done event             0
+142  0x00000001                   0
+143  0x00000000                   0
+144  0x00000000                   1  LINK_RPMSG_RVQ
+145  0x00000002                   1  LINK_RPMSG_SVQ
+146  0x00000000                   0
+147  0x00000000                   0
+148  0x00000000                   0
+149  0x00000000                   2  LINK_RPC_SVC_THREAD 0
+150  0x00000000                   0
+151  0x00000000                   0
+152  0x00000003                   0
+153  0x00000000                   0
+154  0x00000000                   0
+155  0x00000000                   0
+156  0x00000000                   0
+157  0x00000000                   0
+158  0x00000000                   0
+159  0x00000000                   0
+160  0x00000000                   0
+161  0x00000000                   0
+162  0x00000000                   0
+163  0x00000000                   0
+164  0x00000000                   0
+165  0x00000001  start flag             0
+166  0x00000003  FIFO event flag             0
+167  0x00000003  FIFO event flag             0
+------------------------------------
+*****    Total  54 MsgQueue    *****
+------------------------------------
+ ID  Enqueued  Space  Name  FirstSuspended
+  0         0     12  rtos_workq dispatch msg queue  rtos_workq Dispatch
+  1         0     24  rtos_workq queuer msg queue  rtos_workq Queuer
+  2         0      4  time mqueue  Time task
+  3         0    320  s_queue_0
+  4         0    320  s_queue_1
+  5         0    320  s_queue_2
+  6         0    320  s_queue_3
+  7         0    320  s_queue_4
+  8         0    320  s_queue_5
+  9         0    320  s_queue_6
+ 10         0     32
+ 11         0     32
+ 12         0     16  USB Message Queue  USB
+ 13         0     64  CSC Message Queue  CSC task
+ 14         0     20  GPS Command Queue
+ 15         0     20  GPS Internal Queue
+ 16         0      8        AmbaImageMessageTask
+ 17         0     32
+ 18         0     32
+ 19         0     32
+ 20         0     32
+ 21         0     32
+ 22         0      4  Playback mqueue  Playback task
+ 23         0      1  PB stilldec mqueue  Still Decoder Task
+ 24         0      1  PB still disp mqueue  Still Display Task
+ 25         0     16  pb_mov_mqueue
+ 26         0     16  WiMan mqueue
+ 27         0      4  Medit mqueue  medit_main_task
+ 28         0     16  me_trim_mqueue  medit_trim_task
+ 29         0     16  xcode_mqueue
+ 30         0     16  xcode_mqueue
+ 31         0     96        AmbaDSP_MsgDispatchTask
+ 32         0     96
+ 33         0     16  Voice Control MsgQ  Voice Control Pseudo UI
+ 34         0     64  System Message Queue
+ 35         0     64  System Message Queue  Tara Application
+ 36         0      8  REMOTE_BACPACQueue  REMOTE_BACPACTask
+ 37         0      8  REMOTE_WIFIQueue  REMOTE_WIFITask
+ 38         0     10  MTP Message Queue
+ 39         0     64  CSC ASYNC Message Queue  CSC async task
+ 40        16      0
+ 41         0     16        LINK_VFS_OPS
+ 42         0     16        LINK_VFS_SG
+ 43         8      0
+ 44         0      8        HiberSuspendHandler
+ 45         0     10  wifibt  IPC test task
+ 46         0     10  streaming  Streamer IPC task
+ 47         0     10  wifi_ctrl
+ 48         0     10  helper_task
+ 49         0     10  metadata  gpipc in worker task
+ 50         0     10  gptunnel
+ 51         0     10  rtos_media_db
+ 52         0     10  DB Cmd Message Queue
+ 53         0     20  udc_isr_queue  AmbaUSB_IsrTask
+-----------------------------------
+*****   Total   7 Byte pool   *****
+-----------------------------------
+ ID   Available  Fragement  Name
+  0    28524892       1006  byte_pool_cached
+  1   154973080         15  byte_pool_camera_mode
+  2     1048536         55  byte_pool_non_cached
+  3       15308         62
+  4      337328          7
+  5     2097144          2
+  6      279196        103  byte_pool_cached_vr
+-------------------------------------
+******   Total   7 Block pool   *****
+-------------------------------------
+ ID   Available  TotalBlocks  Name
+  0          10           10  wifibt
+  1          10           10  streaming
+  2          10           10  wifi_ctrl
+  3          10           10  helper_task
+  4          10           10  metadata
+  5          10           10  gptunnel
+  6          10           10  rtos_media_db
+a:\>

@@ -1,0 +1,110 @@
+PLL Name: [vout_lcd]
+------------------------------
+VCO Frequency    : 760333824
+<REG_CTRL>       : 0x1f1f0008
+<REG_CTRL2>      : 0x3f710000
+<REG_CTRL3>      : 0x00069300
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000004
+<REG_FRACTION>   : 0xae3a3a8f
+------------------------------
+PLL Name: [vout_tv]
+------------------------------
+VCO Frequency    : 432000000
+<REG_CTRL>       : 0x01078008
+<REG_CTRL2>      : 0x3f770000
+<REG_CTRL3>      : 0x00068300
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000002
+<REG_FRACTION>   : 0x00000000
+------------------------------
+PLL Name: [hdmi_lc]
+------------------------------
+VCO Frequency    : 0
+<REG_CTRL>       : 0x09100000
+<REG_CTRL2>      : 0x00770000
+<REG_CTRL3>      : 0x0f008200
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000001
+<REG_FRACTION>   : 0x00000000
+------------------------------
+PLL Name: [sensor]
+------------------------------
+VCO Frequency    : 648000000
+<REG_CTRL>       : 0x1a120008
+<REG_CTRL2>      : 0x3f770000
+<REG_CTRL3>      : 0x00069300
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000003
+<REG_FRACTION>   : 0x00000000
+------------------------------
+PLL Name: [idsp]
+------------------------------
+VCO Frequency    : 192000000
+<REG_CTRL>       : 0x07110000
+<REG_CTRL2>      : 0x3f770000
+<REG_CTRL3>      : 0x00068300
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000001
+<REG_FRACTION>   : 0x00000000
+------------------------------
+PLL Name: [ddrio]
+------------------------------
+VCO Frequency    : 1200000000
+<REG_CTRL>       : 0x31100000
+<REG_CTRL2>      : 0x3f710000
+<REG_CTRL3>      : 0x00068302
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000001
+<REG_FRACTION>   : 0x00000000
+------------------------------
+PLL Name: [core]
+------------------------------
+VCO Frequency    : 888000000
+<REG_CTRL>       : 0x24100000
+<REG_CTRL2>      : 0x3f770000
+<REG_CTRL3>      : 0x00068300
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000002
+<REG_FRACTION>   : 0x00000000
+------------------------------
+PLL Name: [audio]
+------------------------------
+VCO Frequency    : 430080000
+<REG_CTRL>       : 0x11000008
+<REG_CTRL2>      : 0x3f770000
+<REG_CTRL3>      : 0x00068300
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000023
+<REG_FRACTION>   : 0xeb851eb8
+------------------------------
+PLL Name: [hdmi]
+------------------------------
+VCO Frequency    : 1620000000
+<REG_CTRL>       : 0x1d051000
+<REG_CTRL2>      : 0x00770000
+<REG_CTRL3>      : 0x0f008200
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000001
+<REG_FRACTION>   : 0x00000000
+------------------------------
+PLL Name: [cortex]
+------------------------------
+VCO Frequency    : 792000000
+<REG_CTRL>       : 0x20100000
+<REG_CTRL2>      : 0x3f770000
+<REG_CTRL3>      : 0x00068300
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000001
+<REG_FRACTION>   : 0xd5555555
+------------------------------
+PLL Name: [sd]
+------------------------------
+VCO Frequency    : 480000000
+<REG_CTRL>       : 0x13000000
+<REG_CTRL2>      : 0x3f770000
+<REG_CTRL3>      : 0x00068300
+<REG_PRESCALER>  : 0x00000001
+<REG_POSTSCALER> : 0x00000001
+<REG_FRACTION>   : 0x00000000
+------------------------------
