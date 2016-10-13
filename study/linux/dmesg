@@ -1,0 +1,355 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.10.71 (jenkins@us01-fwbuild-05p) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 PREEMPT Thu Sep 22 16:43:11 PDT 2016
+[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: Ambarella S2E (Flattened Device Tree), model: Ambarella A9S BUB
+[    0.000000] boss: a0a50000 [00a50000]
+[    0.000000] aipc_spin_lock_setup done
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] Ambarella:      AHB = 0x60000000[0xe0000000],0x01000000 0
+[    0.000000] Ambarella:      APB = 0x70000000[0xe8000000],0x01000000 0
+[    0.000000] Ambarella:      PPM = 0x00100000[0xa0100000],0x00a00000 9
+[    0.000000] Ambarella:     PPM2 = 0x04100000[0xa4100000],0x3bf00000 9
+[    0.000000] Ambarella:      AXI = 0xf0000000[0xf0000000],0x00100000 0
+[    0.000000] Ambarella:    DRAMC = 0xdffe0000[0xef000000],0x00020000 0
+[    0.000000] aipc: smem: 0xa0100000 [0x00100000], 0x00a00000
+[    0.000000] On node 0 totalpages: 13824
+[    0.000000] free_area_init_node: node 0, pgdat 405687f0, node_mem_map 40598000
+[    0.000000]   Normal zone: 108 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 13824 pages, LIFO batch:3
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 13716
+[    0.000000] Kernel command line: ubi.mtd=5 root=ubi0:linux rootfstype=ubifs console=ttyS2 nr_cpus=1 maxcpus=0 boss=0xa0a50000
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Memory: 54MB = 54MB total
+[    0.000000] Memory: 49016k/49016k available, 6280k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0x43800000 - 0xa0000000   (1480 MB)
+[    0.000000]     lowmem  : 0x40000000 - 0x43600000   (  54 MB)
+[    0.000000]     modules : 0x3f000000 - 0x40000000   (  16 MB)
+[    0.000000]       .text : 0x40008000 - 0x4050e954   (5147 kB)
+[    0.000000]       .init : 0x4050f000 - 0x4053382c   ( 147 kB)
+[    0.000000]       .data : 0x40534000 - 0x40570088   ( 241 kB)
+[    0.000000]        .bss : 0x40570088 - 0x40591b2c   ( 135 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:272
+[    0.000000] sched_clock: 32 bits at 111MHz, resolution 9ns, wraps every 38693ms
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [ttyS2] enabled
+[    0.331628] Calibrating delay loop... 290.20 BogoMIPS (lpj=1451008)
+[    0.552083] pid_max: default: 32768 minimum: 301
+[    0.565409] Mount-cache hash table entries: 512
+[    0.575091] CPU: Testing write buffer coherency: ok
+[    0.589719] Setting up static identity map for 0x403ea778 - 0x403ea7d8
+[    0.603454] devtmpfs: initialized
+[    0.614992] pinctrl core: initialized pinctrl subsystem
+[    0.627915] NET: Registered protocol family 16
+[    0.632860] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.640330] L310 cache controller enabled
+[    0.651605] l2x0: 16 ways, CACHE_ID 0x4100c4c8, AUX_CTRL 0x22070000, Cache size: 1048576 B
+[    0.670348] ambarella-pinctrl 70009000.pinctrl: Ambarella pinctrl driver registered
+[    0.682633] ambarella-gpio gpio.0: Ambarella GPIO driver registered
+[    0.700323] aipc_mutex_init done
+[    0.716180] bio: create slab <bio-0> at 0
+[    0.721416]  remoteproc0: c0_and_c1 is available
+[    0.726018]  remoteproc0: Note: remoteproc is still under development and considered experimental.
+[    0.742815]  remoteproc0: THE BINARY FORMAT IS NOT YET FINALIZED, and backward compatibility isn't yet guaranteed.
+[    0.763467]  remoteproc0: registered virtio0 (type 7)
+[    0.769048]  remoteproc0: powering up c0_and_c1
+[    0.784119]  remoteproc0: Booting fw image dummy, size 0
+[    0.790191] virtio_rpmsg_bus virtio0: rpmsg host is online
+[    0.802588] NS announcement: 41 6d 62 61 52 70 64 65 76 5f 43 4c 4b 00 ef ef  AmbaRpdev_CLK...
+[    0.802605] NS announcement: ef ef ef ef ef ef ef ef ef ef ef ef ef ef ef ef  ................
+[    0.802614] NS announcement: 00 04 00 00 00 00 00 00                          ........
+[    0.802631] virtio_rpmsg_bus virtio0: creating channel AmbaRpdev_CLK addr 0x400
+[    0.822937] NS announcement: 61 69 70 63 5f 72 70 63 00 ef ef ef ef ef ef e7  aipc_rpc........
+[    0.822956] NS announcement: 8f ef ef ef ef df ef ef ef ef ed ef ef ef ef ef  ................
+[    0.822965] NS announcement: 01 04 00 00 00 00 00 00                          ........
+[    0.822981] virtio_rpmsg_bus virtio0: creating channel aipc_rpc addr 0x401
+[    0.830050] Switching to clocksource ambarella-cs-timer
+[    0.862473] NET: Registered protocol family 2
+[    0.867667] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+[    0.874826] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+[    0.890398] TCP: Hash tables configured (established 512 bind 512)
+[    0.896691] TCP: reno registered
+[    0.906932] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.916070] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.929891] NET: Registered protocol family 1
+[    0.934752] RPC: Registered named UNIX socket transport module.
+[    0.948571] RPC: Registered udp transport module.
+[    0.953294] RPC: Registered tcp transport module.
+[    0.957978] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.973651] ambarella-sd 6000c000.sdmmc1: Slot0 use bounce buffer[0x43280000<->0x03d80000]
+[    0.992908] ambarella-sd 6000c000.sdmmc1: Slot0 req_size=0x00080000, segs=128, seg_size=0x00080000
+[    1.001894] ambarella-sd 6000c000.sdmmc1: Slot0 use ADMA
+[    1.094206] ambarella-sd 6000c000.sdmmc1: 1 slots @ 53333333Hz
+[    1.104367] NS announcement: 61 69 70 63 5f 76 66 73 00 ef ef ef cf ef ef ef  aipc_vfs........
+[    1.104383] NS announcement: ef ef ef ef 8f df ef ee cf ff ef ef ef ef ef ef  ................
+[    1.104393] NS announcement: 02 04 00 00 00 00 00 00                          ........
+[    1.104423] virtio_rpmsg_bus virtio0: creating channel aipc_vfs addr 0x402
+[    1.128789] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.147623] msgmni has been set to 95
+[    1.153505] NET: Registered protocol family 38
+[    1.165948] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    1.173620] io scheduler noop registered
+[    1.185475] io scheduler deadline registered
+[    1.189768] io scheduler cfq registered (default)
+[    1.195017] 7001f000.uart: ttyS1 at MMIO 0x7001f000 (irq = 25) is a ambuart
+[    1.209624] 70014000.uart: ttyS2 at MMIO 0x70014000 (irq = 91) is a ambuart
+[    1.229440] brd: module loaded
+[    1.235624] loop: module loaded
+[    1.247986] Probe amba_heapmem successfully
+[    1.252403] Probe amba_dspmem successfully
+[    1.256911] Ambarella read-only mtdblock
+[    1.268586] ambarella-nand 60001000.nand: in ecc-[6]bit mode
+[    1.274456] ambarella_nand: Use On Flash BBT
+[    1.290482] NAND device: Manufacturer ID: 0x2c, Chip ID: 0xac (Micron NAND 512MiB 1,8V 8-bit), 512MiB, page size: 2048, OOB size: 64
+[    1.303306] Bad block table found at page 262080, version 0xFF
+[    1.318128] Bad block table found at page 262016, version 0xFF
+[    1.333266] 12 ofpart partitions found on MTD device amba_nand
+[    1.339353] Creating 12 MTD partitions on "amba_nand":
+[    1.354194] 0x000000020000-0x000000040000 : "VENDOR_DATA"
+[    1.360527] 0x000004080000-0x000008080000 : "SYS_SW"
+[    1.366523] 0x000008080000-0x00000a080000 : "DSP_uCode"
+[    1.382271] 0x00000a080000-0x00000c080000 : "SYS_DATA"
+[    1.396223] 0x00000c080000-0x00000d080000 : "LINUX_Kernel"
+[    1.402501] 0x00000d080000-0x000011080000 : "LINUX_RFS"
+[    1.408805] 0x000011080000-0x000013080000 : "LINUX_HIBER_IMG"
+[    1.422961] 0x000013080000-0x000013e00000 : "VIDEO_REC_IDX"
+[    1.429343] 0x000013e00000-0x000014f80000 : "CALIB"
+[    1.442802] 0x000014f80000-0x000015200000 : "USER_SETTING"
+[    1.459450] 0x000015200000-0x000015780000 : "DRIVE_A"
+[    1.465394] 0x000015780000-0x000017900000 : "DRIVE_B"
+[    1.471744] ambarella-rtc 7000d000.rtc: =====RTC ever lost power=====
+[    1.486425] ambarella-rtc 7000d000.rtc: ambrtc_set_alarm_or_time is not supported in dual-OSes!
+[    1.502534] ambarella-rtc 7000d000.rtc: rtc core: registered rtc-ambarella as rtc0
+[    1.515308] Netfilter messages via NETLINK v0.30.
+[    1.527562] nf_conntrack version 0.5.0 (765 buckets, 3060 max)
+[    1.533971] ctnetlink v0.93: registering with nfnetlink.
+[    1.548453] xt_time: kernel timezone is -0000
+[    1.553060] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.558476] TCP: cubic registered
+[    1.568001] Initializing XFRM netlink socket
+[    1.572493] NET: Registered protocol family 17
+[    1.577061] Bridge firewalling registered
+[    1.591508] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    1.599195] ThumbEE CPU extension supported.
+[    1.615263] UBI: default fastmap pool size: 25
+[    1.619715] UBI: default fastmap WL pool size: 25
+[    1.630995] UBI: attaching mtd5 to ubi0
+[    1.936416] UBI: scanning is finished
+[    1.953977] UBI: attached mtd5 (name "LINUX_RFS", size 64 MiB) to ubi0
+[    1.960504] UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    1.974056] UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    1.984075] UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    1.998422] UBI: good PEBs: 512, bad PEBs: 0, corrupted PEBs: 0
+[    2.004566] UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.019764] UBI: max/mean erase counter: 1/0, WL threshold: 4096, image sequence number: 1646630136
+[    2.035657] UBI: available PEBs: 37, total reserved PEBs: 475, PEBs reserved for bad PEB handling: 80
+[    2.048509] UBI: background thread "ubi_bgt0d" started, PID 37
+[    2.061626] ambarella-rtc 7000d000.rtc: setting system clock to 2016-10-04 00:13:20 UTC (1475540000)
+[    2.153847] UBIFS: mounted UBI device 0, volume 0, name "linux", R/O mode
+[    2.167587] UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.176874] UBIFS: FS size: 47996928 bytes (45 MiB, 378 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    2.193841] UBIFS: reserved for root: 0 bytes (0 KiB)
+[    2.205445] UBIFS: media format: w4/r0 (latest is w4/r0), UUID F1004471-E5EB-439D-BAC4-FEC8718E41F3, small LPT model
+[    2.227886] VFS: Mounted root (ubifs filesystem) readonly on device 0:12.
+[    2.235792] devtmpfs: mounted
+[    2.239132] Freeing unused kernel memory: 144K (4050f000 - 40533000)
+[    3.362251] NS announcement: 61 69 70 63 5f 72 66 73 00 ee ff ff fc 17 af a5  aipc_rfs........
+[    3.362285] NS announcement: 00 00 00 00 04 82 3a a9 00 00 00 00 f0 b1 ad a5  ......:.........
+[    3.362295] NS announcement: 03 04 00 00 00 00 00 00                          ........
+[    3.362315] virtio_rpmsg_bus virtio0: creating channel aipc_rfs addr 0x403
+[    3.404089] NS announcement: 41 6d 62 61 52 70 64 65 76 5f 4c 69 6e 6b 43 74  AmbaRpdev_LinkCt
+[    3.404109] NS announcement: 72 6c 00 00 20 00 00 00 08 83 3a a9 ee ee ff ff  rl.. .....:.....
+[    3.404119] NS announcement: 04 04 00 00 00 00 00 00                          ........
+[    3.404137] virtio_rpmsg_bus virtio0: creating channel AmbaRpdev_LinkCtrl addr 0x404
+[    3.464625] ambcache_inv_range start:0xa638e2e0 vs 0xa638e2f0
+[    3.470410] NS announcement: 65 63 68 6f 5f 63 6f 72 74 65 78 00 40 84 3a a9  echo_cortex.@.:.
+[    3.470423] NS announcement: ee ee ff ff 00 84 3a a9 00 00 20 00 2f 00 20 00  ......:... ./. .
+[    3.470432] NS announcement: 05 04 00 00 00 00 00 00                          ........
+[    3.470452] virtio_rpmsg_bus virtio0: creating channel echo_cortex addr 0x405
+[    3.531895] NS announcement: 77 69 66 69 62 74 00 00 2e 00 37 00 4b 00 20 00  wifibt....7.K. .
+[    3.531915] NS announcement: 2f 00 20 00 36 00 30 00 20 00 2f 00 20 00 00 00  /. .6.0. ./. ...
+[    3.531925] NS announcement: 06 04 00 00 00 00 00 00                          ........
+[    3.531944] virtio_rpmsg_bus virtio0: creating channel wifibt addr 0x406
+[    3.552585] chan_probe probing rpmessage channel 0
+[    3.583996] NS announcement: 73 74 72 65 61 6d 69 6e 67 00 ff ff 00 00 00 00  streaming.......
+[    3.584020] NS announcement: 00 22 ff ff cc cc ff ff 77 00 00 00 00 00 99 ff  ."......w.......
+[    3.584030] NS announcement: 07 04 00 00 00 00 00 00                          ........
+[    3.584063] virtio_rpmsg_bus virtio0: creating channel streaming addr 0x407
+[    3.617322] chan_probe probing rpmessage channel 1
+[    3.639542] NS announcement: 77 69 66 69 5f 63 74 72 6c 00 00 00 03 00 00 00  wifi_ctrl.......
+[    3.639562] NS announcement: 1f 00 00 00 00 00 00 00 14 00 00 00 00 00 00 00  ................
+[    3.639572] NS announcement: 08 04 00 00 00 00 00 00                          ........
+[    3.639605] virtio_rpmsg_bus virtio0: creating channel wifi_ctrl addr 0x408
+[    3.671208] chan_probe probing rpmessage channel 2
+[    3.702080] NS announcement: 68 65 6c 70 65 72 5f 74 61 73 6b 00 00 01 01 00  helper_task.....
+[    3.702099] NS announcement: 60 a4 ad a5 5c fe 3a a9 00 00 00 00 06 00 00 00  `...\.:.........
+[    3.702288] NS announcement: 09 04 00 00 00 00 00 00                          ........
+[    3.702312] virtio_rpmsg_bus virtio0: creating channel helper_task addr 0x409
+[    3.726469] chan_probe probing rpmessage channel 3
+[    3.743114] NS announcement: 6d 65 74 61 64 61 74 61 00 00 3b a9 ee ee ff ff  metadata..;.....
+[    3.743414] NS announcement: fc 00 3b a9 24 f3 3c a9 cc 58 6d a4 01 00 00 00  ..;.$.<..Xm.....
+[    3.743427] NS announcement: 0a 04 00 00 00 00 00 00                          ........
+[    3.743447] virtio_rpmsg_bus virtio0: creating channel metadata addr 0x40a
+[    3.791036] chan_probe probing rpmessage channel 4
+[    3.809294] NS announcement: 67 70 74 75 6e 6e 65 6c 00 00 00 00 1f 00 ed ef  gptunnel........
+[    3.809349] NS announcement: 64 aa ea a5 00 00 00 00 d0 01 3b a9 ee ee ff ff  d.........;.....
+[    3.809370] NS announcement: 0b 04 00 00 00 00 00 00                          ........
+[    3.809391] virtio_rpmsg_bus virtio0: creating channel gptunnel addr 0x40b
+[    3.852652] chan_probe probing rpmessage channel 5
+[    3.893050] NS announcement: 72 74 6f 73 5f 6d 65 64 69 61 5f 64 62 00 6d a5  rtos_media_db.m.
+[    3.893071] NS announcement: 00 00 00 00 80 95 42 a9 ee ee ff ff 40 b1 ad a5  ......B.....@...
+[    3.893195] NS announcement: 0c 04 00 00 00 00 00 00                          ........
+[    3.893219] virtio_rpmsg_bus virtio0: creating channel rtos_media_db addr 0x40c
+[    3.922382] chan_probe probing rpmessage channel 6
+[    5.090192] PM: Syncing filesystems ... done.
+[    5.096073] Freezing user space processes ... (elapsed 0.02 seconds) done.
+[    5.132345] rpmsg_linkctrl_cmd_hiber_prepare: 0x01070560
+[    5.138103] PM: Preallocating image memory... done (allocated 2931 pages)
+[    5.173489] PM: Allocated 11724 kbytes in 0.02 seconds (586.20 MB/s)
+[    5.179825] Freezing remaining freezable tasks ... (elapsed 0.01 seconds) done.
+[    5.220271] Suspending console(s) (use no_console_suspend to debug)
+[    5.227514] PM: freeze of devices complete after 0.922 msecs
+[    5.227894] PM: late freeze of devices complete after 0.369 msecs
+[    5.236047] PM: noirq freeze of devices complete after 8.136 msecs
+[    5.236138] PM: Creating hibernation image:
+[    5.236138] PM: Need to copy 2926 pages
+[    5.236138] pm_abaoss_entry returned 0x1
+[   10.472622] PM: noirq restore of devices complete after 0.158 msecs
+[   10.472707] virtio_rpmsg_bus virtio0: inbound msg too big: (2048, 39310)
+[   10.472905] PM: early restore of devices complete after 0.065 msecs
+[   10.481359] PM: restore of devices complete after 1.315 msecs
+[   10.536232] rpmsg_linkctrl_cmd_hiber_exit:
+[   10.540482] Restarting tasks ... done.
+[   12.200818] mmc0: queuing unknown CIS tuple 0x01 (3 bytes)
+[   12.230675] mmc0: queuing unknown CIS tuple 0x1a (5 bytes)
+[   12.251710] mmc0: queuing unknown CIS tuple 0x1b (8 bytes)
+[   12.265269] mmc0: queuing unknown CIS tuple 0x14 (0 bytes)
+[   12.289749] mmc0: queuing unknown CIS tuple 0x80 (1 bytes)
+[   12.296048] mmc0: queuing unknown CIS tuple 0x81 (1 bytes)
+[   12.312695] mmc0: queuing unknown CIS tuple 0x82 (1 bytes)
+[   12.320016] mmc0: new high speed SDIO card at address 0001
+[   12.419526] Loading modules backported from Linux version v3.12.8-0-g97f15f1
+[   12.427322] Backport generated by backports.git v3.12.8-1-0-geb41fad
+[   14.422808] cfg80211: Calling CRDA to update world regulatory domain
+[   14.486838] cfg80211: World regulatory domain updated:
+[   14.486862] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[   14.486874] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[   14.486885] cfg80211:   (2457000 KHz - 2482000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[   14.486894] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
+[   14.486904] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (300 mBi, 2000 mBm)
+[   14.486913] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (300 mBi, 2000 mBm)
+[   14.486923] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm)
+[   21.752360] wlan: loading driver v4.5.20.036.011
+[   21.765666] hifDeviceInserted: Dumping clocks (50000000,53333333)
+[   21.772372] HIFDumpCCCR 0(43) 1(3) 2(0) 3(0) 4(0) 5(0) 6(0) 7(6) 8(17) 9(0) A(10) B(0) C(0) D(0) E(0) F(0) 10(0) 11(0) 12(1) 13(3) 14(7) 15(37) 16(1) 
+[   21.805493] /proc/cld/athdiagpfs created
+[   21.806483] wlan: [264:E :HDD] hdd_apply_cfg_ini: MAX_CFG_INI_ITEMS too small, must be at least 520
+[   21.808427] wlan: [264:E :HDD] hdd_apply_cfg_ini: Reg Parameter gBadPeerTxCtlPctLevelIeeeB < allowed Minimum [1 < 8]. Enforcing Default= 1
+[   21.809012] wlan: [264:E :HDD] wlan_hdd_cfg80211_init: wiphy->bands[i] is NULL, i = 2
+[   21.809907] ath_hif_sdio: HIF (Atheros/multi-bss)
+[   21.952157] AR6000: configuration opcode 3 is not used for Linux SDIO stack 
+[   21.962292] NUM_DEV=1 FWMODE=0x2 FWSUBMODE=0x0 FWBR_BUF 0
+[   21.978249] crystal_freq: 48000000Hz
+[   21.978568] Step 1a:    66666
+[   21.979321] Step 1b:    6AAA8
+[   21.979681] Step 2a:      400
+[   21.980144] Step 2b:      160
+[   21.980471] Step 3a:        0
+[   21.981037] Step 3b:        1
+[   21.985143] Step 5a:    11458
+[   21.985693] Step 5b:    5000E
+[   21.986366] Step 7a:    5000E
+[   21.986870] Step 7b:    4000E
+[   21.996264] Step 9a:        3
+[   21.996818] Step 9b:        1
+[   21.997142] Step 10a:    4000E
+[   21.998071] Step 10b:        E
+[   22.062860] Board extended Data download address: 0x0
+[   22.108383] wlan: [264:E :VOS] ol_transfer_bin_file: transferring file: bdwlan30.bin size 8124 bytes done!
+[   22.108547] ol_download_firmware: Using 0x1234 for the remainder of init
+[   22.193630] wlan: [264:E :VOS] ol_transfer_bin_file: transferring file: otp30.bin size 24037 bytes done!
+[   22.194045] ol_transfer_bin_file: Loading setup file qsetup30.bin
+[   22.229992] ol_transfer_bin_file: Failed to get qsetup30.bin
+[   24.075654] wlan: [264:E :VOS] ol_transfer_bin_file: transferring file: qwlan30.bin size 593424 bytes done!
+[   24.077330] +HTCCreate ..  HIF :433ea000 
+[   24.090755] HIF Interrupt processing is SYNC ONLY
+[   24.095527] AR6000: configuration opcode 7 is only used for RTOS systems, not Linux systems
+[   24.111237] AR6000: configuration opcode 5 is not used for Linux SDIO stack 
+[   24.129099] -HTCCreate (0x42720000) 
+[   24.132920] ol_if_dfs_attach: called; ptr=42c95a8c, radar_info=42c93d94
+[   24.140983] wlan: [264:E :SAP] dfs_init_radar_filters[201]: Unknown dfs domain 0 
+[   24.141048] +HWT
+[   24.149925] Target Ready! : transmit resources : 3 size:1792, MaxMsgsPerHTCBundle = 32
+[   24.161318] HTC Service Index : 1 TX : 0x100 : alloc:3 
+[   24.173817] HTC Service:0x0001, ULpipe:1 DLpipe:0 id:0 Ready
+[   24.179679] -HWT
+[   24.181764] MAILBOX SWAP Service is enabled!
+[   24.196102] Reduced Tx Complete service is enabled!
+[   24.201931] is_full_reorder_offloaded? 0
+[   24.205841] HTC Service TX : 0x300 : allocation is zero! 
+[   24.221335] HTC Service:0x0300, ULpipe:1 DLpipe:0 id:1 Ready
+[   24.226984] HTC Service:0x0300 ep:1 TX flow control disabled
+[   24.239989] htt_tx_attach:htt_desc_start:0x42340000 htt_desc_end:0x4235c200
+[   24.257391] HTC Service:0x0100, ULpipe:3 DLpipe:2 id:2 Ready
+[   24.265432] HTC using TX credit flow control
+[   24.278220] __wmi_control_rx: WMI UNIFIED SERVICE READY event
+[   24.285246] __wmi_control_rx:  WMI UNIFIED READY event
+[   24.285480] wlan: [264:E :VOS] error: wiphy->bands is NULL, i = 2
+[   24.308263] session id - 0, AddSta session - 0
+[   24.329669] target uses HTT version 3.28; host uses 3.23
+[   24.343250] *** Warning: host/target HTT versions are different, though compatible!
+[   24.429696] session id - 1, AddSta session - 0
+[   24.438866] TXRX: ol_txrx_peer_find_add_id: Delete Peer 42723000
+[   25.131393] Host SW:4.5.20.036.011, FW:0.0.0.53, HW:QCA9377_REV1_1
+[   25.131550] wlan_logging_sock_activate_svc: Initalizing FEConsoleLog = 0 NumBuff = 32
+[   25.479257] wlan_logging_sock_activate_svc: Activated wlan_logging svc
+[   25.498207] wlan: driver loaded
+[   28.015428] wlan: [267:E :VOS] vos_mem_zero called with NULL parameter ptr
+[   33.174501] wr buff 0x42c0e500 buf 0x3e840c34 cnt 4 offset 0xd580 value 0x5c57bc13
+[   34.653318] wr buff 0x42c0e540 buf 0x3e94bc34 cnt 4 offset 0xd588 value 0x30f464a6
+[    5.603957] wlan: [267:E :VOS] vos_mem_zero called with NULL parameter ptr
+[    5.604811] session id - 2, AddSta session - 0
+[   12.305427] TXRX: ol_txrx_peer_detach:peer 42723000 (f4:dd:9e:44:91:09)
+[   12.464628] TXRX: ol_rx_peer_unmap_handler: Remove the ID 49 reference to peer 42723000
+[   12.634085] TXRX: ol_rx_peer_unmap_handler: Remove the ID 1 reference to peer 42723000
+[   12.839865] TXRX: Deleting peer 42723000 (f4:dd:9e:44:91:09)
+[   13.126990] wlan: [267:E :VOS] vos_mem_zero called with NULL parameter ptr
+[   16.581036] wlan: [331:E :VOS] vos_nv_getChannelEnabledState, invalid channel 0
+[   16.581100] session id - 1, AddSta session - 0
+[   16.947135] TXRX: ol_txrx_peer_find_add_id: Delete Peer 42723000
+[   47.579847] TXRX: Couldn't find peer from ID 12 - skipping security inits
+[   47.846771] TXRX: ol_txrx_peer_find_add_id: Delete Peer 42ac8000
+[  142.704445] 1 log buffers are dropped 
+[ 1659.910897] rpmsg_linkctrl_cmd_hiber_prepare: 0x01070560
+[ 1659.929761] PM: Syncing filesystems ... done.
+[ 1659.940001] Freezing user space processes ... (elapsed 0.02 seconds) done.
+[ 1659.978530] Freezing remaining freezable tasks ... (elapsed 0.01 seconds) done.
+[ 1660.012753] Suspending console(s) (use no_console_suspend to debug)
+[ 1660.024220] ol_ath_sdio_suspend TODO
+[ 1660.067927] HIFsuspendwow TODO
+[ 1660.075617] PM: suspend of devices complete after 53.043 msecs
+[ 1660.076034] PM: late suspend of devices complete after 0.349 msecs
+[ 1660.076686] PM: noirq suspend of devices complete after 0.643 msecs
+[ 1660.076804] pm_abaoss_entry returned 0xffffffff
+[ 1660.076804] pm_abaoss_entry returned 0x1
+[ 1689.799161] PM: noirq resume of devices complete after 0.165 msecs
+[ 1689.806214] PM: early resume of devices complete after 0.068 msecs
+[ 1689.818177] ambarella_sd_enable_sdio_irq 1
+[ 1689.818945] ol_ath_sdio_resume ODO
+[ 1689.856045] PM: resume of devices complete after 49.819 msecs
+[ 1689.871072] Restarting tasks ... done.
+[ 1689.882199] rpmsg_linkctrl_cmd_hiber_exit:
+[ 1696.373348] TXRX: Couldn't find peer from ID 7 - skipping security inits
+[ 1696.392418] TXRX: ol_txrx_peer_find_add_id: Delete Peer 42ac8800
