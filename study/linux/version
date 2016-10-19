@@ -1,0 +1,8 @@
+uname -a
+Linux a9s 3.10.71 #1 PREEMPT Thu Sep 22 16:43:11 PDT 2016 armv7l GNU/Linux
+
+cat /proc/version
+Linux version 3.10.71 (jenkins@us01-fwbuild-05p) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 PREEMPT Thu Sep 22 16:43:11 PDT 2016
+
+uname -r 
+3.10.71
